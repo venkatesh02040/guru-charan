@@ -1,0 +1,1120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Chemoembolisation (TACE) and Ablation of Tumours | Dr. Gurucharan S Shetty Blog</title>
+    <meta name="description"
+        content="Learn about Transarterial Chemoembolisation (TACE) and percutaneous tumour ablation minimally invasive Interventional Radiology treatments for liver cancer (HCC) and other tumours, performed by Dr. Gurucharan S Shetty in Bangalore." />
+    <meta name="keywords"
+        content="TACE Bangalore, chemoembolisation liver cancer, tumour ablation Bangalore, HCC treatment interventional radiology, Dr Gurucharan Shetty TACE, radiofrequency ablation liver Bangalore" />
+    <link rel="canonical" href="https://drgurucharan.com/blogs/chemoembolisation-ablation-tumors.html" />
+    <meta property="og:title" content="Chemoembolisation (TACE) and Ablation of Tumours | Dr. Gurucharan S Shetty" />
+    <meta property="og:description"
+        content="Learn about Transarterial Chemoembolisation (TACE) and percutaneous tumour ablation minimally invasive Interventional Radiology treatments for liver cancer (HCC) and other tumours, performed by Dr. Gurucharan S Shetty in Bangalore." />
+    <meta property="og:type" content="article" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <style>
+        :root {
+            --navy: #0b1f3a;
+            --navy2: #0f2d52;
+            --teal: #0e7490;
+            --teal2: #06b6d4;
+            --gold: #c9a84c;
+            --gold2: #e8c97a;
+            --white: #fff;
+            --off: #f4f7fb;
+            --text: #2d3748;
+            --muted: #64748b;
+            --border: #e2e8f0
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box
+        }
+
+        html {
+            scroll-behavior: smooth
+        }
+
+        body {
+            font-family: 'DM Sans', sans-serif;
+            color: var(--text);
+            background: var(--white);
+            overflow-x: hidden
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background: rgba(11, 31, 58, 0.97);
+            backdrop-filter: blur(14px);
+            border-bottom: 1px solid rgba(201, 168, 76, 0.22);
+            transition: box-shadow .3s
+        }
+
+        .hdr {
+            max-width: 1300px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 74px
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: .85rem;
+            text-decoration: none
+        }
+
+        .logo-b {
+            width: 46px;
+            height: 46px;
+            background: linear-gradient(135deg, var(--gold), var(--gold2));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--navy)
+        }
+
+        .logo-t {
+            display: flex;
+            flex-direction: column
+        }
+
+        .logo-n {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: #fff;
+            line-height: 1.2
+        }
+
+        .logo-s {
+            font-size: .6rem;
+            color: var(--gold);
+            letter-spacing: .12em;
+            text-transform: uppercase
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            gap: .1rem
+        }
+
+        nav a {
+            color: rgba(255, 255, 255, .82);
+            text-decoration: none;
+            font-size: .82rem;
+            font-weight: 500;
+            padding: .45rem .78rem;
+            border-radius: 6px;
+            transition: color .2s
+        }
+
+        nav a:hover,
+        nav a.active {
+            color: var(--gold)
+        }
+
+        .drop {
+            position: relative
+        }
+
+        .drop>a {
+            display: flex;
+            align-items: center;
+            gap: .3rem;
+            cursor: pointer
+        }
+
+        .drop>a::after {
+            content: '\f078';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            font-size: .52rem;
+            transition: transform .2s
+        }
+
+        .drop:hover>a::after {
+            transform: rotate(180deg)
+        }
+
+        .dmenu {
+            position: absolute;
+            top: calc(100% + 8px);
+            left: 0;
+            background: var(--navy);
+            border: 1px solid rgba(201, 168, 76, .2);
+            border-radius: 10px;
+            min-width: 215px;
+            opacity: 0;
+            pointer-events: none;
+            transform: translateY(-8px);
+            transition: all .22s;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, .4)
+        }
+
+        .drop:hover .dmenu {
+            opacity: 1;
+            pointer-events: all;
+            transform: translateY(0)
+        }
+
+        .dmenu a {
+            display: block;
+            padding: .65rem 1.1rem;
+            font-size: .8rem;
+            color: rgba(255, 255, 255, .8);
+            border-bottom: 1px solid rgba(255, 255, 255, .05);
+            transition: all .2s
+        }
+
+        .dmenu a:first-child {
+            border-radius: 10px 10px 0 0
+        }
+
+        .dmenu a:last-child {
+            border-bottom: none;
+            border-radius: 0 0 10px 10px
+        }
+
+        .dmenu a:hover {
+            color: var(--gold);
+            background: rgba(201, 168, 76, .08)
+        }
+
+        .btn-appt {
+            background: linear-gradient(135deg, var(--gold), var(--gold2)) !important;
+            color: var(--navy) !important;
+            font-weight: 600 !important;
+            padding: .48rem 1.1rem !important;
+            border-radius: 25px !important;
+            font-size: .8rem !important
+        }
+
+        .ham {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            padding: 4px;
+            background: none;
+            border: none
+        }
+
+        .ham span {
+            display: block;
+            width: 24px;
+            height: 2px;
+            background: #fff;
+            border-radius: 2px;
+            transition: all .3s
+        }
+
+        .ham.open span:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px)
+        }
+
+        .ham.open span:nth-child(2) {
+            opacity: 0
+        }
+
+        .ham.open span:nth-child(3) {
+            transform: rotate(-45deg) translate(5px, -5px)
+        }
+
+        .mnav {
+            display: none;
+            position: fixed;
+            top: 74px;
+            left: 0;
+            width: 100%;
+            background: var(--navy);
+            border-top: 1px solid rgba(201, 168, 76, .2);
+            flex-direction: column;
+            z-index: 999;
+            max-height: calc(100vh - 74px);
+            overflow-y: auto
+        }
+
+        .mnav.open {
+            display: flex
+        }
+
+        .mnav a {
+            padding: .75rem 1.5rem;
+            color: rgba(255, 255, 255, .85);
+            text-decoration: none;
+            font-size: .88rem;
+            border-bottom: 1px solid rgba(255, 255, 255, .05)
+        }
+
+        .mnav a:hover {
+            color: var(--gold);
+            background: rgba(201, 168, 76, .06)
+        }
+
+        .msec {
+            padding: .55rem 1.5rem .25rem;
+            font-size: .62rem;
+            color: var(--gold);
+            text-transform: uppercase;
+            letter-spacing: .1em
+        }
+
+        .ph {
+            background: linear-gradient(135deg, #0b1f3a 0%, #0e3d6b 55%, #0e7490 100%);
+            padding: 7rem 2rem 4rem;
+            position: relative;
+            overflow: hidden;
+            margin-top: 74px
+        }
+
+        .ph::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            opacity: .05;
+            background-image: radial-gradient(circle at 2px 2px, rgba(255, 255, 255, .8) 1px, transparent 0);
+            background-size: 44px 44px
+        }
+
+        .phi {
+            max-width: 1300px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2
+        }
+
+        .bc2 {
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+            font-size: .78rem;
+            color: rgba(255, 255, 255, .5);
+            margin-bottom: 1rem;
+            flex-wrap: wrap
+        }
+
+        .bc2 a {
+            color: rgba(255, 255, 255, .5);
+            text-decoration: none
+        }
+
+        .bc2 a:hover {
+            color: var(--gold)
+        }
+
+        .bc2 span {
+            color: var(--gold)
+        }
+
+        .btag {
+            display: inline-flex;
+            align-items: center;
+            gap: .4rem;
+            background: rgba(201, 168, 76, .15);
+            border: 1px solid rgba(201, 168, 76, .3);
+            color: var(--gold);
+            font-size: .68rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: .1em;
+            padding: .3rem .85rem;
+            border-radius: 25px;
+            margin-bottom: 1rem
+        }
+
+        .ph h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: clamp(1.9rem, 4vw, 3rem);
+            font-weight: 700;
+            color: #fff;
+            line-height: 1.15;
+            margin-bottom: .75rem;
+            max-width: 800px
+        }
+
+        .ph p {
+            color: rgba(255, 255, 255, .65);
+            font-size: 1rem;
+            max-width: 650px;
+            line-height: 1.7
+        }
+
+        .ph-meta {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+            flex-wrap: wrap
+        }
+
+        .pm-item {
+            display: flex;
+            align-items: center;
+            gap: .4rem;
+            font-size: .8rem;
+            color: rgba(255, 255, 255, .58)
+        }
+
+        .pm-item i {
+            color: var(--gold)
+        }
+
+        /* LAYOUT */
+        .blog-layout {
+            max-width: 1300px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+            display: grid;
+            grid-template-columns: 1fr 320px;
+            gap: 3rem;
+            align-items: start
+        }
+
+        .blog-content {
+            min-width: 0
+        }
+
+        .blog-content p {
+            color: var(--muted);
+            font-size: .95rem;
+            line-height: 1.88;
+            margin-bottom: 1.25rem
+        }
+
+        .blog-content h2 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.65rem;
+            font-weight: 700;
+            color: var(--navy);
+            margin: 2.5rem 0 1rem;
+            line-height: 1.3
+        }
+
+        .blog-content ul {
+            list-style: none;
+            margin: .5rem 0 1.5rem;
+            padding-left: .5rem
+        }
+
+        .intro-box {
+            background: linear-gradient(135deg, var(--navy), var(--navy2));
+            border-radius: 16px;
+            padding: 2rem;
+            margin-bottom: 2.5rem;
+            border-left: 4px solid var(--gold)
+        }
+
+        .intro-box p {
+            color: rgba(255, 255, 255, .75);
+            font-size: 1rem;
+            line-height: 1.8;
+            font-style: italic;
+            margin-bottom: 0
+        }
+
+        .intro-box .intro-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.15rem;
+            font-weight: 600;
+            color: var(--gold);
+            margin-bottom: .75rem
+        }
+
+        .callout {
+            background: rgba(14, 116, 144, .07);
+            border: 1px solid rgba(14, 116, 144, .2);
+            border-radius: 14px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            display: flex;
+            gap: 1rem
+        }
+
+        .callout i {
+            color: var(--teal);
+            font-size: 1.3rem;
+            flex-shrink: 0;
+            margin-top: .15rem
+        }
+
+        .callout p {
+            color: var(--text);
+            font-size: .9rem;
+            line-height: 1.7;
+            margin: 0
+        }
+
+        .callout strong {
+            color: var(--navy)
+        }
+
+        /* SIDEBAR */
+        .sidebar {
+            position: sticky;
+            top: 94px
+        }
+
+        .sw {
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem
+        }
+
+        .sw h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--navy);
+            margin-bottom: 1.25rem;
+            position: relative;
+            padding-bottom: .6rem
+        }
+
+        .sw h3::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 28px;
+            height: 2px;
+            background: var(--gold)
+        }
+
+        .btn-p {
+            display: inline-flex;
+            align-items: center;
+            gap: .5rem;
+            background: linear-gradient(135deg, var(--gold), var(--gold2));
+            color: var(--navy);
+            font-weight: 600;
+            font-size: .88rem;
+            padding: .82rem 1.75rem;
+            border-radius: 30px;
+            text-decoration: none;
+            transition: all .2s;
+            width: 100%;
+            justify-content: center
+        }
+
+        .btn-p:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 28px rgba(201, 168, 76, .38)
+        }
+
+        .doc-card {
+            background: linear-gradient(135deg, var(--navy), var(--navy2));
+            border-radius: 14px;
+            padding: 1.5rem;
+            text-align: center;
+            margin-bottom: 1.5rem
+        }
+
+        .doc-avatar {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--gold), var(--gold2));
+            margin: 0 auto .75rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--navy)
+        }
+
+        .doc-name {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: .2rem
+        }
+
+        .doc-title {
+            font-size: .72rem;
+            color: var(--gold);
+            letter-spacing: .08em;
+            text-transform: uppercase;
+            margin-bottom: 1rem
+        }
+
+        footer {
+            background: #06131f;
+            border-top: 1px solid rgba(201, 168, 76, .14);
+            padding: 4rem 2rem 0
+        }
+
+        .fi {
+            max-width: 1300px;
+            margin: 0 auto
+        }
+
+        .fg {
+            display: grid;
+            grid-template-columns: 1.8fr 1fr 1fr 1fr;
+            gap: 3rem;
+            padding-bottom: 3rem
+        }
+
+        .fb p {
+            color: rgba(255, 255, 255, .48);
+            font-size: .82rem;
+            line-height: 1.8;
+            margin-top: 1rem
+        }
+
+        .soc {
+            display: flex;
+            gap: .6rem;
+            margin-top: 1.5rem
+        }
+
+        .si2 {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, .06);
+            border: 1px solid rgba(255, 255, 255, .1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgba(255, 255, 255, .6);
+            font-size: .85rem;
+            text-decoration: none;
+            transition: all .2s
+        }
+
+        .si2:hover {
+            background: var(--gold);
+            border-color: var(--gold);
+            color: var(--navy)
+        }
+
+        .fc h4 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1rem;
+            font-weight: 600;
+            color: #fff;
+            margin-bottom: 1.25rem;
+            position: relative;
+            padding-bottom: .6rem
+        }
+
+        .fc h4::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 28px;
+            height: 2px;
+            background: var(--gold)
+        }
+
+        .fc ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: .6rem
+        }
+
+        .fc ul a {
+            color: rgba(255, 255, 255, .5);
+            text-decoration: none;
+            font-size: .82rem;
+            transition: color .2s;
+            display: flex;
+            align-items: center;
+            gap: .4rem
+        }
+
+        .fc ul a i {
+            font-size: .6rem;
+            color: var(--teal)
+        }
+
+        .fc ul a:hover {
+            color: var(--gold)
+        }
+
+        .fci {
+            display: flex;
+            align-items: flex-start;
+            gap: .75rem;
+            margin-bottom: .85rem
+        }
+
+        .fci i {
+            color: var(--gold);
+            font-size: .9rem;
+            margin-top: .14rem;
+            flex-shrink: 0
+        }
+
+        .fci p,
+        .fci a {
+            color: rgba(255, 255, 255, .5);
+            font-size: .82rem;
+            line-height: 1.55;
+            text-decoration: none
+        }
+
+        .fci a:hover {
+            color: var(--gold)
+        }
+
+        .fbot {
+            border-top: 1px solid rgba(255, 255, 255, .07);
+            padding: 1.25rem 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: .75rem
+        }
+
+        .fcp {
+            font-size: .77rem;
+            color: rgba(255, 255, 255, .32)
+        }
+
+        .fdb {
+            font-size: .77rem;
+            color: rgba(255, 255, 255, .32)
+        }
+
+        .fdb a {
+            color: var(--gold);
+            text-decoration: none;
+            font-weight: 600
+        }
+
+        .fdb a:hover {
+            text-decoration: underline
+        }
+
+        @media(max-width:1024px) {
+            .blog-layout {
+                grid-template-columns: 1fr
+            }
+
+            .sidebar {
+                position: static
+            }
+
+            .fg {
+                grid-template-columns: 1fr 1fr;
+                gap: 2rem
+            }
+        }
+
+        @media(max-width:768px) {
+            nav {
+                display: none
+            }
+
+            .ham {
+                display: flex
+            }
+
+            .fg {
+                grid-template-columns: 1fr
+            }
+
+            .fbot {
+                flex-direction: column;
+                text-align: center
+            }
+        }
+
+        @media(max-width:480px) {
+            .blog-layout {
+                padding: 2rem 1rem
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header id="hdr">
+        <div class="hdr">
+            <a href="../index.html" class="logo">
+                <div class="logo-b">G</div>
+                <div class="logo-t">
+                    <span class="logo-n">Dr. Gurucharan S Shetty</span>
+                    <span class="logo-s">Interventional Radiologist</span>
+                </div>
+            </a>
+            <nav>
+                <a href="../index.html">Home</a>
+                <a href="../about.html">About</a>
+                <a href="../procedures.html">Procedures</a>
+                <div class="drop">
+                    <a>Testimonials</a>
+                    <div class="dmenu">
+                        <a href="../testimonials/text-testimonials.html"><i
+                                class="fa-regular fa-comment-dots"></i>&nbsp; Patient
+                            Reviews</a>
+                        <a href="../testimonials/video-testimonials.html"><i class="fa-brands fa-youtube"></i>&nbsp;
+                            Video
+                            Testimonials</a>
+                    </div>
+                </div>
+                <a href="../blogs.html" class="active">Blogs</a>
+                <a href="../contact.html">Contact</a>
+                <a href="../contact.html" class="btn-appt"><i class="fa-regular fa-calendar-check"></i>&nbsp; Book
+                    Appointment</a>
+            </nav>
+            <button class="ham" id="ham" onclick="toggleMenu()" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- MOBILE NAV -->
+    <div class="mnav" id="mnav">
+        <a href="../index.html"><i class="fa-solid fa-house"></i>&nbsp; Home</a>
+        <a href="../about.html"><i class="fa-solid fa-user-doctor"></i>&nbsp; About</a>
+        <a href="../procedures.html"><i class="fa-solid fa-stethoscope"></i>&nbsp; Procedures</a>
+        <div class="msec">Testimonials</div>
+        <a href="../testimonials/text-testimonials.html" style="padding-left:2.5rem"><i
+                class="fa-regular fa-comment-dots"></i>&nbsp; Patient Reviews</a>
+        <a href="../testimonials/video-testimonials.html" style="padding-left:2.5rem"><i
+                class="fa-brands fa-youtube"></i>&nbsp; Video Testimonials</a>
+        <a href="../blogs.html"><i class="fa-solid fa-blog"></i>&nbsp; Blogs</a>
+        <a href="../contact.html"><i class="fa-solid fa-phone"></i>&nbsp; Contact</a>
+    </div>
+
+    <div class="ph">
+        <div class="phi">
+            <div class="bc2"><a href="../index.html">Home</a><i class="fa-solid fa-chevron-right"
+                    style="font-size:.6rem"></i><a href="../blogs.html">Blogs</a><i class="fa-solid fa-chevron-right"
+                    style="font-size:.6rem"></i><span>Chemoembolisation (TACE) and Ablation of Tumours</span></div>
+            <div class="btag"><i class="fa-solid fa-dna"></i> Oncology IR</div>
+            <h1>Chemoembolisation (TACE) and Ablation of Tumours</h1>
+            <p>Learn about Transarterial Chemoembolisation (TACE) and percutaneous tumour ablation minimally invasive
+                Interventional Radiology treatments for liver cancer (HCC) and other tumours, performed by Dr.
+                Gurucharan S Shetty in Bangalore.</p>
+            <div class="ph-meta">
+                <span class="pm-item"><i class="fa-solid fa-user-doctor"></i> Dr. Gurucharan S Shetty</span>
+                <span class="pm-item"><i class="fa-regular fa-clock"></i> 8 min read</span>
+                <span class="pm-item"><i class="fa-solid fa-hospital"></i> Sparsh Hospitals, Bengaluru</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="blog-layout">
+        <article class="blog-content">
+            <div class="intro-box">
+                <div class="intro-title"><i class="fa-solid fa-lightbulb"></i> Key Takeaway</div>
+                <p>Chemoembolisation (TACE) and percutaneous tumour ablation are two of the most powerful minimally
+                    invasive weapons against liver cancer and other tumours. Unlike open surgery, these procedures are
+                    performed through a small needle or catheter, delivering treatment directly to the tumour —
+                    maximising effectiveness while minimising harm to surrounding tissue.</p>
+            </div>
+
+            <h2
+                style="font-family:'Cormorant Garamond',serif;font-size:1.6rem;font-weight:700;color:var(--navy);margin:2.5rem 0 1rem;line-height:1.3">
+                What is Chemoembolisation (TACE)?</h2>
+            <p style="color:var(--muted);font-size:.95rem;line-height:1.85;margin-bottom:1rem">Transarterial
+                Chemoembolisation, or TACE, is an Interventional Radiology procedure used primarily to treat
+                Hepatocellular Carcinoma (HCC liver cancer). The procedure works on a brilliant principle: tumours in
+                the liver receive most of their blood supply from the hepatic artery, while normal liver tissue is
+                supplied mainly by the portal vein. TACE exploits this difference by catheterising the hepatic artery
+                under fluoroscopic guidance, injecting a combination of chemotherapy agents and embolic particles
+                directly into the tumour's blood supply. This achieves a dual effect concentrated chemotherapy kills
+                tumour cells while embolisation cuts off the blood supply, causing tumour ischaemia.</p>
+            <ul style="list-style:none;margin:.5rem 0 1.5rem;padding-left:.5rem">
+                <li style="margin-bottom:.5rem;display:flex;align-items:flex-start;gap:.6rem"><i
+                        class="fa-solid fa-circle-check"
+                        style="color:var(--teal);font-size:.8rem;margin-top:.25rem;flex-shrink:0"></i><span>Performed
+                        under local anaesthesia and sedation</span></li>
+                <li style="margin-bottom:.5rem;display:flex;align-items:flex-start;gap:.6rem"><i
+                        class="fa-solid fa-circle-check"
+                        style="color:var(--teal);font-size:.8rem;margin-top:.25rem;flex-shrink:0"></i><span>Small
+                        catheter inserted via the groin artery</span></li>
+                <li style="margin-bottom:.5rem;display:flex;align-items:flex-start;gap:.6rem"><i
+                        class="fa-solid fa-circle-check"
+                        style="color:var(--teal);font-size:.8rem;margin-top:.25rem;flex-shrink:0"></i><span>Chemotherapy
+                        delivered directly to the tumour</span></li>
+                <li style="margin-bottom:.5rem;display:flex;align-items:flex-start;gap:.6rem"><i
+                        class="fa-solid fa-circle-check"
+                        style="color:var(--teal);font-size:.8rem;margin-top:.25rem;flex-shrink:0"></i><span>Blood supply
+                        to the tumour is simultaneously blocked</span></li>
+                <li style="margin-bottom:.5rem;display:flex;align-items:flex-start;gap:.6rem"><i
+                        class="fa-solid fa-circle-check"
+                        style="color:var(--teal);font-size:.8rem;margin-top:.25rem;flex-shrink:0"></i><span>Dramatically
+                        higher drug concentration at tumour site than systemic chemotherapy</span></li>
+            </ul>
+            <h2
+                style="font-family:'Cormorant Garamond',serif;font-size:1.6rem;font-weight:700;color:var(--navy);margin:2.5rem 0 1rem;line-height:1.3">
+                Types of TACE Conventional vs. DEB-TACE</h2>
+            <p style="color:var(--muted);font-size:.95rem;line-height:1.85;margin-bottom:1rem">There are two main forms
+                of TACE. Conventional TACE (cTACE) involves the injection of a mixture of chemotherapy drugs (typically
+                doxorubicin, cisplatin, or mitomycin C) with lipiodol, followed by embolic particles. Drug-Eluting Bead
+                TACE (DEB-TACE) uses specially designed microspheres that are loaded with chemotherapy drugs. These
+                beads release the chemotherapy in a controlled, sustained manner at the tumour site achieving higher
+                local drug concentration with fewer systemic side effects. Dr. Shetty selects the appropriate TACE
+                technique based on tumour size, number, location, and the patient's overall liver function.</p>
+
+            <h2
+                style="font-family:'Cormorant Garamond',serif;font-size:1.6rem;font-weight:700;color:var(--navy);margin:2.5rem 0 1rem;line-height:1.3">
+                What is Percutaneous Tumour Ablation?</h2>
+            <p style="color:var(--muted);font-size:.95rem;line-height:1.85;margin-bottom:1rem">Percutaneous tumour
+                ablation refers to a group of techniques where a needle or probe is inserted through the skin (under CT
+                or ultrasound guidance) directly into the tumour, which is then destroyed using heat, cold, or other
+                energy forms. The most common modalities include Radiofrequency Ablation (RFA), where electrical energy
+                generates heat to destroy tumour tissue; Microwave Ablation (MWA), which uses microwave energy to
+                rapidly heat and ablate the tumour at higher temperatures than RFA; and Cryoablation, which uses extreme
+                cold to freeze and destroy tumour cells. Percutaneous ablation is used for tumours in the liver, kidney,
+                lung, bone, and soft tissue.</p>
+            <ul style="list-style:none;margin:.5rem 0 1.5rem;padding-left:.5rem">
+                <li style="margin-bottom:.5rem;display:flex;align-items:flex-start;gap:.6rem"><i
+                        class="fa-solid fa-circle-check"
+                        style="color:var(--teal);font-size:.8rem;margin-top:.25rem;flex-shrink:0"></i><span>Minimally
+                        invasive only a needle insertion through the skin</span></li>
+                <li style="margin-bottom:.5rem;display:flex;align-items:flex-start;gap:.6rem"><i
+                        class="fa-solid fa-circle-check"
+                        style="color:var(--teal);font-size:.8rem;margin-top:.25rem;flex-shrink:0"></i><span>Performed
+                        under CT or ultrasound guidance</span></li>
+                <li style="margin-bottom:.5rem;display:flex;align-items:flex-start;gap:.6rem"><i
+                        class="fa-solid fa-circle-check"
+                        style="color:var(--teal);font-size:.8rem;margin-top:.25rem;flex-shrink:0"></i><span>General
+                        anaesthesia usually not required</span></li>
+                <li style="margin-bottom:.5rem;display:flex;align-items:flex-start;gap:.6rem"><i
+                        class="fa-solid fa-circle-check"
+                        style="color:var(--teal);font-size:.8rem;margin-top:.25rem;flex-shrink:0"></i><span>Day
+                        procedure for many patients</span></li>
+                <li style="margin-bottom:.5rem;display:flex;align-items:flex-start;gap:.6rem"><i
+                        class="fa-solid fa-circle-check"
+                        style="color:var(--teal);font-size:.8rem;margin-top:.25rem;flex-shrink:0"></i><span>Can treat
+                        multiple tumours in one session</span></li>
+                <li style="margin-bottom:.5rem;display:flex;align-items:flex-start;gap:.6rem"><i
+                        class="fa-solid fa-circle-check"
+                        style="color:var(--teal);font-size:.8rem;margin-top:.25rem;flex-shrink:0"></i><span>Suitable for
+                        patients unfit for surgery</span></li>
+            </ul>
+            <h2
+                style="font-family:'Cormorant Garamond',serif;font-size:1.6rem;font-weight:700;color:var(--navy);margin:2.5rem 0 1rem;line-height:1.3">
+                Who is a Candidate for TACE or Ablation?</h2>
+            <p style="color:var(--muted);font-size:.95rem;line-height:1.85;margin-bottom:1rem">TACE is most commonly
+                recommended for patients with HCC (liver cancer) who are not suitable candidates for surgical resection
+                or liver transplantation often because of tumour size, number, or position. It is also used as a
+                bridge therapy to keep tumour growth controlled while awaiting liver transplantation. Ablation is
+                particularly suitable for small, localised tumours in the liver, kidney, or lung, where surgery would
+                carry high risk or is not the patient's preference. Dr. Shetty evaluates each patient individually,
+                considering tumour characteristics, liver function (Child-Pugh score), performance status, and overall
+                health to determine the most appropriate treatment.</p>
+
+            <h2
+                style="font-family:'Cormorant Garamond',serif;font-size:1.6rem;font-weight:700;color:var(--navy);margin:2.5rem 0 1rem;line-height:1.3">
+                What to Expect Recovery and Outcomes</h2>
+            <p style="color:var(--muted);font-size:.95rem;line-height:1.85;margin-bottom:1rem">Most TACE patients are
+                hospitalised for 2–3 days. Post-embolisation syndrome mild fever, nausea, and abdominal discomfort —
+                is common and expected as the body responds to the procedure. This typically resolves within a week.
+                Follow-up imaging (CT or MRI) is performed at 4–6 weeks to assess tumour response. Multiple TACE
+                sessions may be required. Ablation patients often require only an overnight hospital stay. Response to
+                treatment is assessed using the mRECIST criteria for liver lesions. Studies show TACE significantly
+                improves survival in intermediate-stage HCC compared to best supportive care alone, and ablation
+                achieves complete response rates of over 90% for small liver tumours.</p>
+
+            <div class="callout">
+                <i class="fa-solid fa-circle-info"></i>
+                <p><strong>Disclaimer:</strong> This article is for educational purposes only and does not constitute
+                    medical advice. Please consult Dr. Gurucharan S Shetty or a qualified medical professional for
+                    diagnosis and personalised treatment recommendations.</p>
+            </div>
+            <div
+                style="background:var(--off);border-radius:16px;padding:2rem;margin-top:2rem;display:flex;align-items:center;gap:1.5rem;flex-wrap:wrap">
+                <div style="flex:1;min-width:220px">
+                    <div
+                        style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:700;color:var(--navy);margin-bottom:.4rem">
+                        Have questions about this procedure?</div>
+                    <p style="font-size:.87rem;color:var(--muted);margin:0">Consult directly with Dr. Gurucharan S
+                        Shetty at Sparsh Hospitals, Bengaluru.</p>
+                </div>
+                <a href="../contact.html"
+                    style="display:inline-flex;align-items:center;gap:.5rem;background:linear-gradient(135deg,var(--gold),var(--gold2));color:var(--navy);font-weight:600;font-size:.88rem;padding:.82rem 1.75rem;border-radius:30px;text-decoration:none;white-space:nowrap"><i
+                        class="fa-regular fa-calendar-check"></i> Book Consultation</a>
+            </div>
+        </article>
+        <aside class="sidebar">
+            <div class="doc-card">
+                <div class="doc-avatar">G</div>
+                <div class="doc-name">Dr. Gurucharan S Shetty</div>
+                <div class="doc-title">Interventional Radiologist</div>
+                <a href="../contact.html" class="btn-p"
+                    style="background:linear-gradient(135deg,var(--gold),var(--gold2));color:var(--navy)"><i
+                        class="fa-regular fa-calendar-check"></i> Book Appointment</a>
+            </div>
+            <div class="sw">
+                <h3><i class="fa-solid fa-phone" style="color:var(--gold);margin-right:.4rem"></i> Contact Us</h3>
+                <div style="display:flex;flex-direction:column;gap:.75rem">
+                    <a href="/tel:08061222000"
+                        style="display:flex;align-items:center;gap:.6rem;background:var(--off);border-radius:10px;padding:.75rem 1rem;text-decoration:none;color:var(--text);font-size:.87rem;font-weight:600"><i
+                            class="fa-solid fa-phone" style="color:var(--teal)"></i> 080-61222000</a>
+                    <a href="/mailto:gurucharansshetty@gmail.com"
+                        style="display:flex;align-items:center;gap:.6rem;background:var(--off);border-radius:10px;padding:.75rem 1rem;text-decoration:none;color:var(--text);font-size:.82rem;overflow:hidden;text-overflow:ellipsis;white-space:nowrap"><i
+                            class="fa-regular fa-envelope" style="color:var(--teal);flex-shrink:0"></i>
+                        gurucharansshetty@gmail.com</a>
+                </div>
+            </div>
+            <div class="sw">
+                <h3>Related Articles</h3>
+                <a href="/mechanical-thrombectomy-stroke.html"
+                    style="display:block;background:var(--off);border:1px solid var(--border);border-radius:12px;padding:1rem 1.25rem;text-decoration:none;transition:all .2s;margin-bottom:.75rem">
+                    <div
+                        style="font-size:.68rem;color:var(--teal);font-weight:700;text-transform:uppercase;letter-spacing:.08em;margin-bottom:.3rem">
+                        Neurointerventional</div>
+                    <div
+                        style="font-family:'Cormorant Garamond',serif;font-size:1rem;font-weight:600;color:var(--navy)">
+                        Mechanical Thrombectomy Has Revolutionised Stroke Treatment</div>
+                </a><a href="/varicose-veins.html"
+                    style="display:block;background:var(--off);border:1px solid var(--border);border-radius:12px;padding:1rem 1.25rem;text-decoration:none;transition:all .2s;margin-bottom:.75rem">
+                    <div
+                        style="font-size:.68rem;color:var(--teal);font-weight:700;text-transform:uppercase;letter-spacing:.08em;margin-bottom:.3rem">
+                        Vascular</div>
+                    <div
+                        style="font-family:'Cormorant Garamond',serif;font-size:1rem;font-weight:600;color:var(--navy)">
+                        Varicose Veins Modern Minimally Invasive Solutions</div>
+                </a><a href="/uterine-artery-embolisation.html"
+                    style="display:block;background:var(--off);border:1px solid var(--border);border-radius:12px;padding:1rem 1.25rem;text-decoration:none;transition:all .2s;margin-bottom:.75rem">
+                    <div
+                        style="font-size:.68rem;color:var(--teal);font-weight:700;text-transform:uppercase;letter-spacing:.08em;margin-bottom:.3rem">
+                        Women's Health IR</div>
+                    <div
+                        style="font-family:'Cormorant Garamond',serif;font-size:1rem;font-weight:600;color:var(--navy)">
+                        Uterine Artery Embolisation for Fibroids</div>
+                </a>
+            </div>
+            <div class="sw">
+                <h3>Key Procedures</h3>
+                <div style="display:flex;flex-direction:column;gap:.6rem">
+                    <a href="../procedures/chemoembolisation-tace-hcc.html"
+                        style="font-size:.83rem;color:var(--teal);text-decoration:none;display:flex;align-items:center;gap:.4rem"><i
+                            class="fa-solid fa-chevron-right" style="font-size:.6rem"></i>TACE for Liver Cancer</a>
+                    <a href="../procedures/mechanical-thrombectomy-stroke.html"
+                        style="font-size:.83rem;color:var(--teal);text-decoration:none;display:flex;align-items:center;gap:.4rem"><i
+                            class="fa-solid fa-chevron-right" style="font-size:.6rem"></i>Stroke Thrombectomy</a>
+                    <a href="../procedures/varicose-veins.html"
+                        style="font-size:.83rem;color:var(--teal);text-decoration:none;display:flex;align-items:center;gap:.4rem"><i
+                            class="fa-solid fa-chevron-right" style="font-size:.6rem"></i>Varicose Veins</a>
+                    <a href="../procedures/uterine-artery-embolisation.html"
+                        style="font-size:.83rem;color:var(--teal);text-decoration:none;display:flex;align-items:center;gap:.4rem"><i
+                            class="fa-solid fa-chevron-right" style="font-size:.6rem"></i>Uterine Embolisation</a>
+                    <a href="../procedures/coiling-brain-aneurysms.html"
+                        style="font-size:.83rem;color:var(--teal);text-decoration:none;display:flex;align-items:center;gap:.4rem"><i
+                            class="fa-solid fa-chevron-right" style="font-size:.6rem"></i>Brain Aneurysm Coiling</a>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <footer>
+        <div class="fi">
+            <div class="fg">
+                <div class="fb">
+                    <a href="../index.html" class="logo">
+                        <div class="logo-b">G</div>
+                        <div class="logo-t"><span class="logo-n">Dr. Gurucharan S Shetty</span><span
+                                class="logo-s">Interventional
+                                Radiologist</span></div>
+                    </a>
+                    <p>A leading Interventional Radiologist in Bangalore offering expert minimally invasive,
+                        image-guided
+                        procedures at Sparsh Hospitals. Excellence in vascular, neuro-interventional, and oncology IR.
+                    </p>
+                    <div class="soc">
+                        <a href="#" class="si2" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="si2" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="si2" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#" class="si2" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="fc">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html"><i class="fa-solid fa-chevron-right"></i>Home</a></li>
+                        <li><a href="../about.html"><i class="fa-solid fa-chevron-right"></i>About</a></li>
+                        <li><a href="../procedures.html"><i class="fa-solid fa-chevron-right"></i>Procedures</a></li>
+                        <li><a href="../testimonials/text-testimonials.html"><i
+                                    class="fa-solid fa-chevron-right"></i>Patient
+                                Reviews</a></li>
+                        <li><a href="../testimonials/video-testimonials.html"><i
+                                    class="fa-solid fa-chevron-right"></i>Video
+                                Testimonials</a></li>
+                        <li><a href="../contact.html"><i class="fa-solid fa-chevron-right"></i>Contact</a></li>
+                    </ul>
+                </div>
+                <div class="fc">
+                    <h4>Our Blogs</h4>
+                    <ul>
+                        <li><a href="../blogs/chemoembolisation-ablation-tumors.html"><i
+                                    class="fa-solid fa-chevron-right"></i>Chemoembolisation And Ablation Of Tumors</a>
+                        </li>
+                        <li><a href="../blogs/varicocele-no-scalpel.html"><i class="fa-solid fa-chevron-right"></i>No
+                                Scalpel
+                                Treatment For Varicocele</a></li>
+                        <li><a href="../blogs/varicose-veins.html"><i class="fa-solid fa-chevron-right"></i>Varicose
+                                Veins</a>
+                        </li>
+                        <li><a href="../blogs/mechanical-thrombectomy-stroke.html"><i
+                                    class="fa-solid fa-chevron-right"></i>Mechanical
+                                Thrombectomy Has Revolutionised Treatment Of Acute Ischemic Stroke</a></li>
+                        <li><a href="../blogs.html"><i class="fa-solid fa-chevron-right"></i>All Blogs</a></li>
+                    </ul>
+                </div>
+                <div class="fc">
+                    <h4>Contact Us</h4>
+                    <div class="fci"><i class="fa-solid fa-location-dot"></i>
+                        <p>Sparsh Hospitals, Sarjapur Main Rd, Carmelaram, Doddakannelli, Bengaluru – 560035</p>
+                    </div>
+                    <div class="fci"><i class="fa-solid fa-phone"></i><a href="/tel:08061222000">080-61222000</a></div>
+                    <div class="fci"><i class="fa-regular fa-envelope"></i><a
+                            href="/mailto:gurucharansshetty@gmail.com">gurucharansshetty@gmail.com</a></div>
+                    <div class="fci"><i class="fa-regular fa-clock"></i>
+                        <p>Mon – Sat: 9:00 AM – 6:00 PM</p>
+                    </div>
+                </div>
+            </div>
+            <div class="fbot">
+                <div class="fcp">© <span id="yr"></span> Dr. Gurucharan S Shetty. All Rights Reserved.</div>
+                <div class="fdb">Designed &amp; Developed by <a href="https://thinkb.agency/" target="_blank"
+                        rel="noopener">ThinkB</a></div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('yr').textContent = new Date().getFullYear();
+        function toggleMenu() { document.getElementById('ham').classList.toggle('open'); document.getElementById('mnav').classList.toggle('open') }
+        window.addEventListener('scroll', () => { document.getElementById('hdr').style.boxShadow = scrollY > 50 ? '0 4px 30px rgba(0,0,0,.35)' : 'none' });
+    </script>
+</body>
+
+</html>

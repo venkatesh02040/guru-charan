@@ -1,0 +1,1793 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dr. Gurucharan S Shetty | Interventional Radiologist Bangalore</title>
+  <meta name="description"
+    content="Dr. Gurucharan S Shetty is a leading Interventional Radiologist in Bangalore at Sparsh Hospitals, offering minimally invasive image-guided procedures including TACE, Embolisation, Varicose Veins, Mechanical Thrombectomy & more." />
+  <meta name="keywords"
+    content="Interventional Radiologist Bangalore, Dr Gurucharan Shetty, TACE, Embolisation, Varicose Veins, Mechanical Thrombectomy, Sparsh Hospital, Minimally Invasive Procedures, Image Guided Biopsy Bangalore" />
+  <meta name="author" content="Dr. Gurucharan S Shetty" />
+  <meta property="og:title" content="Dr. Gurucharan S Shetty | Interventional Radiologist Bangalore" />
+  <meta property="og:description"
+    content="Expert Interventional Radiologist in Bangalore specializing in minimally invasive image-guided procedures at Sparsh Hospitals." />
+  <meta property="og:type" content="website" />
+  <link rel="canonical" href="https://drgurucharan.com/" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    :root {
+      --navy: #0b1f3a;
+      --navy2: #0f2d52;
+      --teal: #0e7490;
+      --teal2: #06b6d4;
+      --gold: #c9a84c;
+      --gold2: #e8c97a;
+      --white: #fff;
+      --off: #f4f7fb;
+      --text: #2d3748;
+      --muted: #64748b;
+      --border: #e2e8f0
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box
+    }
+
+    html {
+      scroll-behavior: smooth
+    }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      color: var(--text);
+      background: var(--white);
+      overflow-x: hidden
+    }
+
+    /* HEADER */
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      background: rgba(11, 31, 58, 0.97);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid rgba(201, 168, 76, 0.22);
+      transition: box-shadow .3s
+    }
+
+    .hdr {
+      max-width: 1300px;
+      margin: 0 auto;
+      padding: 0 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 74px
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: .85rem;
+      text-decoration: none
+    }
+
+    .logo-b {
+      width: 46px;
+      height: 46px;
+      background: linear-gradient(135deg, var(--gold), var(--gold2));
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--navy)
+    }
+
+    .logo-t {
+      display: flex;
+      flex-direction: column
+    }
+
+    .logo-n {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: #fff;
+      line-height: 1.2
+    }
+
+    .logo-s {
+      font-size: .6rem;
+      color: var(--gold);
+      letter-spacing: .12em;
+      text-transform: uppercase
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: .1rem
+    }
+
+    nav a {
+      color: rgba(255, 255, 255, .82);
+      text-decoration: none;
+      font-size: .82rem;
+      font-weight: 500;
+      padding: .45rem .78rem;
+      border-radius: 6px;
+      transition: color .2s;
+      letter-spacing: .025em
+    }
+
+    nav a:hover,
+    nav a.active {
+      color: var(--gold)
+    }
+
+    .drop {
+      position: relative
+    }
+
+    .drop>a {
+      display: flex;
+      align-items: center;
+      gap: .3rem;
+      cursor: pointer
+    }
+
+    .drop>a::after {
+      content: '\f078';
+      font-family: 'Font Awesome 6 Free';
+      font-weight: 900;
+      font-size: .52rem;
+      transition: transform .2s
+    }
+
+    .drop:hover>a::after {
+      transform: rotate(180deg)
+    }
+
+    .dmenu {
+      position: absolute;
+      top: calc(100% + 8px);
+      left: 0;
+      background: var(--navy);
+      border: 1px solid rgba(201, 168, 76, .2);
+      border-radius: 10px;
+      min-width: 215px;
+      opacity: 0;
+      pointer-events: none;
+      transform: translateY(-8px);
+      transition: all .22s;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, .4)
+    }
+
+    .drop:hover .dmenu {
+      opacity: 1;
+      pointer-events: all;
+      transform: translateY(0)
+    }
+
+    .dmenu a {
+      display: block;
+      padding: .65rem 1.1rem;
+      font-size: .8rem;
+      color: rgba(255, 255, 255, .8);
+      border-bottom: 1px solid rgba(255, 255, 255, .05);
+      transition: all .2s;
+      border-radius: 0
+    }
+
+    .dmenu a:first-child {
+      border-radius: 10px 10px 0 0
+    }
+
+    .dmenu a:last-child {
+      border-bottom: none;
+      border-radius: 0 0 10px 10px
+    }
+
+    .dmenu a:hover {
+      color: var(--gold);
+      background: rgba(201, 168, 76, .08)
+    }
+
+    .btn-appt {
+      background: linear-gradient(135deg, var(--gold), var(--gold2)) !important;
+      color: var(--navy) !important;
+      font-weight: 600 !important;
+      padding: .48rem 1.1rem !important;
+      border-radius: 25px !important;
+      font-size: .8rem !important
+    }
+
+    .btn-appt:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 6px 20px rgba(201, 168, 76, .4)
+    }
+
+    .ham {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      padding: 4px;
+      background: none;
+      border: none
+    }
+
+    .ham span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background: #fff;
+      border-radius: 2px;
+      transition: all .3s
+    }
+
+    .ham.open span:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px)
+    }
+
+    .ham.open span:nth-child(2) {
+      opacity: 0
+    }
+
+    .ham.open span:nth-child(3) {
+      transform: rotate(-45deg) translate(5px, -5px)
+    }
+
+    .mnav {
+      display: none;
+      position: fixed;
+      top: 74px;
+      left: 0;
+      width: 100%;
+      background: var(--navy);
+      border-top: 1px solid rgba(201, 168, 76, .2);
+      flex-direction: column;
+      z-index: 999;
+      max-height: calc(100vh - 74px);
+      overflow-y: auto
+    }
+
+    .mnav.open {
+      display: flex
+    }
+
+    .mnav a {
+      padding: .75rem 1.5rem;
+      color: rgba(255, 255, 255, .85);
+      text-decoration: none;
+      font-size: .88rem;
+      border-bottom: 1px solid rgba(255, 255, 255, .05)
+    }
+
+    .mnav a:hover {
+      color: var(--gold);
+      background: rgba(201, 168, 76, .06)
+    }
+
+    .msec {
+      padding: .55rem 1.5rem .25rem;
+      font-size: .62rem;
+      color: var(--gold);
+      text-transform: uppercase;
+      letter-spacing: .1em
+    }
+
+    /* HERO */
+    .hero {
+      position: relative;
+      height: 100vh;
+      min-height: 620px;
+      overflow: hidden
+    }
+
+    .slides {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      transition: transform .85s cubic-bezier(.77, 0, .175, 1)
+    }
+
+    .slide {
+      min-width: 100%;
+      height: 100%;
+      position: relative;
+      display: flex;
+      align-items: center
+    }
+
+    .sbg {
+      position: absolute;
+      inset: 0;
+      background-size: cover;
+      background-position: center
+    }
+
+    .sbg::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(105deg, rgba(11, 31, 58, .9) 0%, rgba(11, 31, 58, .55) 55%, rgba(11, 31, 58, .2) 100%)
+    }
+
+    .s1 .sbg {
+      background: linear-gradient(135deg, #0b1f3a 0%, #0e3d6b 55%, #0e7490 100%)
+    }
+
+    .s2 .sbg {
+      background: linear-gradient(135deg, #0b1f3a 0%, #1a3a5c 55%, #0f4c75 100%)
+    }
+
+    .s3 .sbg {
+      background: linear-gradient(135deg, #0b2035 0%, #0b3d5e 55%, #0e6b7a 100%)
+    }
+
+    .spat {
+      position: absolute;
+      inset: 0;
+      opacity: .05;
+      background-image: radial-gradient(circle at 2px 2px, rgba(255, 255, 255, .8) 1px, transparent 0);
+      background-size: 44px 44px
+    }
+
+    .sc {
+      position: relative;
+      z-index: 2;
+      max-width: 1300px;
+      margin: 0 auto;
+      padding: 0 2rem;
+      padding-top: 74px;
+      width: 100%
+    }
+
+    .eye {
+      display: inline-flex;
+      align-items: center;
+      gap: .5rem;
+      background: rgba(201, 168, 76, .15);
+      border: 1px solid rgba(201, 168, 76, .3);
+      color: var(--gold);
+      font-size: .7rem;
+      font-weight: 600;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      padding: .35rem .85rem;
+      border-radius: 25px;
+      margin-bottom: 1.5rem
+    }
+
+    .sh1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2.4rem, 5vw, 4rem);
+      font-weight: 700;
+      color: #fff;
+      line-height: 1.1;
+      margin-bottom: 1.2rem;
+      max-width: 650px
+    }
+
+    .sh1 em {
+      color: var(--gold2);
+      font-style: normal
+    }
+
+    .sdesc {
+      font-size: 1rem;
+      color: rgba(255, 255, 255, .72);
+      max-width: 500px;
+      line-height: 1.75;
+      margin-bottom: 2rem;
+      font-weight: 300
+    }
+
+    .sact {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap
+    }
+
+    .sstats {
+      display: flex;
+      gap: 2.5rem;
+      margin-top: 3rem;
+      flex-wrap: wrap
+    }
+
+    .stn {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: var(--gold);
+      line-height: 1
+    }
+
+    .stl {
+      font-size: .7rem;
+      color: rgba(255, 255, 255, .6);
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      margin-top: .2rem
+    }
+
+    .arrows {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      padding: 0 1.5rem;
+      z-index: 10;
+      pointer-events: none
+    }
+
+    .arr {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, .12);
+      border: 1px solid rgba(255, 255, 255, .25);
+      color: #fff;
+      font-size: 1rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      pointer-events: all;
+      transition: all .2s
+    }
+
+    .arr:hover {
+      background: rgba(201, 168, 76, .3);
+      border-color: var(--gold)
+    }
+
+    .dots {
+      position: absolute;
+      bottom: 2.5rem;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 10;
+      display: flex;
+      align-items: center;
+      gap: .75rem
+    }
+
+    .dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, .35);
+      cursor: pointer;
+      border: none;
+      transition: all .3s
+    }
+
+    .dot.on {
+      background: var(--gold);
+      width: 28px;
+      border-radius: 4px
+    }
+
+    /* GENERAL SECTION */
+    .sec {
+      padding: 5rem 2rem
+    }
+
+    .si {
+      max-width: 1300px;
+      margin: 0 auto
+    }
+
+    .slbl {
+      display: inline-flex;
+      align-items: center;
+      gap: .5rem;
+      color: var(--teal);
+      font-size: .7rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: .12em;
+      margin-bottom: .75rem
+    }
+
+    .slbl::before {
+      content: '';
+      display: block;
+      width: 28px;
+      height: 2px;
+      background: var(--teal)
+    }
+
+    h2.stit {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(1.9rem, 3.5vw, 2.8rem);
+      font-weight: 700;
+      color: var(--navy);
+      line-height: 1.2;
+      margin-bottom: 1rem
+    }
+
+    .ssub {
+      color: var(--muted);
+      font-size: .93rem;
+      line-height: 1.75;
+      max-width: 580px
+    }
+
+    /* ABOUT */
+    .about-sec {
+      background: var(--off)
+    }
+
+    .ag {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5rem;
+      align-items: center
+    }
+
+    .aiw {
+      position: relative
+    }
+
+    .aic {
+      background: linear-gradient(135deg, var(--navy), var(--navy2));
+      border-radius: 20px;
+      aspect-ratio: 4/5;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden
+    }
+
+    .aic i {
+      font-size: 7rem;
+      color: rgba(201, 168, 76, .25)
+    }
+
+    .abadge {
+      position: absolute;
+      bottom: -1.5rem;
+      right: -1.5rem;
+      background: linear-gradient(135deg, var(--gold), var(--gold2));
+      color: var(--navy);
+      border-radius: 16px;
+      padding: 1.2rem 1.5rem;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(201, 168, 76, .3)
+    }
+
+    .abadge .n {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.4rem;
+      font-weight: 700;
+      line-height: 1
+    }
+
+    .abadge .l {
+      font-size: .68rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: .08em
+    }
+
+    .atag {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .6rem;
+      margin: 1.25rem 0
+    }
+
+    .ct {
+      background: rgba(14, 116, 144, .08);
+      border: 1px solid rgba(14, 116, 144, .2);
+      color: var(--teal);
+      font-size: .73rem;
+      font-weight: 600;
+      padding: .32rem .78rem;
+      border-radius: 20px
+    }
+
+    .at p {
+      color: var(--muted);
+      font-size: .93rem;
+      line-height: 1.8;
+      margin-bottom: 1rem
+    }
+
+    .af {
+      display: flex;
+      flex-direction: column;
+      gap: .85rem;
+      margin: 1.5rem 0
+    }
+
+    .afi {
+      display: flex;
+      align-items: flex-start;
+      gap: .75rem
+    }
+
+    .afi i {
+      color: var(--gold);
+      font-size: .9rem;
+      margin-top: .12rem;
+      flex-shrink: 0
+    }
+
+    .afi p {
+      font-size: .87rem;
+      color: var(--muted);
+      line-height: 1.55
+    }
+
+    .afi strong {
+      color: var(--text);
+      font-weight: 600
+    }
+
+    /* PROCEDURES */
+    .pg {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
+      gap: 1.5rem
+    }
+
+    .pc {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 1.75rem;
+      transition: all .3s;
+      text-decoration: none;
+      display: block;
+      position: relative;
+      overflow: hidden
+    }
+
+    .pc::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background: linear-gradient(90deg, var(--teal), var(--teal2));
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform .3s
+    }
+
+    .pc:hover::before {
+      transform: scaleX(1)
+    }
+
+    .pc:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 50px rgba(11, 31, 58, .1);
+      border-color: transparent
+    }
+
+    .pic {
+      width: 52px;
+      height: 52px;
+      border-radius: 14px;
+      background: linear-gradient(135deg, rgba(14, 116, 144, .1), rgba(6, 182, 212, .1));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.4rem;
+      color: var(--teal);
+      margin-bottom: 1rem
+    }
+
+    .pt {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--navy);
+      margin-bottom: .45rem;
+      line-height: 1.3
+    }
+
+    .pd {
+      font-size: .82rem;
+      color: var(--muted);
+      line-height: 1.6
+    }
+
+    .pl {
+      display: inline-flex;
+      align-items: center;
+      gap: .35rem;
+      color: var(--teal);
+      font-size: .78rem;
+      font-weight: 600;
+      margin-top: .9rem
+    }
+
+    .pc:hover .pl {
+      color: var(--navy)
+    }
+
+    /* WHY */
+    .why {
+      background: var(--navy);
+      position: relative;
+      overflow: hidden
+    }
+
+    .why::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      opacity: .04;
+      background-image: radial-gradient(circle at 2px 2px, rgba(255, 255, 255, .8) 1px, transparent 0);
+      background-size: 44px 44px
+    }
+
+    .why .slbl {
+      color: var(--gold)
+    }
+
+    .why .slbl::before {
+      background: var(--gold)
+    }
+
+    .why h2.stit {
+      color: #fff
+    }
+
+    .why .ssub {
+      color: rgba(255, 255, 255, .58)
+    }
+
+    .wg {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 1.5rem;
+      margin-top: 3rem
+    }
+
+    .wc {
+      background: rgba(255, 255, 255, .04);
+      border: 1px solid rgba(255, 255, 255, .1);
+      border-radius: 16px;
+      padding: 2rem 1.5rem;
+      transition: all .3s
+    }
+
+    .wc:hover {
+      background: rgba(201, 168, 76, .08);
+      border-color: rgba(201, 168, 76, .25);
+      transform: translateY(-3px)
+    }
+
+    .wi {
+      font-size: 2rem;
+      color: var(--gold);
+      margin-bottom: 1rem
+    }
+
+    .wt {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: #fff;
+      margin-bottom: .55rem
+    }
+
+    .wd {
+      font-size: .82rem;
+      color: rgba(255, 255, 255, .53);
+      line-height: 1.7
+    }
+
+    /* TESTIMONIALS */
+    .tg {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+      gap: 1.5rem;
+      margin-top: 3rem
+    }
+
+    .tc {
+      background: #fff;
+      border-radius: 16px;
+      padding: 1.75rem;
+      border: 1px solid var(--border)
+    }
+
+    .tq {
+      font-size: 2.5rem;
+      line-height: 1;
+      color: var(--teal);
+      opacity: .28;
+      font-family: serif;
+      margin-bottom: .4rem
+    }
+
+    .tt {
+      font-size: .87rem;
+      color: var(--muted);
+      line-height: 1.75;
+      font-style: italic;
+      margin-bottom: 1.25rem
+    }
+
+    .tau {
+      display: flex;
+      align-items: center;
+      gap: .75rem
+    }
+
+    .tav {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--teal), var(--navy));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+      color: #fff;
+      font-weight: 600
+    }
+
+    .tan {
+      font-weight: 600;
+      font-size: .87rem;
+      color: var(--navy)
+    }
+
+    .tal {
+      font-size: .73rem;
+      color: var(--muted)
+    }
+
+    .tstr {
+      color: var(--gold);
+      font-size: .73rem;
+      margin-top: .15rem
+    }
+
+    /* BLOG */
+    .bg2 {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+      gap: 1.5rem;
+      margin-top: 3rem
+    }
+
+    .bc {
+      background: #fff;
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      text-decoration: none;
+      display: block;
+      transition: all .3s
+    }
+
+    .bc:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 50px rgba(11, 31, 58, .1)
+    }
+
+    .bi {
+      height: 175px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 3rem
+    }
+
+    .bi.c1 {
+      background: linear-gradient(135deg, #0b1f3a, #0e7490)
+    }
+
+    .bi.c2 {
+      background: linear-gradient(135deg, #0f2d52, #1e7a6e)
+    }
+
+    .bi.c3 {
+      background: linear-gradient(135deg, #1a2a4a, #2d5a8e)
+    }
+
+    .bb {
+      padding: 1.5rem
+    }
+
+    .btag {
+      font-size: .67rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: .1em;
+      color: var(--teal);
+      margin-bottom: .45rem
+    }
+
+    .btit {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.12rem;
+      font-weight: 600;
+      color: var(--navy);
+      line-height: 1.35;
+      margin-bottom: .55rem
+    }
+
+    .bex {
+      font-size: .82rem;
+      color: var(--muted);
+      line-height: 1.6
+    }
+
+    .brl {
+      display: inline-flex;
+      align-items: center;
+      gap: .35rem;
+      color: var(--teal);
+      font-size: .78rem;
+      font-weight: 600;
+      margin-top: .9rem
+    }
+
+    /* CTA */
+    .cta {
+      background: linear-gradient(135deg, var(--navy), var(--navy2) 50%, #0e3d6b 100%);
+      padding: 5rem 2rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden
+    }
+
+    .cta::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      opacity: .05;
+      background-image: radial-gradient(circle at 2px 2px, rgba(255, 255, 255, .8) 1px, transparent 0);
+      background-size: 44px 44px
+    }
+
+    .ctai {
+      position: relative;
+      z-index: 2;
+      max-width: 650px;
+      margin: 0 auto
+    }
+
+    .ctal {
+      display: inline-flex;
+      align-items: center;
+      gap: .5rem;
+      color: var(--gold);
+      font-size: .7rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: .12em;
+      margin-bottom: 1rem
+    }
+
+    .ctah {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+      font-weight: 700;
+      color: #fff;
+      line-height: 1.2;
+      margin-bottom: 1rem
+    }
+
+    .ctad {
+      color: rgba(255, 255, 255, .62);
+      font-size: .93rem;
+      line-height: 1.75;
+      margin-bottom: 2rem
+    }
+
+    .ctaa {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap
+    }
+
+    /* BUTTONS */
+    .btn-p {
+      display: inline-flex;
+      align-items: center;
+      gap: .5rem;
+      background: linear-gradient(135deg, var(--gold), var(--gold2));
+      color: var(--navy);
+      font-weight: 600;
+      font-size: .88rem;
+      padding: .82rem 1.75rem;
+      border-radius: 30px;
+      text-decoration: none;
+      transition: all .2s
+    }
+
+    .btn-p:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 28px rgba(201, 168, 76, .38)
+    }
+
+    .btn-o {
+      display: inline-flex;
+      align-items: center;
+      gap: .5rem;
+      border: 1px solid rgba(255, 255, 255, .38);
+      color: #fff;
+      font-weight: 500;
+      font-size: .88rem;
+      padding: .82rem 1.75rem;
+      border-radius: 30px;
+      text-decoration: none;
+      transition: all .2s
+    }
+
+    .btn-o:hover {
+      background: rgba(255, 255, 255, .1);
+      border-color: rgba(255, 255, 255, .7)
+    }
+
+    /* FOOTER */
+    footer {
+      background: #06131f;
+      border-top: 1px solid rgba(201, 168, 76, .14);
+      padding: 4rem 2rem 0
+    }
+
+    .fi {
+      max-width: 1300px;
+      margin: 0 auto
+    }
+
+    .fg {
+      display: grid;
+      grid-template-columns: 1.8fr 1fr 1fr 1fr;
+      gap: 3rem;
+      padding-bottom: 3rem
+    }
+
+    .fb p {
+      color: rgba(255, 255, 255, .48);
+      font-size: .82rem;
+      line-height: 1.8;
+      margin-top: 1rem
+    }
+
+    .soc {
+      display: flex;
+      gap: .6rem;
+      margin-top: 1.5rem
+    }
+
+    .si2 {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, .06);
+      border: 1px solid rgba(255, 255, 255, .1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: rgba(255, 255, 255, .6);
+      font-size: .85rem;
+      text-decoration: none;
+      transition: all .2s
+    }
+
+    .si2:hover {
+      background: var(--gold);
+      border-color: var(--gold);
+      color: var(--navy)
+    }
+
+    .fc h4 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1rem;
+      font-weight: 600;
+      color: #fff;
+      margin-bottom: 1.25rem;
+      position: relative;
+      padding-bottom: .6rem
+    }
+
+    .fc h4::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 28px;
+      height: 2px;
+      background: var(--gold)
+    }
+
+    .fc ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: .6rem
+    }
+
+    .fc ul a {
+      color: rgba(255, 255, 255, .5);
+      text-decoration: none;
+      font-size: .82rem;
+      transition: color .2s;
+      display: flex;
+      align-items: center;
+      gap: .4rem
+    }
+
+    .fc ul a i {
+      font-size: .6rem;
+      color: var(--teal)
+    }
+
+    .fc ul a:hover {
+      color: var(--gold)
+    }
+
+    .fci {
+      display: flex;
+      align-items: flex-start;
+      gap: .75rem;
+      margin-bottom: .85rem
+    }
+
+    .fci i {
+      color: var(--gold);
+      font-size: .9rem;
+      margin-top: .14rem;
+      flex-shrink: 0
+    }
+
+    .fci p,
+    .fci a {
+      color: rgba(255, 255, 255, .5);
+      font-size: .82rem;
+      line-height: 1.55;
+      text-decoration: none
+    }
+
+    .fci a:hover {
+      color: var(--gold)
+    }
+
+    .fbot {
+      border-top: 1px solid rgba(255, 255, 255, .07);
+      padding: 1.25rem 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: .75rem
+    }
+
+    .fcp {
+      font-size: .77rem;
+      color: rgba(255, 255, 255, .32)
+    }
+
+    .fdb {
+      font-size: .77rem;
+      color: rgba(255, 255, 255, .32)
+    }
+
+    .fdb a {
+      color: var(--gold);
+      text-decoration: none;
+      font-weight: 600
+    }
+
+    .fdb a:hover {
+      text-decoration: underline
+    }
+
+    @media(max-width:1024px) {
+      .ag {
+        grid-template-columns: 1fr;
+        gap: 3rem
+      }
+
+      .fg {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem
+      }
+    }
+
+    @media(max-width:768px) {
+      nav {
+        display: none
+      }
+
+      .ham {
+        display: flex
+      }
+
+      .sstats {
+        gap: 1.5rem
+      }
+
+      .stn {
+        font-size: 1.8rem
+      }
+
+      .fg {
+        grid-template-columns: 1fr
+      }
+
+      .fbot {
+        flex-direction: column;
+        text-align: center
+      }
+
+      .arrows {
+        padding: 0 .5rem
+      }
+
+      .arr {
+        width: 38px;
+        height: 38px;
+        font-size: .85rem
+      }
+    }
+
+    @media(max-width:480px) {
+      .sec {
+        padding: 3.5rem 1.25rem
+      }
+
+      .sc {
+        padding: 0 1.25rem;
+        padding-top: 74px
+      }
+
+      .qbi {
+        flex-direction: column;
+        gap: .7rem;
+        text-align: center
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header id="hdr">
+    <div class="hdr">
+      <a href="/index.html" class="logo">
+        <div class="logo-b">G</div>
+        <div class="logo-t">
+          <span class="logo-n">Dr. Gurucharan S Shetty</span>
+          <span class="logo-s">Interventional Radiologist</span>
+        </div>
+      </a>
+      <nav>
+        <a href="/index.html" class="active">Home</a>
+        <a href="/about.html">About</a>
+        <a href="/procedures.html">Procedures</a>
+        <div class="drop">
+          <a>Testimonials</a>
+          <div class="dmenu">
+            <a href="/testimonials/text-testimonials.html"><i class="fa-regular fa-comment-dots"></i>&nbsp; Patient
+              Reviews</a>
+            <a href="/testimonials/video-testimonials.html"><i class="fa-brands fa-youtube"></i>&nbsp; Video
+              Testimonials</a>
+          </div>
+        </div>
+        <a href="/blogs.html">Blogs</a>
+        <a href="/contact.html">Contact</a>
+        <a href="/contact.html" class="btn-appt"><i class="fa-regular fa-calendar-check"></i>&nbsp; Book Appointment</a>
+      </nav>
+      <button class="ham" id="ham" onclick="toggleMenu()" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- MOBILE NAV -->
+  <div class="mnav" id="mnav">
+    <a href="/index.html"><i class="fa-solid fa-house"></i>&nbsp; Home</a>
+    <a href="/about.html"><i class="fa-solid fa-user-doctor"></i>&nbsp; About</a>
+    <a href="/procedures.html"><i class="fa-solid fa-stethoscope"></i>&nbsp; Procedures</a>
+    <div class="msec">Testimonials</div>
+    <a href="/testimonials/text-testimonials.html" style="padding-left:2.5rem"><i
+        class="fa-regular fa-comment-dots"></i>&nbsp; Patient Reviews</a>
+    <a href="/testimonials/video-testimonials.html" style="padding-left:2.5rem"><i
+        class="fa-brands fa-youtube"></i>&nbsp; Video Testimonials</a>
+    <a href="/blogs.html"><i class="fa-solid fa-blog"></i>&nbsp; Blogs</a>
+    <a href="/contact.html"><i class="fa-solid fa-phone"></i>&nbsp; Contact</a>
+  </div>
+
+  <!-- HERO CAROUSEL -->
+  <section class="hero">
+    <div class="slides" id="slides">
+      <div class="slide s1">
+        <div class="sbg"></div>
+        <div class="spat"></div>
+        <div class="sc">
+          <div class="eye"><i class="fa-solid fa-circle-check"></i> Sparsh Hospitals, Bengaluru</div>
+          <h1 class="sh1">Expert <em>Interventional Radiology</em> Care in Bangalore</h1>
+          <p class="sdesc">Dr. Gurucharan S Shetty brings world-class minimally invasive, image-guided procedures —
+            delivering precision treatment with faster recovery and better outcomes.</p>
+          <div class="sact">
+            <a href="/procedures.html" class="btn-p"><i class="fa-solid fa-stethoscope"></i> View Procedures</a>
+            <a href="/contact.html" class="btn-o"><i class="fa-regular fa-calendar-check"></i> Book Appointment</a>
+          </div>
+          <div class="sstats">
+            <div>
+              <div class="stn">10+</div>
+              <div class="stl">Years Experience</div>
+            </div>
+            <div>
+              <div class="stn">10,000+</div>
+              <div class="stl">Procedures Done</div>
+            </div>
+            <div>
+              <div class="stn">10+</div>
+              <div class="stl">Specialised Treatments</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slide s2">
+        <div class="sbg"></div>
+        <div class="spat"></div>
+        <div class="sc">
+          <div class="eye"><i class="fa-solid fa-brain"></i> Neurointerventional Excellence</div>
+          <h1 class="sh1">Pioneering <em>Stroke &amp; Brain</em> Intervention Techniques</h1>
+          <p class="sdesc">From Mechanical Thrombectomy in acute stroke to Brain Aneurysm Coiling advanced
+            neuro-interventional care that saves lives and restores function.</p>
+          <div class="sact">
+            <a href="/" class="btn-p"><i class="fa-solid fa-brain"></i>
+              Learn More</a>
+            <a href="/about.html" class="btn-o"><i class="fa-solid fa-user-doctor"></i> About Dr. Shetty</a>
+          </div>
+          <div class="sstats">
+            <div>
+              <div class="stn">500+</div>
+              <div class="stl">Stroke Cases</div>
+            </div>
+            <div>
+              <div class="stn">98%</div>
+              <div class="stl">Success Rate</div>
+            </div>
+            <div>
+              <div class="stn">24/7</div>
+              <div class="stl">Emergency Care</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slide s3">
+        <div class="sbg"></div>
+        <div class="spat"></div>
+        <div class="sc">
+          <div class="eye"><i class="fa-solid fa-heart-pulse"></i> Vascular &amp; Oncology Interventions</div>
+          <h1 class="sh1">Advanced <em>Cancer &amp; Vascular</em> Treatment Without Surgery</h1>
+          <p class="sdesc">TACE, Tumour Ablation, Uterine Artery Embolisation and Varicose Vein treatments effective,
+            minimally invasive alternatives to open surgery.</p>
+          <div class="sact">
+            <a href="/" class="btn-p"><i class="fa-solid fa-microscope"></i>
+              TACE Treatment</a>
+            <a href="/contact.html" class="btn-o"><i class="fa-solid fa-phone"></i> Call Us Today</a>
+          </div>
+          <div class="sstats">
+            <div>
+              <div class="stn">1000+</div>
+              <div class="stl">Cancer Procedures</div>
+            </div>
+            <div>
+              <div class="stn">No</div>
+              <div class="stl">Open Surgery</div>
+            </div>
+            <div>
+              <div class="stn">Fast</div>
+              <div class="stl">Recovery Time</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="arrows">
+      <button class="arr" onclick="chg(-1)"><i class="fa-solid fa-chevron-left"></i></button>
+      <button class="arr" onclick="chg(1)"><i class="fa-solid fa-chevron-right"></i></button>
+    </div>
+    <div class="dots">
+      <button class="dot on" onclick="go(0)"></button>
+      <button class="dot" onclick="go(1)"></button>
+      <button class="dot" onclick="go(2)"></button>
+    </div>
+  </section>
+
+  <!-- ABOUT PREVIEW -->
+  <section class="sec about-sec">
+    <div class="si">
+      <div class="ag">
+        <div class="aiw">
+          <div class="aic"><i class="fa-solid fa-user-doctor"></i></div>
+          <div class="abadge">
+            <div class="n">10+</div>
+            <div class="l">Years of Excellence</div>
+          </div>
+        </div>
+        <div class="at">
+          <div class="slbl">About the Doctor</div>
+          <h2 class="stit">Dr. Gurucharan S Shetty</h2>
+          <div class="atag">
+            <span class="ct">MBBS</span><span class="ct">MD Radiology</span>
+            <span class="ct">DM Interventional Radiology</span><span class="ct">Fellowship – Vascular IR</span>
+          </div>
+          <p>Dr. Gurucharan S Shetty is one of Bangalore's most distinguished Interventional Radiologists, with over two
+            decades of experience in performing complex, minimally invasive, image-guided procedures.</p>
+          <p>Practicing at Sparsh Hospitals, Bengaluru, he is a pioneer in neuro-interventional procedures, vascular
+            interventions, and oncology-related interventional radiology across South India.</p>
+          <div class="af">
+            <div class="afi"><i class="fa-solid fa-circle-check"></i>
+              <p><strong>Neuro-Interventional Expert:</strong> Mechanical Thrombectomy, Brain Aneurysm Coiling, AVM
+                treatment</p>
+            </div>
+            <div class="afi"><i class="fa-solid fa-circle-check"></i>
+              <p><strong>Oncology IR:</strong> TACE, Tumour Ablation, Preoperative Embolisation</p>
+            </div>
+            <div class="afi"><i class="fa-solid fa-circle-check"></i>
+              <p><strong>Vascular Specialist:</strong> Varicose Veins, UAE, Angioplasty &amp; Stenting</p>
+            </div>
+            <div class="afi"><i class="fa-solid fa-circle-check"></i>
+              <p><strong>Emergency IR:</strong> 24/7 availability for stroke and bleeding emergencies</p>
+            </div>
+          </div>
+          <a href="/about.html" class="btn-p" style="margin-top:.5rem">Read Full Profile <i
+              class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCEDURES PREVIEW -->
+  <section class="sec" style="background:#fff">
+    <div class="si">
+      <div
+        style="display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:3rem;flex-wrap:wrap;gap:1.5rem">
+        <div>
+          <div class="slbl">What We Offer</div>
+          <h2 class="stit">Specialised Procedures</h2>
+          <p class="ssub">A comprehensive range of image-guided, minimally invasive interventional radiology procedures.
+          </p>
+        </div>
+        <a href="/procedures.html" class="btn-p"><i class="fa-solid fa-list"></i>&nbsp; All Procedures</a>
+      </div>
+      <div class="pg">
+        <a href="/procedures/biopsies-fnac.html" class="pc">
+          <div class="pic"><i class="fa-solid fa-microscope"></i></div>
+          <div class="pt">CT/USG Image Guided Biopsies / FNAC</div>
+          <div class="pd">Precise image-guided tissue sampling for accurate diagnosis with minimal discomfort.</div>
+          <div class="pl">Learn More <i class="fa-solid fa-arrow-right"></i></div>
+        </a>
+        <a href="/procedures/chemoembolisation-tace-hcc.html" class="pc">
+          <div class="pic"><i class="fa-solid fa-dna"></i></div>
+          <div class="pt">Chemoembolisation (TACE) &amp; Treatment of HCC</div>
+          <div class="pd">Advanced liver cancer treatment delivering chemotherapy directly to tumour blood vessels.
+          </div>
+          <div class="pl">Learn More <i class="fa-solid fa-arrow-right"></i></div>
+        </a>
+        <a href="/procedures/mechanical-thrombectomy-stroke.html" class="pc">
+          <div class="pic"><i class="fa-solid fa-brain"></i></div>
+          <div class="pt">Mechanical Thrombectomy in Acute Stroke</div>
+          <div class="pd">Life-saving clot retrieval technique for acute ischemic stroke with excellent neurological
+            outcomes.</div>
+          <div class="pl">Learn More <i class="fa-solid fa-arrow-right"></i></div>
+        </a>
+        <a href="/procedures/varicose-veins.html" class="pc">
+          <div class="pic"><i class="fa-solid fa-heart-pulse"></i></div>
+          <div class="pt">Varicose Veins Treatment</div>
+          <div class="pd">Minimally invasive endovenous ablation no cuts, no general anaesthesia, rapid return to
+            activity.</div>
+          <div class="pl">Learn More <i class="fa-solid fa-arrow-right"></i></div>
+        </a>
+        <a href="/procedures/uterine-artery-embolisation.html" class="pc">
+          <div class="pic"><i class="fa-solid fa-venus"></i></div>
+          <div class="pt">Uterine Artery Embolisation</div>
+          <div class="pd">Non-surgical fibroid treatment preserving the uterus effective alternative to hysterectomy.
+          </div>
+          <div class="pl">Learn More <i class="fa-solid fa-arrow-right"></i></div>
+        </a>
+        <a href="/procedures/coiling-brain-aneurysms.html" class="pc">
+          <div class="pic"><i class="fa-solid fa-circle-nodes"></i></div>
+          <div class="pt">Coiling of Brain Aneurysms</div>
+          <div class="pd">Endovascular coiling to prevent rupture in subarachnoid haemorrhage no open brain surgery.
+          </div>
+          <div class="pl">Learn More <i class="fa-solid fa-arrow-right"></i></div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE -->
+  <section class="sec why">
+    <div class="si">
+      <div class="slbl">Why Choose Us</div>
+      <h2 class="stit">Precision. Compassion. Excellence.</h2>
+      <p class="ssub">Dr. Shetty combines cutting-edge technology with decades of experience for the best patient
+        outcomes.</p>
+      <div class="wg">
+        <div class="wc">
+          <div class="wi"><i class="fa-solid fa-shield-halved"></i></div>
+          <div class="wt">Minimally Invasive</div>
+          <div class="wd">Most procedures require only a small needle puncture no large incisions, minimal blood loss,
+            and significantly faster recovery.</div>
+        </div>
+        <div class="wc">
+          <div class="wi"><i class="fa-solid fa-satellite-dish"></i></div>
+          <div class="wt">Image-Guided Precision</div>
+          <div class="wd">Every procedure is performed under real-time CT, Ultrasound, or Fluoroscopic guidance ensuring
+            pinpoint accuracy.</div>
+        </div>
+        <div class="wc">
+          <div class="wi"><i class="fa-solid fa-hospital"></i></div>
+          <div class="wt">State-of-the-Art Facility</div>
+          <div class="wd">Practicing at Sparsh Hospitals, Bengaluru equipped with the latest biplane angiography
+            suites and advanced imaging technology.</div>
+        </div>
+        <div class="wc">
+          <div class="wi"><i class="fa-solid fa-clock"></i></div>
+          <div class="wt">24/7 Emergency Care</div>
+          <div class="wd">Available round-the-clock for emergency interventions like stroke thrombectomy and haemorrhage
+            embolisation.</div>
+        </div>
+        <div class="wc">
+          <div class="wi"><i class="fa-solid fa-heart"></i></div>
+          <div class="wt">Patient-Centred Approach</div>
+          <div class="wd">Personalised treatment plans, thorough pre-procedure counselling, and dedicated post-procedure
+            follow-up care.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS PREVIEW -->
+  <section class="sec" style="background:var(--off)">
+    <div class="si">
+      <div
+        style="display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:0;flex-wrap:wrap;gap:1rem">
+        <div>
+          <div class="slbl">Patient Voices</div>
+          <h2 class="stit">What Our Patients Say</h2>
+        </div>
+        <a href="/testimonials/text-testimonials.html" class="btn-p"><i class="fa-regular fa-comment-dots"></i>&nbsp;
+          All
+          Reviews</a>
+      </div>
+      <div class="tg">
+        <div class="tc">
+          <div class="tq">"</div>
+          <p class="tt">Dr. Shetty performed my TACE procedure with exceptional skill. His calm demeanor and detailed
+            explanation before the procedure put me at ease. The results have been outstanding truly a life-saver.</p>
+          <div class="tau">
+            <div class="tav">R</div>
+            <div>
+              <div class="tan">Ramesh K.</div>
+              <div class="tal">Liver Cancer Patient, Bengaluru</div>
+              <div class="tstr"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                  class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+            </div>
+          </div>
+        </div>
+        <div class="tc">
+          <div class="tq">"</div>
+          <p class="tt">I came to Dr. Shetty for varicose vein treatment. The procedure was quick, painless and I was
+            back home the same day. After years of suffering, I finally have relief. Highly recommended to anyone !</p>
+          <div class="tau">
+            <div class="tav">S</div>
+            <div>
+              <div class="tan">Sunita M.</div>
+              <div class="tal">Varicose Veins Patient, Mysuru</div>
+              <div class="tstr"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                  class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+            </div>
+          </div>
+        </div>
+        <div class="tc">
+          <div class="tq">"</div>
+          <p class="tt">I consulted Dr. Shetty for a uterine fibroid issue. The treatment was smooth, comfortable, and I
+            was able to resume my normal routine very quickly. The care and guidance throughout the process were
+            excellent.</p>
+          <div class="tau">
+            <div class="tav">R</div>
+            <div>
+              <div class="tan">Radhika P.</div>
+              <div class="tal">Uterine Fibroid Patient, Bengaluru</div>
+              <div class="tstr"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                  class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+            </div>
+          </div>
+        </div>
+        <div class="tc">
+          <div class="tq">"</div>
+          <p class="tt">My father had a stroke and Dr. Shetty performed the mechanical thrombectomy within the golden
+            hour. Today my father walks and speaks normally. We are forever grateful to this exceptional doctor.</p>
+          <div class="tau">
+            <div class="tav">A</div>
+            <div>
+              <div class="tan">Anand P.</div>
+              <div class="tal">Stroke Patient Family, Bengaluru</div>
+              <div class="tstr"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                  class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="text-align:center;margin-top:2rem">
+        <a href="/testimonials/video-testimonials.html"
+          style="display:inline-flex;align-items:center;gap:.5rem;border:1px solid var(--border);color:var(--teal);padding:.72rem 1.5rem;border-radius:30px;text-decoration:none;font-weight:600;font-size:.875rem;transition:all .2s;background:#fff">
+          <i class="fa-brands fa-youtube" style="color:#ff0000;font-size:1.1rem"></i> Watch Video Testimonials
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOG PREVIEW -->
+  <section class="sec" style="background:#fff">
+    <div class="si">
+      <div
+        style="display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:0;flex-wrap:wrap;gap:1rem">
+        <div>
+          <div class="slbl">Knowledge Hub</div>
+          <h2 class="stit">Latest from the Blog</h2>
+        </div>
+        <a href="/blogs/chemoembolisation-ablation-tumors.html" class="btn-p"><i
+            class="fa-solid fa-newspaper"></i>&nbsp;
+          All Articles</a>
+      </div>
+      <div class="bg2">
+        <a href="/blogs/chemoembolisation-ablation-tumors.html" class="bc">
+          <div class="bi c1"><i class="fa-solid fa-dna" style="color:rgba(201,168,76,.65)"></i></div>
+          <div class="bb">
+            <div class="btag"><i class="fa-solid fa-tag"></i> Oncology IR</div>
+            <div class="btit">Chemoembolisation and Ablation of Tumors</div>
+            <div class="bex">Understanding TACE and percutaneous ablation as effective treatments for liver and other
+              organ tumours without surgery.</div>
+            <div class="brl">Read Article <i class="fa-solid fa-arrow-right"></i></div>
+          </div>
+        </a>
+        <a href="/blogs/mechanical-thrombectomy-stroke.html" class="bc">
+          <div class="bi c2"><i class="fa-solid fa-brain" style="color:rgba(201,168,76,.65)"></i></div>
+          <div class="bb">
+            <div class="btag"><i class="fa-solid fa-tag"></i> Neurointerventional</div>
+            <div class="btit">Mechanical Thrombectomy Has Revolutionised Stroke Treatment</div>
+            <div class="bex">How clot retrieval therapy has transformed outcomes for patients with acute ischemic stroke
+              globally.</div>
+            <div class="brl">Read Article <i class="fa-solid fa-arrow-right"></i></div>
+          </div>
+        </a>
+        <a href="/blogs/varicose-veins.html" class="bc">
+          <div class="bi c3"><i class="fa-solid fa-heart-pulse" style="color:rgba(201,168,76,.65)"></i></div>
+          <div class="bb">
+            <div class="btag"><i class="fa-solid fa-tag"></i> Vascular</div>
+            <div class="btit">Varicose Veins Modern Minimally Invasive Solutions</div>
+            <div class="bex">From endovenous laser therapy to sclerotherapy a complete guide to modern varicose vein
+              treatments.</div>
+            <div class="brl">Read Article <i class="fa-solid fa-arrow-right"></i></div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <div class="ctai">
+      <div class="ctal"><i class="fa-regular fa-calendar-check"></i> Get in Touch</div>
+      <h2 class="ctah">Ready to Consult with Dr. Gurucharan S Shetty?</h2>
+      <p class="ctad">Schedule a consultation at Sparsh Hospitals, Bengaluru. We offer comprehensive evaluation and
+        personalised minimally invasive treatment plans.</p>
+      <div class="ctaa">
+        <a href="/contact.html" class="btn-p"><i class="fa-regular fa-calendar-check"></i> Book an Appointment</a>
+        <a href="/tel:08061222000" class="btn-o"><i class="fa-solid fa-phone"></i> 080-61222000</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="fi">
+      <div class="fg">
+        <div class="fb">
+          <a href="/index.html" class="logo">
+            <div class="logo-b">G</div>
+            <div class="logo-t"><span class="logo-n">Dr. Gurucharan S Shetty</span><span class="logo-s">Interventional
+                Radiologist</span></div>
+          </a>
+          <p>A leading Interventional Radiologist in Bangalore offering expert minimally invasive, image-guided
+            procedures at Sparsh Hospitals. Excellence in vascular, neuro-interventional, and oncology IR.</p>
+          <div class="soc">
+            <a href="#" class="si2" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="si2" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="si2" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" class="si2" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div class="fc">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="/index.html"><i class="fa-solid fa-chevron-right"></i>Home</a></li>
+            <li><a href="/about.html"><i class="fa-solid fa-chevron-right"></i>About</a></li>
+            <li><a href="/procedures.html"><i class="fa-solid fa-chevron-right"></i>Procedures</a></li>
+            <li><a href="/testimonials/text-testimonials.html"><i class="fa-solid fa-chevron-right"></i>Patient
+                Reviews</a></li>
+            <li><a href="/testimonials/video-testimonials.html"><i class="fa-solid fa-chevron-right"></i>Video
+                Testimonials</a></li>
+            <li><a href="/contact.html"><i class="fa-solid fa-chevron-right"></i>Contact</a></li>
+          </ul>
+        </div>
+        <div class="fc">
+          <h4>Our Blogs</h4>
+          <ul>
+            <li><a href="/blogs/chemoembolisation-ablation-tumors.html"><i
+                  class="fa-solid fa-chevron-right"></i>Chemoembolisation And Ablation Of Tumors</a></li>
+            <li><a href="/blogs/varicocele-no-scalpel.html"><i class="fa-solid fa-chevron-right"></i>No Scalpel
+                Treatment For Varicocele</a></li>
+            <li><a href="/blogs/varicose-veins.html"><i class="fa-solid fa-chevron-right"></i>Varicose Veins</a>
+            </li>
+            <li><a href="/blogs/mechanical-thrombectomy-stroke.html"><i class="fa-solid fa-chevron-right"></i>Mechanical
+                Thrombectomy Has Revolutionised Treatment Of Acute Ischemic Stroke</a></li>
+            <li><a href="/blogs.html"><i class="fa-solid fa-chevron-right"></i>All Blogs</a></li>
+          </ul>
+        </div>
+        <div class="fc">
+          <h4>Contact Us</h4>
+          <div class="fci"><i class="fa-solid fa-location-dot"></i>
+            <p>Sparsh Hospitals, Sarjapur Main Rd, Carmelaram, Doddakannelli, Bengaluru – 560035</p>
+          </div>
+          <div class="fci"><i class="fa-solid fa-phone"></i><a href="/tel:08061222000">080-61222000</a></div>
+          <div class="fci"><i class="fa-regular fa-envelope"></i><a
+              href="/mailto:gurucharansshetty@gmail.com">gurucharansshetty@gmail.com</a></div>
+          <div class="fci"><i class="fa-regular fa-clock"></i>
+            <p>Mon – Sat: 9:00 AM – 6:00 PM</p>
+          </div>
+        </div>
+      </div>
+      <div class="fbot">
+        <div class="fcp">© <span id="yr"></span> Dr. Gurucharan S Shetty. All Rights Reserved.</div>
+        <div class="fdb">Designed &amp; Developed by <a href="https://thinkb.agency/" target="_blank"
+            rel="noopener">ThinkB</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('yr').textContent = new Date().getFullYear();
+    function toggleMenu() { document.getElementById('ham').classList.toggle('open'); document.getElementById('mnav').classList.toggle('open') }
+    let cur = 0, tot = 3, tim;
+    function upd() { document.getElementById('slides').style.transform = `translateX(-${cur * 100}%)`; document.querySelectorAll('.dot').forEach((d, i) => d.classList.toggle('on', i === cur)) }
+    function chg(d) { cur = (cur + d + tot) % tot; upd(); rst() }
+    function go(n) { cur = n; upd(); rst() }
+    function rst() { clearInterval(tim); tim = setInterval(() => chg(1), 5500) }
+    rst();
+    window.addEventListener('scroll', () => { document.getElementById('hdr').style.boxShadow = scrollY > 50 ? '0 4px 30px rgba(0,0,0,.35)' : 'none' });
+  </script>
+</body>
+
+</html>
