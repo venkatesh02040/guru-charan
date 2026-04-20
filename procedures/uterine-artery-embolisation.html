@@ -588,8 +588,7 @@
         .benefit-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 15px 35px rgba(11, 31, 58, .08);
-            border-color: var(--teal)
-        }
+         }
 
         .benefit-card i {
             font-size: 1.75rem;
@@ -983,79 +982,53 @@
 
 <body>
 
+    <!-- HEADER -->
     <header id="hdr">
         <div class="hdr">
-            <a href="../index.html" class="logo">
+            <a href="/index.html" class="logo">
                 <div class="logo-b">G</div>
-                <div class="logo-t"><span class="logo-n">Dr. Gurucharan S Shetty</span><span
-                        class="logo-s">Interventional Radiologist</span></div>
+                <div class="logo-t">
+                    <span class="logo-n">Dr. Gurucharan S Shetty</span>
+                    <span class="logo-s">Interventional Radiologist</span>
+                </div>
             </a>
             <nav>
-                <a href="../index.html">Home</a>
-                <a href="../about.html">About</a>
-                <a href="../procedures.html" class="active">Procedures</a>
-                <div class="drop"><a>Testimonials</a>
+                <a href="/index.html">Home</a>
+                <a href="/about.html">About</a>
+                <a href="/procedures.html" class="active">Procedures</a>
+                <div class="drop">
+                    <a>Testimonials</a>
                     <div class="dmenu">
-                        <a href="../testimonials/text-testimonials.html"><i
-                                class="fa-regular fa-comment-dots"></i>&nbsp; Patient Reviews</a>
-                        <a href="../testimonials/video-testimonials.html"><i class="fa-brands fa-youtube"></i>&nbsp;
-                            Video Testimonials</a>
+                        <a href="/testimonials/text-testimonials.html"><i class="fa-regular fa-comment-dots"></i>&nbsp;
+                            Patient
+                            Reviews</a>
+                        <a href="/testimonials/video-testimonials.html"><i class="fa-brands fa-youtube"></i>&nbsp; Video
+                            Testimonials</a>
                     </div>
                 </div>
-                <div class="drop"><a>Blogs</a>
-                    <div class="dmenu">
-                        <a href="../blogs/chemoembolisation-ablation-tumors.html"><i class="fa-solid fa-chevron-right"
-                                style="font-size:.55rem"></i>&nbsp; TACE &amp; Ablation</a>
-                        <a href="../blogs/varicocele-no-scalpel.html"><i class="fa-solid fa-chevron-right"
-                                style="font-size:.55rem"></i>&nbsp; Varicocele Treatment</a>
-                        <a href="../blogs/varicose-veins.html"><i class="fa-solid fa-chevron-right"
-                                style="font-size:.55rem"></i>&nbsp; Varicose Veins</a>
-                        <a href="../blogs/mechanical-thrombectomy-stroke.html"><i class="fa-solid fa-chevron-right"
-                                style="font-size:.55rem"></i>&nbsp; Thrombectomy &amp; Stroke</a>
-                        <a href="../blogs/lymph-node-biopsy.html"><i class="fa-solid fa-chevron-right"
-                                style="font-size:.55rem"></i>&nbsp; Lymph Node Biopsy</a>
-                        <a href="../blogs/uterine-artery-embolisation.html"><i class="fa-solid fa-chevron-right"
-                                style="font-size:.55rem"></i>&nbsp; Uterine Artery Embolisation</a>
-                    </div>
-                </div>
-                <a href="../contact.html">Contact</a>
-                <a href="../contact.html" class="btn-appt"><i class="fa-regular fa-calendar-check"></i>&nbsp; Book
+                <a href="/blogs.html">Blogs</a>
+                <a href="/contact.html">Contact</a>
+                <a href="/contact.html" class="btn-appt"><i class="fa-regular fa-calendar-check"></i>&nbsp; Book
                     Appointment</a>
             </nav>
-            <button class="ham" id="ham" onclick="toggleMenu()"
-                aria-label="Toggle menu"><span></span><span></span><span></span></button>
+            <button class="ham" id="ham" onclick="toggleMenu()" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
         </div>
     </header>
+
+    <!-- MOBILE NAV -->
     <div class="mnav" id="mnav">
-        <a href="../index.html"><i class="fa-solid fa-house"></i>&nbsp; Home</a>
-        <a href="../about.html"><i class="fa-solid fa-user-doctor"></i>&nbsp; About</a>
-        <a href="../procedures.html"><i class="fa-solid fa-stethoscope"></i>&nbsp; Procedures</a>
-        <div class="mnav-drop">
-            <button class="mnav-drop-btn" onclick="toggleMobileMenu(this)">Testimonials <i
-                    class="fa-solid fa-chevron-down m-chev"></i></button>
-            <div class="mnav-sub">
-                <a href="../testimonials/text-testimonials.html"><i class="fa-regular fa-comment-dots"></i> Patient
-                    Reviews</a>
-                <a href="../testimonials/video-testimonials.html"><i class="fa-brands fa-youtube"></i> Video
-                    Testimonials</a>
-            </div>
-        </div>
-        <div class="mnav-drop">
-            <button class="mnav-drop-btn" onclick="toggleMobileMenu(this)">Blogs <i
-                    class="fa-solid fa-chevron-down m-chev"></i></button>
-            <div class="mnav-sub">
-                <a href="../blogs/chemoembolisation-ablation-tumors.html"><i class="fa-solid fa-chevron-right"></i> TACE
-                    &amp; Ablation</a>
-                <a href="../blogs/varicose-veins.html"><i class="fa-solid fa-chevron-right"></i> Varicose Veins</a>
-                <a href="../blogs/mechanical-thrombectomy-stroke.html"><i class="fa-solid fa-chevron-right"></i>
-                    Thrombectomy &amp; Stroke</a>
-                <a href="../blogs/uterine-artery-embolisation.html"><i class="fa-solid fa-chevron-right"></i> Uterine
-                    Artery Embolisation</a>
-            </div>
-        </div>
-        <a href="../contact.html"><i class="fa-solid fa-phone"></i>&nbsp; Contact</a>
-        <a href="../contact.html" style="background:rgba(201,168,76,.15);color:var(--gold);font-weight:600"><i
-                class="fa-regular fa-calendar-check"></i>&nbsp; Book Appointment</a>
+        <a href="/index.html"><i class="fa-solid fa-house"></i>&nbsp; Home</a>
+        <a href="/about.html"><i class="fa-solid fa-user-doctor"></i>&nbsp; About</a>
+        <a href="/procedures.html"><i class="fa-solid fa-stethoscope"></i>&nbsp; Procedures</a>
+        <div class="msec">Testimonials</div>
+        <a href="/testimonials/text-testimonials.html" style="padding-left:2.5rem"><i
+                class="fa-regular fa-comment-dots"></i>&nbsp; Patient Reviews</a>
+        <a href="/testimonials/video-testimonials.html" style="padding-left:2.5rem"><i
+                class="fa-brands fa-youtube"></i>&nbsp; Video Testimonials</a>
+        <a href="/blogs.html"><i class="fa-solid fa-blog"></i>&nbsp; Blogs</a>
+        <a href="/contact.html"><i class="fa-solid fa-phone"></i>&nbsp; Contact</a>
     </div>
 
     <!-- HERO -->
@@ -1089,47 +1062,11 @@
                         months, leading to significant symptom relief in 85–90% of patients. The uterus is preserved, no
                         surgical incision is made, and recovery is dramatically faster than hysterectomy.</p>
 
-                    <!-- AT A GLANCE -->
-                    <div class="glance-grid">
-                        <div class="glance-card"><i class="fa-solid fa-clock"></i>
-                            <h4>Duration</h4>
-                            <p>60–90 minutes</p>
-                        </div>
-                        <div class="glance-card"><i class="fa-solid fa-bed"></i>
-                            <h4>Hospital Stay</h4>
-                            <p>1–2 days</p>
-                        </div>
-                        <div class="glance-card"><i class="fa-solid fa-syringe"></i>
-                            <h4>Anaesthesia</h4>
-                            <p>Sedation + local anaesthesia</p>
-                        </div>
-                        <div class="glance-card"><i class="fa-solid fa-person-walking"></i>
-                            <h4>Recovery</h4>
-                            <p>7–10 days vs 4–6 weeks for surgery</p>
-                        </div>
-                    </div>
-
                     <h3>Who is This Procedure For?</h3>
-                    <p>UAE is suitable for pre-menopausal women with symptomatic uterine fibroids who wish to preserve
-                        their uterus or avoid the risks and recovery of surgery:</p>
-                    <ul>
-                        <li><strong>Heavy Menstrual Bleeding</strong> Menorrhagia causing anaemia, fatigue, and poor
-                            quality of life the most common indication for UAE</li>
-                        <li><strong>Pelvic Pressure &amp; Bulk Symptoms</strong> Large fibroids pressing on the bladder
-                            (urinary frequency), bowel (constipation), or causing pelvic heaviness and discomfort</li>
-                        <li><strong>Painful Periods</strong> Dysmenorrhoea from fibroid-related uterine contractions
-                            dramatically improved after UAE</li>
-                        <li><strong>Avoid Surgery</strong> Women who decline hysterectomy or myomectomy, or those who
-                            are high surgical risk due to anaemia, medical comorbidities, or prior abdominal surgery
-                        </li>
-                        <li><strong>Multiple Fibroids</strong> Women with multiple fibroids at different locations where
-                            surgical myomectomy would be very extensive</li>
-                        <li><strong>Recurrent Fibroids</strong> Women with recurrence after prior myomectomy UAE treats
-                            all fibroids simultaneously regardless of number or position</li>
-                    </ul>
+<p> Uterine artery embolisation (UAE) is suitable for pre-menopausal women with symptomatic uterine fibroids who wish to preserve their uterus or avoid the risks and recovery associated with surgery. It is most commonly indicated for heavy menstrual bleeding (menorrhagia), which can lead to anaemia, fatigue, and a reduced quality of life. UAE is also effective in managing pelvic pressure and bulk-related symptoms caused by large fibroids pressing on surrounding organs, leading to urinary frequency, constipation, or a sensation of pelvic heaviness and discomfort. Women experiencing painful periods (dysmenorrhoea) due to fibroid-related uterine contractions often see significant improvement after the procedure. It is a preferred option for those who wish to avoid surgery, including women who decline hysterectomy or myomectomy, or those at high surgical risk due to anaemia, medical comorbidities, or prior abdominal surgery. Additionally, UAE is beneficial for women with multiple fibroids located in different areas, where surgical removal would be extensive, as well as for those with recurrent fibroids after previous myomectomy, since UAE can treat all fibroids simultaneously regardless of their number or position. </p>
 
                     <h3>How is UAE Performed?</h3>
-                    <ol class="steps-ol">
+                    <ul>
                         <li>
                             <div><strong>Pre-procedure MRI Pelvis</strong>
                                 <p>Pelvic MRI characterises fibroid number, size, position (submucosal, intramural,
@@ -1162,7 +1099,7 @@
                                     Discharged in 1–2 days. Follow-up MRI at 3–6 months assesses fibroid shrinkage.</p>
                             </div>
                         </li>
-                    </ol>
+                    </ul>
                 </div>
 
                 <div class="proc-img-wrap">
@@ -1173,19 +1110,6 @@
                     </div>
 
 
-                    <div class="sidebar-cta">
-                        <div
-                            style="font-family: 'Poppins', sans-serif;font-size:1.15rem;font-weight:700;color:#fff;margin-bottom:.4rem">
-                            Book a Consultation</div>
-                        <div style="font-size:.82rem;color:rgba(255,255,255,.58);margin-bottom:1.25rem">Dr. Gurucharan S
-                            Shetty<br>Sparsh Hospitals, Bengaluru</div>
-                        <a href="../contact.html" class="btn-p" style="width:100%;justify-content:center"><i
-                                class="fa-regular fa-calendar-check"></i> Book Appointment</a>
-                        <a href="tel:08061222000"
-                            style="display:flex;align-items:center;justify-content:center;gap:.5rem;margin-top:.75rem;color:var(--gold);font-size:.85rem;text-decoration:none;font-weight:600"><i
-                                class="fa-solid fa-phone"></i> 080-61222000</a>
-                    </div>
-
                 </div>
             </div>
 
@@ -1193,35 +1117,26 @@
             <h3 style="font-family: 'Poppins', sans-serif;font-size:1.6rem;color:var(--navy);margin-bottom:1rem">
                 Benefits of This Procedure</h3>
             <div class="benefits-grid">
-                <div class="benefit-card"><i class="fa-solid fa-shield-halved"></i>
+                <div class="benefit-card">
                     <h4>Uterus Preserved</h4>
                     <p>Unlike hysterectomy, UAE preserves the uterus important for women not wishing permanent removal
                         of their uterus.</p>
                 </div>
-                <div class="benefit-card"><i class="fa-solid fa-star"></i>
+                <div class="benefit-card">
                     <h4>85–90% Success Rate</h4>
                     <p>The vast majority of women experience significant relief of heavy bleeding, pain, and pressure
                         symptoms after UAE.</p>
                 </div>
-                <div class="benefit-card"><i class="fa-solid fa-person-walking"></i>
+                <div class="benefit-card">
                     <h4>Faster Recovery</h4>
                     <p>Return to normal activity in 7–10 days compared to 4–6 weeks for hysterectomy and 4 weeks for
                         myomectomy.</p>
                 </div>
-                <div class="benefit-card"><i class="fa-solid fa-list-check"></i>
+                <div class="benefit-card">
                     <h4>Treats All Fibroids</h4>
                     <p>UAE simultaneously treats all fibroids regardless of number or position unlike myomectomy which
                         may leave small fibroids behind.</p>
                 </div>
-            </div>
-
-            <div class="callout">
-                <i class="fa-solid fa-circle-info"></i>
-                <p><strong>MRI Planning is Essential:</strong> A high-quality pre-procedure pelvic MRI is mandatory
-                    before UAE to characterise fibroid position, vascularity, and anatomy. Submucosal fibroids with a
-                    thin stalk (pedunculated submucosal Type 0) require special consideration as they carry a risk of
-                    expulsion post-UAE which can cause complications. Adenomyosis and other uterine pathology must also
-                    be identified. Dr. Shetty reviews all MRI images personally before recommending UAE.</p>
             </div>
 
             <!-- FAQ -->
@@ -1299,48 +1214,59 @@
     </section>
 
 
+    <!-- FOOTER -->
     <footer>
         <div class="fi">
             <div class="fg">
                 <div class="fb">
-                    <a href="../index.html" class="logo">
+                    <a href="/index.html" class="logo">
                         <div class="logo-b">G</div>
                         <div class="logo-t"><span class="logo-n">Dr. Gurucharan S Shetty</span><span
-                                class="logo-s">Interventional Radiologist</span></div>
+                                class="logo-s">Interventional
+                                Radiologist</span></div>
                     </a>
                     <p>A leading Interventional Radiologist in Bangalore offering expert minimally invasive,
-                        image-guided procedures at Sparsh Hospitals. Excellence in vascular, neuro-interventional, and
-                        oncology IR.</p>
-                    <div class="soc"><a href="#" class="si2"><i class="fa-brands fa-facebook-f"></i></a><a href="#"
-                            class="si2"><i class="fa-brands fa-instagram"></i></a><a href="#" class="si2"><i
-                                class="fa-brands fa-youtube"></i></a><a href="#" class="si2"><i
-                                class="fa-brands fa-linkedin-in"></i></a></div>
+                        image-guided
+                        procedures at Sparsh Hospitals. Excellence in vascular, neuro-interventional, and oncology IR.
+                    </p>
+                    <div class="soc">
+                        <a href="#" class="si2" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="si2" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="si2" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#" class="si2" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
                 </div>
                 <div class="fc">
                     <h4>Quick Links</h4>
                     <ul>
-                        <li><a href="../index.html"><i class="fa-solid fa-chevron-right"></i>Home</a></li>
-                        <li><a href="../about.html"><i class="fa-solid fa-chevron-right"></i>About</a></li>
-                        <li><a href="../procedures.html"><i class="fa-solid fa-chevron-right"></i>Procedures</a></li>
-                        <li><a href="../testimonials/text-testimonials.html"><i
-                                    class="fa-solid fa-chevron-right"></i>Patient Reviews</a></li>
-                        <li><a href="../testimonials/video-testimonials.html"><i
-                                    class="fa-solid fa-chevron-right"></i>Video Testimonials</a></li>
-                        <li><a href="../contact.html"><i class="fa-solid fa-chevron-right"></i>Contact</a></li>
+                        <li><a href="/index.html"><i class="fa-solid fa-chevron-right"></i>Home</a></li>
+                        <li><a href="/about.html"><i class="fa-solid fa-chevron-right"></i>About</a></li>
+                        <li><a href="/procedures.html"><i class="fa-solid fa-chevron-right"></i>Procedures</a></li>
+                        <li><a href="/testimonials/text-testimonials.html"><i
+                                    class="fa-solid fa-chevron-right"></i>Patient
+                                Reviews</a></li>
+                        <li><a href="/testimonials/video-testimonials.html"><i
+                                    class="fa-solid fa-chevron-right"></i>Video
+                                Testimonials</a></li>
+                        <li><a href="/contact.html"><i class="fa-solid fa-chevron-right"></i>Contact</a></li>
                     </ul>
                 </div>
                 <div class="fc">
-                    <h4>Related Procedures</h4>
+                    <h4>Our Blogs</h4>
                     <ul>
-                        <li><a href="embolisation-emergency-bleeding.html"><i
-                                    class="fa-solid fa-chevron-right"></i>Embolisation for Emergency Bleeding</a></li>
-                        <li><a href="partial-splenic-embolisation.html"><i class="fa-solid fa-chevron-right"></i>Partial
-                                Splenic Embolisation</a></li>
-                        <li><a href="vascular-angioplasty-stenting.html"><i
-                                    class="fa-solid fa-chevron-right"></i>Vascular Angioplasty &amp; Stenting</a></li>
-                        <li><a href="sclerotherapy.html"><i class="fa-solid fa-chevron-right"></i>Sclerotherapy</a></li>
-                        <li><a href="varicose-veins.html"><i class="fa-solid fa-chevron-right"></i>Varicose Veins
-                                Treatment</a></li>
+                        <li><a href="/blogs/chemoembolisation-ablation-tumors.html"><i
+                                    class="fa-solid fa-chevron-right"></i>Chemoembolisation And Ablation Of Tumors</a>
+                        </li>
+                        <li><a href="/blogs/varicocele-no-scalpel.html"><i class="fa-solid fa-chevron-right"></i>No
+                                Scalpel
+                                Treatment For Varicocele</a></li>
+                        <li><a href="/blogs/varicose-veins.html"><i class="fa-solid fa-chevron-right"></i>Varicose
+                                Veins</a>
+                        </li>
+                        <li><a href="/blogs/mechanical-thrombectomy-stroke.html"><i
+                                    class="fa-solid fa-chevron-right"></i>Mechanical
+                                Thrombectomy Has Revolutionised Treatment Of Acute Ischemic Stroke</a></li>
+                        <li><a href="/blogs.html"><i class="fa-solid fa-chevron-right"></i>All Blogs</a></li>
                     </ul>
                 </div>
                 <div class="fc">
@@ -1348,9 +1274,9 @@
                     <div class="fci"><i class="fa-solid fa-location-dot"></i>
                         <p>Sparsh Hospitals, Sarjapur Main Rd, Carmelaram, Doddakannelli, Bengaluru – 560035</p>
                     </div>
-                    <div class="fci"><i class="fa-solid fa-phone"></i><a href="tel:08061222000">080-61222000</a></div>
+                    <div class="fci"><i class="fa-solid fa-phone"></i><a href="/tel:08061222000">080-61222000</a></div>
                     <div class="fci"><i class="fa-regular fa-envelope"></i><a
-                            href="mailto:gurucharansshetty@gmail.com">gurucharansshetty@gmail.com</a></div>
+                            href="/mailto:gurucharansshetty@gmail.com">gurucharansshetty@gmail.com</a></div>
                     <div class="fci"><i class="fa-regular fa-clock"></i>
                         <p>Mon – Sat: 9:00 AM – 6:00 PM</p>
                     </div>

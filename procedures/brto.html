@@ -587,7 +587,6 @@
         .benefit-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 15px 35px rgba(11, 31, 58, .08);
-            border-color: var(--teal)
         }
 
         .benefit-card i {
@@ -982,79 +981,53 @@
 
 <body>
 
+    <!-- HEADER -->
     <header id="hdr">
         <div class="hdr">
-            <a href="../index.html" class="logo">
+            <a href="/index.html" class="logo">
                 <div class="logo-b">G</div>
-                <div class="logo-t"><span class="logo-n">Dr. Gurucharan S Shetty</span><span
-                        class="logo-s">Interventional Radiologist</span></div>
+                <div class="logo-t">
+                    <span class="logo-n">Dr. Gurucharan S Shetty</span>
+                    <span class="logo-s">Interventional Radiologist</span>
+                </div>
             </a>
             <nav>
-                <a href="../index.html">Home</a>
-                <a href="../about.html">About</a>
-                <a href="../procedures.html" class="active">Procedures</a>
-                <div class="drop"><a>Testimonials</a>
+                <a href="/index.html">Home</a>
+                <a href="/about.html">About</a>
+                <a href="/procedures.html" class="active">Procedures</a>
+                <div class="drop">
+                    <a>Testimonials</a>
                     <div class="dmenu">
-                        <a href="../testimonials/text-testimonials.html"><i
-                                class="fa-regular fa-comment-dots"></i>&nbsp; Patient Reviews</a>
-                        <a href="../testimonials/video-testimonials.html"><i class="fa-brands fa-youtube"></i>&nbsp;
-                            Video Testimonials</a>
+                        <a href="/testimonials/text-testimonials.html"><i class="fa-regular fa-comment-dots"></i>&nbsp;
+                            Patient
+                            Reviews</a>
+                        <a href="/testimonials/video-testimonials.html"><i class="fa-brands fa-youtube"></i>&nbsp; Video
+                            Testimonials</a>
                     </div>
                 </div>
-                <div class="drop"><a>Blogs</a>
-                    <div class="dmenu">
-                        <a href="../blogs/chemoembolisation-ablation-tumors.html"><i class="fa-solid fa-chevron-right"
-                                style="font-size:.55rem"></i>&nbsp; TACE &amp; Ablation</a>
-                        <a href="../blogs/varicocele-no-scalpel.html"><i class="fa-solid fa-chevron-right"
-                                style="font-size:.55rem"></i>&nbsp; Varicocele Treatment</a>
-                        <a href="../blogs/varicose-veins.html"><i class="fa-solid fa-chevron-right"
-                                style="font-size:.55rem"></i>&nbsp; Varicose Veins</a>
-                        <a href="../blogs/mechanical-thrombectomy-stroke.html"><i class="fa-solid fa-chevron-right"
-                                style="font-size:.55rem"></i>&nbsp; Thrombectomy &amp; Stroke</a>
-                        <a href="../blogs/lymph-node-biopsy.html"><i class="fa-solid fa-chevron-right"
-                                style="font-size:.55rem"></i>&nbsp; Lymph Node Biopsy</a>
-                        <a href="../blogs/uterine-artery-embolisation.html"><i class="fa-solid fa-chevron-right"
-                                style="font-size:.55rem"></i>&nbsp; Uterine Artery Embolisation</a>
-                    </div>
-                </div>
-                <a href="../contact.html">Contact</a>
-                <a href="../contact.html" class="btn-appt"><i class="fa-regular fa-calendar-check"></i>&nbsp; Book
+                <a href="/blogs.html">Blogs</a>
+                <a href="/contact.html">Contact</a>
+                <a href="/contact.html" class="btn-appt"><i class="fa-regular fa-calendar-check"></i>&nbsp; Book
                     Appointment</a>
             </nav>
-            <button class="ham" id="ham" onclick="toggleMenu()"
-                aria-label="Toggle menu"><span></span><span></span><span></span></button>
+            <button class="ham" id="ham" onclick="toggleMenu()" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
         </div>
     </header>
+
+    <!-- MOBILE NAV -->
     <div class="mnav" id="mnav">
-        <a href="../index.html"><i class="fa-solid fa-house"></i>&nbsp; Home</a>
-        <a href="../about.html"><i class="fa-solid fa-user-doctor"></i>&nbsp; About</a>
-        <a href="../procedures.html"><i class="fa-solid fa-stethoscope"></i>&nbsp; Procedures</a>
-        <div class="mnav-drop">
-            <button class="mnav-drop-btn" onclick="toggleMobileMenu(this)">Testimonials <i
-                    class="fa-solid fa-chevron-down m-chev"></i></button>
-            <div class="mnav-sub">
-                <a href="../testimonials/text-testimonials.html"><i class="fa-regular fa-comment-dots"></i> Patient
-                    Reviews</a>
-                <a href="../testimonials/video-testimonials.html"><i class="fa-brands fa-youtube"></i> Video
-                    Testimonials</a>
-            </div>
-        </div>
-        <div class="mnav-drop">
-            <button class="mnav-drop-btn" onclick="toggleMobileMenu(this)">Blogs <i
-                    class="fa-solid fa-chevron-down m-chev"></i></button>
-            <div class="mnav-sub">
-                <a href="../blogs/chemoembolisation-ablation-tumors.html"><i class="fa-solid fa-chevron-right"></i> TACE
-                    &amp; Ablation</a>
-                <a href="../blogs/varicose-veins.html"><i class="fa-solid fa-chevron-right"></i> Varicose Veins</a>
-                <a href="../blogs/mechanical-thrombectomy-stroke.html"><i class="fa-solid fa-chevron-right"></i>
-                    Thrombectomy &amp; Stroke</a>
-                <a href="../blogs/uterine-artery-embolisation.html"><i class="fa-solid fa-chevron-right"></i> Uterine
-                    Artery Embolisation</a>
-            </div>
-        </div>
-        <a href="../contact.html"><i class="fa-solid fa-phone"></i>&nbsp; Contact</a>
-        <a href="../contact.html" style="background:rgba(201,168,76,.15);color:var(--gold);font-weight:600"><i
-                class="fa-regular fa-calendar-check"></i>&nbsp; Book Appointment</a>
+        <a href="/index.html"><i class="fa-solid fa-house"></i>&nbsp; Home</a>
+        <a href="/about.html"><i class="fa-solid fa-user-doctor"></i>&nbsp; About</a>
+        <a href="/procedures.html"><i class="fa-solid fa-stethoscope"></i>&nbsp; Procedures</a>
+        <div class="msec">Testimonials</div>
+        <a href="/testimonials/text-testimonials.html" style="padding-left:2.5rem"><i
+                class="fa-regular fa-comment-dots"></i>&nbsp; Patient Reviews</a>
+        <a href="/testimonials/video-testimonials.html" style="padding-left:2.5rem"><i
+                class="fa-brands fa-youtube"></i>&nbsp; Video Testimonials</a>
+        <a href="/blogs.html"><i class="fa-solid fa-blog"></i>&nbsp; Blogs</a>
+        <a href="/contact.html"><i class="fa-solid fa-phone"></i>&nbsp; Contact</a>
     </div>
 
     <!-- HERO -->
@@ -1089,46 +1062,22 @@
                         jugular vein, inflates a balloon to occlude the shunt, and injects sclerosant to permanently
                         close the variceal complex eliminating bleeding risk without open surgery.</p>
 
-                    <!-- AT A GLANCE -->
-                    <div class="glance-grid">
-                        <div class="glance-card"><i class="fa-solid fa-clock"></i>
-                            <h4>Duration</h4>
-                            <p>60–90 minutes</p>
-                        </div>
-                        <div class="glance-card"><i class="fa-solid fa-bed"></i>
-                            <h4>Hospital Stay</h4>
-                            <p>1–2 days</p>
-                        </div>
-                        <div class="glance-card"><i class="fa-solid fa-syringe"></i>
-                            <h4>Anaesthesia</h4>
-                            <p>Sedation + local anaesthesia</p>
-                        </div>
-                        <div class="glance-card"><i class="fa-solid fa-chart-line"></i>
-                            <h4>Efficacy</h4>
-                            <p>&gt;90% gastric variceal obliteration</p>
-                        </div>
-                    </div>
-
                     <h3>Who is This Procedure For?</h3>
-                    <p>BRTO is indicated for patients with gastric varices due to portal hypertension, particularly
-                        those with a gastrorenal shunt on imaging:</p>
-                    <ul>
-                        <li><strong>Acute Gastric Variceal Bleeding</strong> Emergency BRTO to control active gastric
-                            variceal haemorrhage not controlled by endoscopic cyanoacrylate glue injection</li>
-                        <li><strong>Prevention of Gastric Variceal Bleeding</strong> High-risk gastric varices (GOV2,
-                            IGV1) prophylactic BRTO to eliminate bleeding risk before a catastrophic haemorrhage occurs
-                        </li>
-                        <li><strong>Recurrent Gastric Variceal Haemorrhage</strong> Prevention of further episodes after
-                            index gastric variceal bleed</li>
-                        <li><strong>Refractory Hepatic Encephalopathy</strong> Occlusion of large spontaneous
-                            gastrorenal shunts reduces portal blood bypassing the liver improving ammonia clearance and
-                            encephalopathy in carefully selected patients</li>
-                        <li><strong>After Failed Cyanoacrylate Glue</strong> Gastric varices not adequately controlled
-                            by repeated endoscopic glue injection</li>
-                    </ul>
+                    <p> Balloon-occluded retrograde transvenous obliteration (BRTO) is indicated for patients with
+                        gastric varices due to portal hypertension, particularly when a gastrorenal shunt is identified
+                        on imaging. It is used in cases of acute gastric variceal bleeding as an emergency procedure
+                        when haemorrhage is not controlled by endoscopic cyanoacrylate glue injection. BRTO is also
+                        effective in preventing gastric variceal bleeding in high-risk varices such as GOV2 and IGV1,
+                        helping to eliminate the risk before a catastrophic bleed occurs. It plays an important role in
+                        preventing recurrent gastric variceal haemorrhage after an initial bleeding episode.
+                        Additionally, BRTO can be beneficial in patients with refractory hepatic encephalopathy by
+                        occluding large spontaneous gastrorenal shunts, thereby reducing portal blood bypass of the
+                        liver, improving ammonia clearance, and alleviating encephalopathy in carefully selected cases.
+                        It is also considered when gastric varices are not adequately controlled despite repeated
+                        endoscopic cyanoacrylate glue injections. </p>
 
                     <h3>How is BRTO Performed?</h3>
-                    <ol class="steps-ol">
+                    <ul>
                         <li>
                             <div><strong>Femoral Vein Access &amp; Shunt Identification</strong>
                                 <p>Femoral vein access. A catheter is guided into the left renal vein and then into the
@@ -1162,7 +1111,7 @@
                                     confirms complete variceal thrombosis and absence of residual gastric varices.</p>
                             </div>
                         </li>
-                    </ol>
+                    </ul>
                 </div>
 
                 <div class="proc-img-wrap">
@@ -1173,18 +1122,7 @@
                     </div>
 
 
-                    <div class="sidebar-cta">
-                        <div
-                            style="font-family: 'Poppins', sans-serif;font-size:1.15rem;font-weight:700;color:#fff;margin-bottom:.4rem">
-                            Book a Consultation</div>
-                        <div style="font-size:.82rem;color:rgba(255,255,255,.58);margin-bottom:1.25rem">Dr. Gurucharan S
-                            Shetty<br>Sparsh Hospitals, Bengaluru</div>
-                        <a href="../contact.html" class="btn-p" style="width:100%;justify-content:center"><i
-                                class="fa-regular fa-calendar-check"></i> Book Appointment</a>
-                        <a href="tel:08061222000"
-                            style="display:flex;align-items:center;justify-content:center;gap:.5rem;margin-top:.75rem;color:var(--gold);font-size:.85rem;text-decoration:none;font-weight:600"><i
-                                class="fa-solid fa-phone"></i> 080-61222000</a>
-                    </div>
+
 
                 </div>
             </div>
@@ -1193,37 +1131,26 @@
             <h3 style="font-family: 'Poppins', sans-serif;font-size:1.6rem;color:var(--navy);margin-bottom:1rem">
                 Benefits of This Procedure</h3>
             <div class="benefits-grid">
-                <div class="benefit-card"><i class="fa-solid fa-heart-crack"></i>
+                <div class="benefit-card">
                     <h4>Eliminates Gastric Varices</h4>
                     <p>BRTO achieves complete or near-complete obliteration of gastric varices in &gt;90% of cases
                         dramatically reducing the risk of catastrophic haemorrhage.</p>
                 </div>
-                <div class="benefit-card"><i class="fa-solid fa-brain"></i>
+                <div class="benefit-card">
                     <h4>Improves Encephalopathy</h4>
                     <p>By occluding large portosystemic shunts, BRTO redirects ammonia-rich portal blood through the
                         liver improving hepatic encephalopathy in selected patients.</p>
                 </div>
-                <div class="benefit-card"><i class="fa-solid fa-liver"></i>
+                <div class="benefit-card">
                     <h4>May Improve Liver Function</h4>
                     <p>Unlike TIPSS, BRTO can increase portal blood flow to the liver potentially improving liver
                         synthetic function and portal perfusion.</p>
                 </div>
-                <div class="benefit-card"><i class="fa-solid fa-shield-halved"></i>
+                <div class="benefit-card">
                     <h4>Avoids Open Surgery</h4>
                     <p>Completely endovascular no abdominal incision, no general anaesthesia, significantly lower
                         morbidity than surgical shunting procedures.</p>
                 </div>
-            </div>
-
-            <div class="callout">
-                <i class="fa-solid fa-circle-info"></i>
-                <p><strong>Modified BRTO (mBRTO) and Plug-Assisted BRTO (PARTO):</strong> Traditional BRTO involved
-                    prolonged balloon retention times of 4–12 hours limiting efficiency. Modified protocols (mBRTO) use
-                    higher concentration sclerosants with shorter retention times (2–4 hours), improving procedure
-                    efficiency without compromising efficacy. PARTO uses a vascular plug to occlude the shunt instead of
-                    a balloon, followed by sclerosant injection offering similar outcomes with greater technical
-                    versatility. Dr. Shetty selects the optimal BRTO technique based on each patient's anatomy and
-                    clinical situation.</p>
             </div>
 
             <!-- FAQ -->
@@ -1307,49 +1234,59 @@
     </section>
 
 
+    <!-- FOOTER -->
     <footer>
         <div class="fi">
             <div class="fg">
                 <div class="fb">
-                    <a href="../index.html" class="logo">
+                    <a href="/index.html" class="logo">
                         <div class="logo-b">G</div>
                         <div class="logo-t"><span class="logo-n">Dr. Gurucharan S Shetty</span><span
-                                class="logo-s">Interventional Radiologist</span></div>
+                                class="logo-s">Interventional
+                                Radiologist</span></div>
                     </a>
                     <p>A leading Interventional Radiologist in Bangalore offering expert minimally invasive,
-                        image-guided procedures at Sparsh Hospitals. Excellence in vascular, neuro-interventional, and
-                        oncology IR.</p>
-                    <div class="soc"><a href="#" class="si2"><i class="fa-brands fa-facebook-f"></i></a><a href="#"
-                            class="si2"><i class="fa-brands fa-instagram"></i></a><a href="#" class="si2"><i
-                                class="fa-brands fa-youtube"></i></a><a href="#" class="si2"><i
-                                class="fa-brands fa-linkedin-in"></i></a></div>
+                        image-guided
+                        procedures at Sparsh Hospitals. Excellence in vascular, neuro-interventional, and oncology IR.
+                    </p>
+                    <div class="soc">
+                        <a href="#" class="si2" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="si2" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="si2" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#" class="si2" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
                 </div>
                 <div class="fc">
                     <h4>Quick Links</h4>
                     <ul>
-                        <li><a href="../index.html"><i class="fa-solid fa-chevron-right"></i>Home</a></li>
-                        <li><a href="../about.html"><i class="fa-solid fa-chevron-right"></i>About</a></li>
-                        <li><a href="../procedures.html"><i class="fa-solid fa-chevron-right"></i>Procedures</a></li>
-                        <li><a href="../testimonials/text-testimonials.html"><i
-                                    class="fa-solid fa-chevron-right"></i>Patient Reviews</a></li>
-                        <li><a href="../testimonials/video-testimonials.html"><i
-                                    class="fa-solid fa-chevron-right"></i>Video Testimonials</a></li>
-                        <li><a href="../contact.html"><i class="fa-solid fa-chevron-right"></i>Contact</a></li>
+                        <li><a href="/index.html"><i class="fa-solid fa-chevron-right"></i>Home</a></li>
+                        <li><a href="/about.html"><i class="fa-solid fa-chevron-right"></i>About</a></li>
+                        <li><a href="/procedures.html"><i class="fa-solid fa-chevron-right"></i>Procedures</a></li>
+                        <li><a href="/testimonials/text-testimonials.html"><i
+                                    class="fa-solid fa-chevron-right"></i>Patient
+                                Reviews</a></li>
+                        <li><a href="/testimonials/video-testimonials.html"><i
+                                    class="fa-solid fa-chevron-right"></i>Video
+                                Testimonials</a></li>
+                        <li><a href="/contact.html"><i class="fa-solid fa-chevron-right"></i>Contact</a></li>
                     </ul>
                 </div>
                 <div class="fc">
-                    <h4>Related Procedures</h4>
+                    <h4>Our Blogs</h4>
                     <ul>
-                        <li><a href="tipss-hepatic-vein-stenting.html"><i class="fa-solid fa-chevron-right"></i>TIPSS
-                                &amp; Hepatic Vein Stenting</a></li>
-                        <li><a href="transjugular-liver-biopsy-hvpg.html"><i
-                                    class="fa-solid fa-chevron-right"></i>Transjugular Liver Biopsy &amp; HVPG</a></li>
-                        <li><a href="partial-splenic-embolisation.html"><i class="fa-solid fa-chevron-right"></i>Partial
-                                Splenic Embolisation</a></li>
-                        <li><a href="ptbd-biliary-stenting.html"><i class="fa-solid fa-chevron-right"></i>PTBD &amp;
-                                Biliary Stenting</a></li>
-                        <li><a href="embolisation-emergency-bleeding.html"><i
-                                    class="fa-solid fa-chevron-right"></i>Embolisation for Emergency Bleeding</a></li>
+                        <li><a href="/blogs/chemoembolisation-ablation-tumors.html"><i
+                                    class="fa-solid fa-chevron-right"></i>Chemoembolisation And Ablation Of Tumors</a>
+                        </li>
+                        <li><a href="/blogs/varicocele-no-scalpel.html"><i class="fa-solid fa-chevron-right"></i>No
+                                Scalpel
+                                Treatment For Varicocele</a></li>
+                        <li><a href="/blogs/varicose-veins.html"><i class="fa-solid fa-chevron-right"></i>Varicose
+                                Veins</a>
+                        </li>
+                        <li><a href="/blogs/mechanical-thrombectomy-stroke.html"><i
+                                    class="fa-solid fa-chevron-right"></i>Mechanical
+                                Thrombectomy Has Revolutionised Treatment Of Acute Ischemic Stroke</a></li>
+                        <li><a href="/blogs.html"><i class="fa-solid fa-chevron-right"></i>All Blogs</a></li>
                     </ul>
                 </div>
                 <div class="fc">
@@ -1357,9 +1294,9 @@
                     <div class="fci"><i class="fa-solid fa-location-dot"></i>
                         <p>Sparsh Hospitals, Sarjapur Main Rd, Carmelaram, Doddakannelli, Bengaluru – 560035</p>
                     </div>
-                    <div class="fci"><i class="fa-solid fa-phone"></i><a href="tel:08061222000">080-61222000</a></div>
+                    <div class="fci"><i class="fa-solid fa-phone"></i><a href="/tel:08061222000">080-61222000</a></div>
                     <div class="fci"><i class="fa-regular fa-envelope"></i><a
-                            href="mailto:gurucharansshetty@gmail.com">gurucharansshetty@gmail.com</a></div>
+                            href="/mailto:gurucharansshetty@gmail.com">gurucharansshetty@gmail.com</a></div>
                     <div class="fci"><i class="fa-regular fa-clock"></i>
                         <p>Mon – Sat: 9:00 AM – 6:00 PM</p>
                     </div>

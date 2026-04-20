@@ -805,38 +805,53 @@
 </head>
 
 <body>
+    <!-- HEADER -->
     <header id="hdr">
         <div class="hdr">
-            <a href="../index.html" class="logo">
+            <a href="/index.html" class="logo">
                 <div class="logo-b">G</div>
-                <div class="logo-t"><span class="logo-n">Dr. Gurucharan S Shetty</span><span
-                        class="logo-s">Interventional Radiologist</span></div>
-            </a>
-            <nav><a href="../index.html">Home</a><a href="../about.html">About</a><a href="../procedures.html"
-                    class="active">Procedures</a>
-                <div class="drop"><a>Testimonials</a>
-                    <div class="dmenu"><a href="../testimonials/text-testimonials.html"><i
-                                class="fa-regular fa-comment-dots"></i>&nbsp; Patient Reviews</a><a
-                            href="../testimonials/video-testimonials.html"><i class="fa-brands fa-youtube"></i>&nbsp;
-                            Video Testimonials</a></div>
+                <div class="logo-t">
+                    <span class="logo-n">Dr. Gurucharan S Shetty</span>
+                    <span class="logo-s">Interventional Radiologist</span>
                 </div>
-                <a href="../blogs.html">Blogs</a><a href="../contact.html">Contact</a><a href="../contact.html"
-                    class="btn-appt"><i class="fa-regular fa-calendar-check"></i>&nbsp; Book Appointment</a>
+            </a>
+            <nav>
+                <a href="/index.html">Home</a>
+                <a href="/about.html">About</a>
+                <a href="/procedures.html" class="active">Procedures</a>
+                <div class="drop">
+                    <a>Testimonials</a>
+                    <div class="dmenu">
+                        <a href="/testimonials/text-testimonials.html"><i class="fa-regular fa-comment-dots"></i>&nbsp;
+                            Patient
+                            Reviews</a>
+                        <a href="/testimonials/video-testimonials.html"><i class="fa-brands fa-youtube"></i>&nbsp; Video
+                            Testimonials</a>
+                    </div>
+                </div>
+                <a href="/blogs.html">Blogs</a>
+                <a href="/contact.html">Contact</a>
+                <a href="/contact.html" class="btn-appt"><i class="fa-regular fa-calendar-check"></i>&nbsp; Book
+                    Appointment</a>
             </nav>
-            <button class="ham" id="ham" onclick="toggleMenu()"
-                aria-label="Toggle menu"><span></span><span></span><span></span></button>
+            <button class="ham" id="ham" onclick="toggleMenu()" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
         </div>
     </header>
+
+    <!-- MOBILE NAV -->
     <div class="mnav" id="mnav">
-        <a href="../index.html"><i class="fa-solid fa-house"></i>&nbsp; Home</a><a href="../about.html"><i
-                class="fa-solid fa-user-doctor"></i>&nbsp; About</a><a href="../procedures.html"><i
-                class="fa-solid fa-stethoscope"></i>&nbsp; Procedures</a>
-        <a href="../testimonials/text-testimonials.html" style="padding-left:2.5rem"><i
-                class="fa-regular fa-comment-dots"></i>&nbsp; Patient Reviews</a><a
-            href="../testimonials/video-testimonials.html" style="padding-left:2.5rem"><i
+        <a href="/index.html"><i class="fa-solid fa-house"></i>&nbsp; Home</a>
+        <a href="/about.html"><i class="fa-solid fa-user-doctor"></i>&nbsp; About</a>
+        <a href="/procedures.html"><i class="fa-solid fa-stethoscope"></i>&nbsp; Procedures</a>
+        <div class="msec">Testimonials</div>
+        <a href="/testimonials/text-testimonials.html" style="padding-left:2.5rem"><i
+                class="fa-regular fa-comment-dots"></i>&nbsp; Patient Reviews</a>
+        <a href="/testimonials/video-testimonials.html" style="padding-left:2.5rem"><i
                 class="fa-brands fa-youtube"></i>&nbsp; Video Testimonials</a>
-        <a href="../blogs.html"><i class="fa-solid fa-blog"></i>&nbsp; Blogs</a><a href="../contact.html"><i
-                class="fa-solid fa-phone"></i>&nbsp; Contact</a>
+        <a href="/blogs.html"><i class="fa-solid fa-blog"></i>&nbsp; Blogs</a>
+        <a href="/contact.html"><i class="fa-solid fa-phone"></i>&nbsp; Contact</a>
     </div>
 
     <div class="ph">
@@ -868,17 +883,15 @@
                         surgical clipping for most intracranial aneurysms.</p>
 
                     <h3>Who Needs Aneurysm Coiling?</h3>
-                    <p>Aneurysm coiling is considered for:</p>
-                    <ul>
-                        <li>Ruptured aneurysms causing subarachnoid haemorrhage emergency treatment</li>
-                        <li>Unruptured aneurysms found incidentally on brain imaging (CT/MRI) that carry a significant
-                            risk of future rupture</li>
-                        <li>Aneurysms in locations difficult to access via open surgery (posterior circulation, skull
-                            base)</li>
-                        <li>Elderly patients or those with medical comorbidities where open craniotomy carries higher
-                            risk</li>
-                        <li>Patients who prefer a less invasive approach and whose aneurysm anatomy is suitable</li>
-                    </ul>
+                    <p> Aneurysm coiling is considered for patients with ruptured aneurysms causing subarachnoid
+                        haemorrhage, where it is performed as an emergency life-saving treatment. It is also used for
+                        unruptured aneurysms that are incidentally detected on brain imaging (CT or MRI) but carry a
+                        significant risk of future rupture. This approach is particularly beneficial for aneurysms
+                        located in areas that are difficult to access through open surgery, such as the posterior
+                        circulation or skull base. It is often preferred in elderly patients or those with significant
+                        medical comorbidities, where the risks associated with open craniotomy are higher. Additionally,
+                        it is a suitable option for patients who prefer a minimally invasive approach, provided the
+                        aneurysm anatomy is favourable for endovascular treatment. </p>
 
                     <h3>How is the Procedure Performed?</h3>
                     <ul>
@@ -900,32 +913,6 @@
                             contrast, the catheters are removed. The patient recovers in the neuro-ICU.</li>
                     </ul>
 
-                    <h3>Coiling vs. Surgical Clipping</h3>
-                    <div class="compare-grid">
-                        <div class="compare-card coil">
-                            <h4><i class="fa-solid fa-circle-check" style="color:var(--teal)"></i> Endovascular Coiling
-                            </h4>
-                            <ul>
-                                <li><i class="fa-solid fa-chevron-right"></i>No craniotomy (no head opening)</li>
-                                <li><i class="fa-solid fa-chevron-right"></i>Shorter hospital stay (3–5 days)</li>
-                                <li><i class="fa-solid fa-chevron-right"></i>Faster recovery</li>
-                                <li><i class="fa-solid fa-chevron-right"></i>Preferred for posterior circulation
-                                    aneurysms</li>
-                                <li><i class="fa-solid fa-chevron-right"></i>Follow-up imaging required</li>
-                            </ul>
-                        </div>
-                        <div class="compare-card clip">
-                            <h4><i class="fa-solid fa-scissors" style="color:var(--muted)"></i> Surgical Clipping</h4>
-                            <ul>
-                                <li><i class="fa-solid fa-chevron-right"></i>Requires opening the skull</li>
-                                <li><i class="fa-solid fa-chevron-right"></i>Longer hospital stay</li>
-                                <li><i class="fa-solid fa-chevron-right"></i>More definitive in complex anatomy</li>
-                                <li><i class="fa-solid fa-chevron-right"></i>Preferred for MCA bifurcation aneurysms
-                                </li>
-                                <li><i class="fa-solid fa-chevron-right"></i>Durable, less follow-up needed</li>
-                            </ul>
-                        </div>
-                    </div>
                 </div>
                 <div class="proc-img-wrap">
                     <div class="proc-img-placeholder"><i class="fa-solid fa-image" style="font-size:2rem"></i>Procedure
@@ -1031,43 +1018,59 @@
         </div>
     </section>
 
+    <!-- FOOTER -->
     <footer>
         <div class="fi">
             <div class="fg">
-                <div class="fb"><a href="../index.html" class="logo">
+                <div class="fb">
+                    <a href="/index.html" class="logo">
                         <div class="logo-b">G</div>
                         <div class="logo-t"><span class="logo-n">Dr. Gurucharan S Shetty</span><span
-                                class="logo-s">Interventional Radiologist</span></div>
+                                class="logo-s">Interventional
+                                Radiologist</span></div>
                     </a>
                     <p>A leading Interventional Radiologist in Bangalore offering expert minimally invasive,
-                        image-guided procedures at Sparsh Hospitals.</p>
-                    <div class="soc"><a href="#" class="si2"><i class="fa-brands fa-facebook-f"></i></a><a href="#"
-                            class="si2"><i class="fa-brands fa-instagram"></i></a><a href="#" class="si2"><i
-                                class="fa-brands fa-youtube"></i></a><a href="#" class="si2"><i
-                                class="fa-brands fa-linkedin-in"></i></a></div>
+                        image-guided
+                        procedures at Sparsh Hospitals. Excellence in vascular, neuro-interventional, and oncology IR.
+                    </p>
+                    <div class="soc">
+                        <a href="#" class="si2" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="si2" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="si2" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#" class="si2" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
                 </div>
                 <div class="fc">
                     <h4>Quick Links</h4>
                     <ul>
-                        <li><a href="../index.html"><i class="fa-solid fa-chevron-right"></i>Home</a></li>
-                        <li><a href="../about.html"><i class="fa-solid fa-chevron-right"></i>About</a></li>
-                        <li><a href="../procedures.html"><i class="fa-solid fa-chevron-right"></i>Procedures</a></li>
-                        <li><a href="../testimonials/text-testimonials.html"><i
-                                    class="fa-solid fa-chevron-right"></i>Patient Reviews</a></li>
-                        <li><a href="../contact.html"><i class="fa-solid fa-chevron-right"></i>Contact</a></li>
+                        <li><a href="/index.html"><i class="fa-solid fa-chevron-right"></i>Home</a></li>
+                        <li><a href="/about.html"><i class="fa-solid fa-chevron-right"></i>About</a></li>
+                        <li><a href="/procedures.html"><i class="fa-solid fa-chevron-right"></i>Procedures</a></li>
+                        <li><a href="/testimonials/text-testimonials.html"><i
+                                    class="fa-solid fa-chevron-right"></i>Patient
+                                Reviews</a></li>
+                        <li><a href="/testimonials/video-testimonials.html"><i
+                                    class="fa-solid fa-chevron-right"></i>Video
+                                Testimonials</a></li>
+                        <li><a href="/contact.html"><i class="fa-solid fa-chevron-right"></i>Contact</a></li>
                     </ul>
                 </div>
                 <div class="fc">
                     <h4>Our Blogs</h4>
                     <ul>
-                        <li><a href="../blogs/chemoembolisation-ablation-tumors.html"><i
+                        <li><a href="/blogs/chemoembolisation-ablation-tumors.html"><i
                                     class="fa-solid fa-chevron-right"></i>Chemoembolisation And Ablation Of Tumors</a>
                         </li>
-                        <li><a href="../blogs/varicose-veins.html"><i class="fa-solid fa-chevron-right"></i>Varicose
-                                Veins</a></li>
-                        <li><a href="../blogs/mechanical-thrombectomy-stroke.html"><i
-                                    class="fa-solid fa-chevron-right"></i>Mechanical Thrombectomy For Stroke</a></li>
-                        <li><a href="../blogs.html"><i class="fa-solid fa-chevron-right"></i>All Blogs</a></li>
+                        <li><a href="/blogs/varicocele-no-scalpel.html"><i class="fa-solid fa-chevron-right"></i>No
+                                Scalpel
+                                Treatment For Varicocele</a></li>
+                        <li><a href="/blogs/varicose-veins.html"><i class="fa-solid fa-chevron-right"></i>Varicose
+                                Veins</a>
+                        </li>
+                        <li><a href="/blogs/mechanical-thrombectomy-stroke.html"><i
+                                    class="fa-solid fa-chevron-right"></i>Mechanical
+                                Thrombectomy Has Revolutionised Treatment Of Acute Ischemic Stroke</a></li>
+                        <li><a href="/blogs.html"><i class="fa-solid fa-chevron-right"></i>All Blogs</a></li>
                     </ul>
                 </div>
                 <div class="fc">
@@ -1075,9 +1078,9 @@
                     <div class="fci"><i class="fa-solid fa-location-dot"></i>
                         <p>Sparsh Hospitals, Sarjapur Main Rd, Carmelaram, Doddakannelli, Bengaluru – 560035</p>
                     </div>
-                    <div class="fci"><i class="fa-solid fa-phone"></i><a href="tel:08061222000">080-61222000</a></div>
+                    <div class="fci"><i class="fa-solid fa-phone"></i><a href="/tel:08061222000">080-61222000</a></div>
                     <div class="fci"><i class="fa-regular fa-envelope"></i><a
-                            href="mailto:gurucharansshetty@gmail.com">gurucharansshetty@gmail.com</a></div>
+                            href="/mailto:gurucharansshetty@gmail.com">gurucharansshetty@gmail.com</a></div>
                     <div class="fci"><i class="fa-regular fa-clock"></i>
                         <p>Mon – Sat: 9:00 AM – 6:00 PM</p>
                     </div>
