@@ -17,8 +17,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <style>
     :root {
-      --navy: #0b1f3a;
-      --navy2: #0f2d52;
+      --navy: #004c90;
+      --navy2: #0683CE;
       --teal: #0e7490;
       --teal2: #06b6d4;
       --gold: #c9a84c;
@@ -53,7 +53,7 @@
       left: 0;
       width: 100%;
       z-index: 1000;
-      background: rgba(11, 31, 58, 0.97);
+      background: #004c90;
       backdrop-filter: blur(14px);
       border-bottom: 1px solid rgba(201, 168, 76, 0.22);
       transition: box-shadow .3s
@@ -157,7 +157,7 @@
 
     .dmenu {
       position: absolute;
-      top: calc(100% + 8px);
+      top: 100%;
       left: 0;
       background: var(--navy);
       border: 1px solid rgba(201, 168, 76, .2);
@@ -201,9 +201,9 @@
 
     .btn-appt {
       background: linear-gradient(135deg, var(--gold), var(--gold2)) !important;
-      color: var(--navy) !important;
+      color: white !important;
       font-weight: 600 !important;
-      padding: .48rem 1.1rem !important;
+      padding: .8rem 1.1rem !important;
       border-radius: 25px !important;
       font-size: .8rem !important
     }
@@ -309,7 +309,7 @@
       display: flex;
       align-items: center;
       gap: .5rem;
-      font-size: .78rem;
+      font-size: .95rem;
       color: rgba(255, 255, 255, .5);
       margin-bottom: 1rem
     }
@@ -551,7 +551,7 @@
       align-items: center;
       gap: .5rem;
       background: linear-gradient(135deg, var(--gold), var(--gold2));
-      color: var(--navy);
+      color: white;
       font-weight: 600;
       font-size: .88rem;
       padding: .82rem 1.75rem;
@@ -767,8 +767,8 @@
         <a href="/about.html">About</a>
         <a href="/procedures.html">Procedures</a>
         <div class="drop"><a href="#" class="active">Testimonials</a>
-          <div class="dmenu"><a href="/text-testimonials.html"><i class="fa-regular fa-comment-dots"></i>&nbsp; Patient
-              Reviews</a><a href="/video-testimonials.html" style="color:var(--gold)"><i
+          <div class="dmenu"><a href="/testimonials/text-testimonials.html"><i class="fa-regular fa-comment-dots"></i>&nbsp; Patient
+              Reviews</a><a href="/testimonials/video-testimonials.html" style="color:var(--gold)"><i
                 class="fa-brands fa-youtube"></i>&nbsp; Video Testimonials</a></div>
         </div>
         <a href="/blogs.html">Blogs</a>
@@ -834,8 +834,9 @@
         style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;margin-bottom:.5rem">
         <h2 class="stit" style="margin-bottom:0">Video Testimonials</h2>
         <div class="switcher">
-          <a href="/text-testimonials.html" class="sw-tab"><i class="fa-regular fa-comment-dots"></i> Written Reviews</a>
-          <a href="/video-testimonials.html" class="sw-tab active"><i class="fa-brands fa-youtube"></i> Video
+          <a href="/testimonials/text-testimonials.html" class="sw-tab"><i class="fa-regular fa-comment-dots"></i> Written
+            Reviews</a>
+          <a href="/testimonials/video-testimonials.html" class="sw-tab active"><i class="fa-brands fa-youtube"></i> Video
             Testimonials</a>
         </div>
       </div>
@@ -944,7 +945,7 @@
       <a href="../contact.html" class="btn-p"><i class="fa-regular fa-calendar-check"></i> Book an Appointment</a>
     </div>
   </section>
-<footer>
+  <footer>
     <div class="fi">
       <div class="fg">
         <div class="fb">
@@ -984,7 +985,8 @@
                 Treatment For Varicocele</a></li>
             <li><a href="../blogs/varicose-veins.html"><i class="fa-solid fa-chevron-right"></i>Varicose Veins</a>
             </li>
-            <li><a href="../blogs/mechanical-thrombectomy-stroke.html"><i class="fa-solid fa-chevron-right"></i>Mechanical
+            <li><a href="../blogs/mechanical-thrombectomy-stroke.html"><i
+                  class="fa-solid fa-chevron-right"></i>Mechanical
                 Thrombectomy Has Revolutionised Treatment Of Acute Ischemic Stroke</a></li>
             <li><a href="../blogs.html"><i class="fa-solid fa-chevron-right"></i>All Blogs</a></li>
           </ul>

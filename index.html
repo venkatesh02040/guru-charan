@@ -22,8 +22,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <style>
     :root {
-      --navy: #0b1f3a;
-      --navy2: #0f2d52;
+      --navy: #004c90;
+      --navy2: #0683CE;
       --teal: #0e7490;
       --teal2: #06b6d4;
       --gold: #c9a84c;
@@ -59,7 +59,7 @@
       left: 0;
       width: 100%;
       z-index: 1000;
-      background: rgba(11, 31, 58, 0.97);
+      background: #004c90;
       backdrop-filter: blur(14px);
       border-bottom: 1px solid rgba(201, 168, 76, 0.22);
       transition: box-shadow .3s
@@ -163,7 +163,7 @@
 
     .dmenu {
       position: absolute;
-      top: calc(100% + 8px);
+      top: 100%;
       left: 0;
       background: var(--navy);
       border: 1px solid rgba(201, 168, 76, .2);
@@ -208,16 +208,11 @@
 
     .btn-appt {
       background: linear-gradient(135deg, var(--gold), var(--gold2)) !important;
-      color: var(--navy) !important;
+      color: white !important;
       font-weight: 600 !important;
-      padding: .48rem 1.1rem !important;
+      padding: .8rem 1.3rem !important;
       border-radius: 25px !important;
       font-size: .8rem !important
-    }
-
-    .btn-appt:hover {
-      transform: translateY(-1px);
-      box-shadow: 0 6px 20px rgba(201, 168, 76, .4)
     }
 
     .ham {
@@ -328,15 +323,24 @@
     }
 
     .s1 .sbg {
-      background: linear-gradient(135deg, #0b1f3a 0%, #0e3d6b 55%, #0e7490 100%)
+      background: url("https://images.unsplash.com/photo-1666214280352-db292c05fd80?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
     }
 
     .s2 .sbg {
-      background: linear-gradient(135deg, #0b1f3a 0%, #1a3a5c 55%, #0f4c75 100%)
+      background: url("https://images.unsplash.com/photo-1559757175-0eb30cd8c063?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
     }
 
     .s3 .sbg {
-      background: linear-gradient(135deg, #0b2035 0%, #0b3d5e 55%, #0e6b7a 100%)
+      background: url("https://images.unsplash.com/photo-1579684453401-966b11832744?q=80&w=1491&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
     }
 
     .spat {
@@ -380,7 +384,7 @@
       color: #fff;
       line-height: 1.1;
       margin-bottom: 1.2rem;
-      max-width: 650px
+      /* max-width: 650px */
     }
 
     .sh1 em {
@@ -391,7 +395,7 @@
     .sdesc {
       font-size: 1rem;
       color: rgba(255, 255, 255, .72);
-      max-width: 500px;
+      /* max-width: 500px; */
       line-height: 1.75;
       margin-bottom: 2rem;
       font-weight: 300
@@ -549,13 +553,16 @@
     }
 
     .aic {
-      background: linear-gradient(135deg, var(--navy), var(--navy2));
+      background: url(/g3.png);
       border-radius: 20px;
       aspect-ratio: 4/5;
       display: flex;
       align-items: center;
       justify-content: center;
-      overflow: hidden
+      overflow: hidden;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
     }
 
     .aic i {
@@ -568,7 +575,7 @@
       bottom: -1.5rem;
       right: -1.5rem;
       background: linear-gradient(135deg, var(--gold), var(--gold2));
-      color: var(--navy);
+      color: white;
       border-radius: 16px;
       padding: 1.2rem 1.5rem;
       text-align: center;
@@ -680,12 +687,6 @@
       transform: scaleX(1)
     }
 
-    .pc:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 20px 50px rgba(11, 31, 58, .1);
-      border-color: transparent
-    }
-
     .pic {
       width: 52px;
       height: 52px;
@@ -719,7 +720,7 @@
       align-items: center;
       gap: .35rem;
       color: var(--teal);
-      font-size: .78rem;
+      font-size: .95rem;
       font-weight: 600;
       margin-top: .9rem
     }
@@ -887,11 +888,6 @@
       transition: all .3s
     }
 
-    .bc:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 20px 50px rgba(11, 31, 58, .1)
-    }
-
     .bi {
       height: 175px;
       display: flex;
@@ -901,11 +897,11 @@
     }
 
     .bi.c1 {
-      background: linear-gradient(135deg, #0b1f3a, #0e7490)
+      background: linear-gradient(135deg, #004c90, #0e7490)
     }
 
     .bi.c2 {
-      background: linear-gradient(135deg, #0f2d52, #1e7a6e)
+      background: linear-gradient(135deg, #004c90, #1e7a6e)
     }
 
     .bi.c3 {
@@ -1016,7 +1012,7 @@
       align-items: center;
       gap: .5rem;
       background: linear-gradient(135deg, var(--gold), var(--gold2));
-      color: var(--navy);
+      color: white;
       font-weight: 600;
       font-size: .88rem;
       padding: .82rem 1.75rem;
@@ -1268,6 +1264,27 @@
         gap: .7rem;
         text-align: center
       }
+
+      .sh1 {
+        font-size: 20px;
+      }
+
+      .sdesc {
+        font-size: .9rem;
+        line-height: 1.2;
+      }
+
+      .arr {
+        display: none;
+      }
+
+      .eye {
+        font-size: .6rem;
+      }
+
+      .dots {
+        bottom: 1.5rem;
+      }
     }
   </style>
 </head>
@@ -1330,7 +1347,7 @@
         <div class="sc">
           <div class="eye"><i class="fa-solid fa-circle-check"></i> Sparsh Hospitals, Bengaluru</div>
           <h1 class="sh1">Expert <em>Interventional Radiology</em> Care in Bangalore</h1>
-          <p class="sdesc">Dr. Gurucharan S Shetty brings world-class minimally invasive, image-guided procedures —
+          <p class="sdesc">Dr. Gurucharan S Shetty brings world-class minimally invasive, image-guided procedures
             delivering precision treatment with faster recovery and better outcomes.</p>
           <div class="sact">
             <a href="/procedures.html" class="btn-p"><i class="fa-solid fa-stethoscope"></i> View Procedures</a>
@@ -1427,7 +1444,7 @@
     <div class="si">
       <div class="ag">
         <div class="aiw">
-          <div class="aic"><i class="fa-solid fa-user-doctor"></i></div>
+          <div class="aic"></div>
           <div class="abadge">
             <div class="n">10+</div>
             <div class="l">Years of Excellence</div>
@@ -1521,6 +1538,22 @@
           </div>
           <div class="pl">Learn More <i class="fa-solid fa-arrow-right"></i></div>
         </a>
+        <a href="/procedures/breast-interventions.html" class="pc">
+          <div class="pic"><i class="fa-solid fa-ribbon"></i></div>
+          <div class="pt">Breast Interventions</div>
+          <div class="pd">Image-guided breast biopsies, cyst aspirations, and wire localisation procedures for accurate
+            breast lesion diagnosis and management.
+          </div>
+          <div class="pl">Learn More <i class="fa-solid fa-arrow-right"></i></div>
+        </a>
+        <a href="/procedures/sclerotherapy.html" class="pc">
+          <div class="pic"><i class="fa-solid fa-syringe"></i></div>
+          <div class="pt">Sclerotherapy</div>
+          <div class="pd">Injection-based treatment for spider veins, varicose veins, vascular malformations, and cysts
+            effective, minimally invasive, and safe.
+          </div>
+          <div class="pl">Learn More <i class="fa-solid fa-arrow-right"></i></div>
+        </a>
       </div>
     </div>
   </section>
@@ -1582,7 +1615,7 @@
       </div>
       <div class="tg">
         <div class="tc">
-          <div class="tq">"</div>
+
           <p class="tt">Dr. Shetty performed my TACE procedure with exceptional skill. His calm demeanor and detailed
             explanation before the procedure put me at ease. The results have been outstanding truly a life-saver.</p>
           <div class="tau">
@@ -1596,7 +1629,7 @@
           </div>
         </div>
         <div class="tc">
-          <div class="tq">"</div>
+
           <p class="tt">I came to Dr. Shetty for varicose vein treatment. The procedure was quick, painless and I was
             back home the same day. After years of suffering, I finally have relief. Highly recommended to anyone !</p>
           <div class="tau">
@@ -1610,10 +1643,9 @@
           </div>
         </div>
         <div class="tc">
-          <div class="tq">"</div>
+
           <p class="tt">I consulted Dr. Shetty for a uterine fibroid issue. The treatment was smooth, comfortable, and I
-            was able to resume my normal routine very quickly. The care and guidance throughout the process were
-            excellent.</p>
+            was able to resume my normal routine very quickly. The care and guidance is outstanding.</p>
           <div class="tau">
             <div class="tav">R</div>
             <div>
@@ -1625,7 +1657,7 @@
           </div>
         </div>
         <div class="tc">
-          <div class="tq">"</div>
+
           <p class="tt">My father had a stroke and Dr. Shetty performed the mechanical thrombectomy within the golden
             hour. Today my father walks and speaks normally. We are forever grateful to this exceptional doctor.</p>
           <div class="tau">
@@ -1657,9 +1689,8 @@
           <div class="slbl">Knowledge Hub</div>
           <h2 class="stit">Latest from the Blog</h2>
         </div>
-        <a href="/blogs/chemoembolisation-ablation-tumors.html" class="btn-p"><i
-            class="fa-solid fa-newspaper"></i>&nbsp;
-          All Articles</a>
+        <a href="/blogs.html" class="btn-p"><i class="fa-solid fa-newspaper"></i>&nbsp;
+          All Blogs</a>
       </div>
       <div class="bg2">
         <a href="/blogs/chemoembolisation-ablation-tumors.html" class="bc">
@@ -1689,6 +1720,16 @@
             <div class="btit">Varicose Veins Modern Minimally Invasive Solutions</div>
             <div class="bex">From endovenous laser therapy to sclerotherapy a complete guide to modern varicose vein
               treatments.</div>
+            <div class="brl">Read Article <i class="fa-solid fa-arrow-right"></i></div>
+          </div>
+        </a>
+        <a href="/blogs/lymph-node-biopsy.html" class="bc">
+          <div class="bi c3"><i class="fa-solid fa-vial" style="color:rgba(201,168,76,.65)"></i></div>
+          <div class="bb">
+            <div class="btag"><i class="fa-solid fa-tag"></i> Diagnostic</div>
+            <div class="btit">Lymph Node Biopsy Accurate Diagnosis With Minimally Invasive Care</div>
+            <div class="bex">From image guided techniques to safe tissue sampling a complete guide to modern lymph node
+              biopsy procedures.</div>
             <div class="brl">Read Article <i class="fa-solid fa-arrow-right"></i></div>
           </div>
         </a>

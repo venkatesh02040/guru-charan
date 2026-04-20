@@ -17,8 +17,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <style>
     :root {
-      --navy: #0b1f3a;
-      --navy2: #0f2d52;
+      --navy: #004c90;
+      --navy2: #0683CE;
       --teal: #0e7490;
       --teal2: #06b6d4;
       --gold: #c9a84c;
@@ -53,7 +53,7 @@
       left: 0;
       width: 100%;
       z-index: 1000;
-      background: rgba(11, 31, 58, 0.97);
+      background: #004c90;
       backdrop-filter: blur(14px);
       border-bottom: 1px solid rgba(201, 168, 76, 0.22);
       transition: box-shadow .3s
@@ -157,7 +157,7 @@
 
     .dmenu {
       position: absolute;
-      top: calc(100% + 8px);
+      top: 100%;
       left: 0;
       background: var(--navy);
       border: 1px solid rgba(201, 168, 76, .2);
@@ -202,9 +202,9 @@
 
     .btn-appt {
       background: linear-gradient(135deg, var(--gold), var(--gold2)) !important;
-      color: var(--navy) !important;
+      color: white !important;
       font-weight: 600 !important;
-      padding: .48rem 1.1rem !important;
+      padding: .8rem 1.1rem !important;
       border-radius: 25px !important;
       font-size: .8rem !important
     }
@@ -307,7 +307,7 @@
       display: flex;
       align-items: center;
       gap: .5rem;
-      font-size: .78rem;
+      font-size: .95rem;
       color: rgba(255, 255, 255, .5);
       margin-bottom: 1rem
     }
@@ -444,12 +444,6 @@
       transform: scaleX(1)
     }
 
-    .pc:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 20px 50px rgba(11, 31, 58, .1);
-      border-color: transparent
-    }
-
     .cat-badge {
       display: inline-block;
       font-size: .65rem;
@@ -538,7 +532,7 @@
       align-items: center;
       gap: .5rem;
       background: linear-gradient(135deg, var(--gold), var(--gold2));
-      color: var(--navy);
+      color: white;
       font-weight: 600;
       font-size: .88rem;
       padding: .82rem 1.75rem;
@@ -859,7 +853,7 @@
         </a>
         <a href="/procedures/ptbd-biliary-stenting.html" class="pc" data-cat="vasc">
           <span class="cat-badge cat-vasc">Hepatobiliary</span>
-          <div class="pic"><i class="fa-solid fa-liver"></i></div>
+          <div class="pic"><i class="fa-solid fa-x-ray"></i></div>
           <div class="pt">PTBD and Biliary Stenting</div>
           <div class="pd">Percutaneous Transhepatic Biliary Drainage and stenting for bile duct obstruction relieving
             jaundice without surgery.</div>

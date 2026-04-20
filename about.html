@@ -17,8 +17,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <style>
     :root {
-      --navy: #0b1f3a;
-      --navy2: #0f2d52;
+      --navy: #004c90;
+      --navy2: #0683CE;
       --teal: #0e7490;
       --teal2: #06b6d4;
       --gold: #c9a84c;
@@ -53,7 +53,7 @@
       left: 0;
       width: 100%;
       z-index: 1000;
-      background: rgba(11, 31, 58, 0.97);
+      background: #004c90;
       backdrop-filter: blur(14px);
       border-bottom: 1px solid rgba(201, 168, 76, 0.22);
       transition: box-shadow .3s
@@ -157,7 +157,7 @@
 
     .dmenu {
       position: absolute;
-      top: calc(100% + 8px);
+      top: 100%;
       left: 0;
       background: var(--navy);
       border: 1px solid rgba(201, 168, 76, .2);
@@ -202,9 +202,9 @@
 
     .btn-appt {
       background: linear-gradient(135deg, var(--gold), var(--gold2)) !important;
-      color: var(--navy) !important;
+      color: white !important;
       font-weight: 600 !important;
-      padding: .48rem 1.1rem !important;
+      padding: .8rem 1.1rem !important;
       border-radius: 25px !important;
       font-size: .8rem !important
     }
@@ -308,7 +308,7 @@
       display: flex;
       align-items: center;
       gap: .5rem;
-      font-size: .78rem;
+      font-size: .95rem;
       color: rgba(255, 255, 255, .5);
       margin-bottom: 1rem
     }
@@ -386,7 +386,7 @@
       align-items: center;
       gap: .5rem;
       background: linear-gradient(135deg, var(--gold), var(--gold2));
-      color: var(--navy);
+      color: white;
       font-weight: 600;
       font-size: .88rem;
       padding: .82rem 1.75rem;
@@ -409,14 +409,17 @@
     }
 
     .ap {
-      background: linear-gradient(135deg, var(--navy), var(--navy2));
+      background: url(/g1.png);
       border-radius: 20px;
       aspect-ratio: 3/4;
       display: flex;
       align-items: center;
       justify-content: center;
       position: relative;
-      overflow: hidden
+      overflow: hidden;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
     }
 
     .ap i {
@@ -511,10 +514,11 @@
 
     .sr-l {
       font-size: .75rem;
+      font-weight: 600;
       color: var(--muted);
       text-transform: uppercase;
       letter-spacing: .08em;
-      margin-top: .35rem
+      margin-top: .35rem;
     }
 
     /* EXPERTISE */
@@ -531,11 +535,6 @@
       border-radius: 14px;
       padding: 1.5rem;
       transition: all .3s
-    }
-
-    .ec:hover {
-      border-color: var(--teal);
-      box-shadow: 0 8px 30px rgba(14, 116, 144, .12)
     }
 
     .ec i {
@@ -584,7 +583,7 @@
     .te::before {
       content: '';
       position: absolute;
-      left: -1.75rem;
+      left: -1.85rem;
       top: .35rem;
       width: 10px;
       height: 10px;
@@ -817,7 +816,7 @@
       }
 
       .stats-row {
-        grid-template-columns: 1fr 1fr
+        grid-template-columns: 1fr
       }
     }
   </style>
@@ -888,7 +887,7 @@
       <div class="ag">
         <div>
           <div class="ap">
-            <i class="fa-solid fa-user-doctor"></i>
+
             <div class="ap-badge">
               <div class="ap-name">Dr. Gurucharan S Shetty</div>
               <div class="ap-title">Interventional Radiologist — Sparsh Hospitals, Bengaluru</div>
@@ -899,19 +898,22 @@
           <div class="slbl">Profile</div>
           <h2 class="stit">Meet the Doctor</h2>
           <p style="color:var(--muted);font-size:.95rem;line-height:1.8;margin-bottom:1.25rem">Dr. Gurucharan S Shetty
-            is a highly accomplished Interventional Radiologist practicing at Sparsh Hospitals, Sarjapur, Bengaluru.
-            With a career spanning over two and a half decades, he has established himself as one of South India's
-            foremost experts in minimally invasive, image-guided vascular and non-vascular interventions.</p>
-          <p style="color:var(--muted);font-size:.95rem;line-height:1.8;margin-bottom:1.25rem">His expertise encompasses
-            the full spectrum of Interventional Radiology from complex neuro-interventional procedures such as
-            mechanical thrombectomy for acute stroke and coiling of brain aneurysms, to oncology IR procedures like
-            Transarterial Chemoembolisation (TACE) and tumour ablation, to vascular procedures including varicose vein
-            treatment and uterine artery embolisation.</p>
-          <p style="color:var(--muted);font-size:.95rem;line-height:1.8;margin-bottom:2rem">Dr. Shetty is known for his
-            patient-first philosophy taking time to explain procedures in detail, ensuring informed consent, and
-            providing compassionate care throughout the treatment journey. His commitment to excellence, combined with
-            access to state-of-the-art technology at Sparsh Hospitals, ensures outstanding outcomes for his patients.
-          </p>
+            is a highly regarded Interventional Radiologist currently serving as Senior Consultant at Sparsh Hospitals,
+            Sarjapur Road, Bengaluru.
+            With extensive training from premier medical institutions across India and abroad, he has built a strong
+            reputation in advanced image-guided interventions.</p>
+
+          <p style="color:var(--muted);font-size:.95rem;line-height:1.8;margin-bottom:1.25rem">He has held key positions
+            including Chief Interventional Radiologist at Sri Shankara Cancer Hospital and Consultant at Fortis
+            Hospital, Bannerghatta Road, where he worked for nearly eight years.
+            His clinical expertise spans diagnostic imaging as well as complex body and vascular interventional
+            procedures.</p>
+
+          <p style="color:var(--muted);font-size:.95rem;line-height:1.8;margin-bottom:2rem">Dr. Shetty has undergone
+            advanced training at AIIMS New Delhi and completed specialised fellowships in neuroradiology and
+            neurointervention at SGPGI, Lucknow, along with international exposure in Paris.
+            He also holds prestigious European certifications, reflecting his commitment to excellence and high
+            standards of patient care.</p>
           <div class="qual-list">
             <div class="ql"><i class="fa-solid fa-graduation-cap"></i>
               <p><strong>Academic Qualifications</strong>MBBS · MD Radiology · DM Interventional Radiology · Fellowship
@@ -1011,40 +1013,41 @@
   <!-- TRAINING & JOURNEY -->
   <section class="sec" style="background:var(--white)">
     <div class="si">
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start">
+      <div style="display:grid;grid-template-columns:1fr;gap:4rem;align-items:start">
         <div>
           <div class="slbl">Career Journey</div>
           <h2 class="stit">Professional Timeline</h2>
           <div class="timeline">
             <div class="te">
-              <div class="te-yr">Early Career</div>
-              <div class="te-title">MBBS &amp; MD Radiology</div>
-              <div class="te-desc">Completed foundational medical training followed by specialisation in Radiology from
-                a premier medical institution in India.</div>
+              <div class="te-yr">Medical Education</div>
+              <div class="te-title">MBBS &amp; MD Radiodiagnosis</div>
+              <div class="te-desc">Completed MBBS from Bangalore Medical College and Research Institute followed by MD
+                in Radiodiagnosis from Lady Hardinge Medical College, Delhi University.</div>
             </div>
             <div class="te">
-              <div class="te-yr">Specialisation</div>
-              <div class="te-title">DM in Interventional Radiology</div>
-              <div class="te-desc">Completed DM in Interventional Radiology — one of the most advanced subspecialty
-                qualifications in the field, focusing on image-guided therapeutic procedures.</div>
+              <div class="te-yr">Advanced Training</div>
+              <div class="te-title">Senior Residency — AIIMS New Delhi</div>
+              <div class="te-desc">Undertook senior residency at AIIMS, New Delhi, gaining extensive experience in
+                diagnostic imaging along with body and vascular interventional procedures.</div>
             </div>
             <div class="te">
-              <div class="te-yr">Fellowship</div>
-              <div class="te-title">Vascular &amp; Interventional Radiology Fellowship</div>
-              <div class="te-desc">Underwent intensive fellowship training in vascular and neuro-interventional
-                radiology, gaining expertise in the full spectrum of IR procedures.</div>
+              <div class="te-yr">Super Specialisation</div>
+              <div class="te-title">Neuroradiology &amp; Neurointervention Fellowship</div>
+              <div class="te-desc">Completed post-doctoral fellowship in neuroradiology and neurointervention at SGPGI,
+                Lucknow, along with international exposure in interventional neuroradiology training in Paris, France.
+              </div>
             </div>
             <div class="te">
-              <div class="te-yr">Bengaluru Practice</div>
-              <div class="te-title">Senior Interventional Radiologist — Sparsh Hospitals</div>
-              <div class="te-desc">Joined Sparsh Hospitals, Bengaluru, establishing one of the most comprehensive IR
-                programmes in South India with a multidisciplinary approach.</div>
+              <div class="te-yr">Leadership Roles</div>
+              <div class="te-title">Chief &amp; Consultant Interventional Radiologist</div>
+              <div class="te-desc">Served as Chief Interventional Radiologist at Sri Shankara Cancer Hospital and held a
+                key consultant role at Fortis Hospital, Bannerghatta Road, for nearly eight years.</div>
             </div>
             <div class="te">
-              <div class="te-yr">Present</div>
-              <div class="te-title">Pioneer in Advanced IR Procedures</div>
-              <div class="te-desc">Continues to lead in cutting-edge procedures including Mechanical Thrombectomy, Brain
-                Aneurysm Coiling, TACE, and complex vascular interventions with outstanding outcomes.</div>
+              <div class="te-yr">Current Role</div>
+              <div class="te-title">Senior Consultant — Sparsh Hospitals</div>
+              <div class="te-desc">Currently practicing at Sparsh Hospitals, Sarjapur Road, delivering advanced
+                interventional radiology treatments with a focus on precision and patient outcomes.</div>
             </div>
           </div>
         </div>
@@ -1052,18 +1055,18 @@
           <div class="slbl">Philosophy</div>
           <h2 class="stit">Why Interventional Radiology?</h2>
           <p style="color:var(--muted);font-size:.93rem;line-height:1.8;margin-bottom:1.25rem">Interventional Radiology
-            represents the future of medicine delivering targeted, minimally invasive treatments that were once only
-            possible through open surgery. Dr. Shetty is deeply passionate about this field because it puts patient
-            welfare at the forefront.</p>
-          <p style="color:var(--muted);font-size:.93rem;line-height:1.8;margin-bottom:1.5rem">Most IR procedures are
-            performed through small needle punctures under image guidance meaning no large incisions, minimal blood
-            loss, shorter hospital stays, faster recovery, and lower risk of complications compared to conventional
-            surgery.</p>
+            is transforming modern medicine by enabling highly targeted treatments through minimally invasive
+            techniques. It allows complex conditions to be treated with greater accuracy while reducing the physical
+            burden on patients.</p>
+          <p style="color:var(--muted);font-size:.93rem;line-height:1.8;margin-bottom:1.5rem">These procedures are
+            typically performed using small needle punctures under advanced imaging guidance, resulting in minimal pain,
+            reduced hospital stay, quicker recovery, and significantly lower complication risks compared to traditional
+            surgical methods.</p>
           <div style="background:var(--off);border-radius:16px;padding:2rem;border-left:4px solid var(--gold)">
             <p
               style="font-family: 'Poppins', sans-serif;font-size:1.3rem;font-weight:600;color:var(--navy);line-height:1.5;font-style:italic;">
-              "My goal is to offer every patient the least invasive, most effective treatment possible using the power
-              of imaging to guide precise interventions and change lives."</p>
+              "My approach is to provide patients with the safest and least invasive treatment options, using advanced
+              imaging to ensure precision and better clinical outcomes."</p>
             <p style="font-size:.82rem;color:var(--muted);margin-top:1rem;font-weight:600">— Dr. Gurucharan S Shetty</p>
           </div>
           <div style="margin-top:2rem">
@@ -1071,17 +1074,21 @@
               style="font-family: 'Poppins', sans-serif;font-size:1.3rem;font-weight:600;color:var(--navy);margin-bottom:1rem">
               Memberships &amp; Affiliations</h3>
             <div style="display:flex;flex-direction:column;gap:.65rem">
-              <div style="display:flex;align-items:center;gap:.75rem;font-size:.87rem;color:var(--muted)"><i
-                  class="fa-solid fa-circle-check" style="color:var(--teal)"></i> Indian Society of Vascular &amp;
+              <div
+                style="display:flex;align-items:center;gap:.75rem;font-size:.87rem;color:var(--muted);line-height: 1.5;">
+                <i class="fa-solid fa-circle-check" style="color:var(--teal)"></i> Indian Society of Vascular &amp;
                 Interventional Radiology (ISVIR)</div>
-              <div style="display:flex;align-items:center;gap:.75rem;font-size:.87rem;color:var(--muted)"><i
-                  class="fa-solid fa-circle-check" style="color:var(--teal)"></i> Indian Radiological &amp; Imaging
+              <div
+                style="display:flex;align-items:center;gap:.75rem;font-size:.87rem;color:var(--muted);line-height: 1.5;">
+                <i class="fa-solid fa-circle-check" style="color:var(--teal)"></i> Indian Radiological &amp; Imaging
                 Association (IRIA)</div>
-              <div style="display:flex;align-items:center;gap:.75rem;font-size:.87rem;color:var(--muted)"><i
-                  class="fa-solid fa-circle-check" style="color:var(--teal)"></i> Cardiovascular &amp; Interventional
+              <div
+                style="display:flex;align-items:center;gap:.75rem;font-size:.87rem;color:var(--muted);line-height: 1.5;">
+                <i class="fa-solid fa-circle-check" style="color:var(--teal)"></i> Cardiovascular &amp; Interventional
                 Radiological Society of Europe (CIRSE)</div>
-              <div style="display:flex;align-items:center;gap:.75rem;font-size:.87rem;color:var(--muted)"><i
-                  class="fa-solid fa-circle-check" style="color:var(--teal)"></i> Society of Interventional Radiology
+              <div
+                style="display:flex;align-items:center;gap:.75rem;font-size:.87rem;color:var(--muted);line-height: 1.5;">
+                <i class="fa-solid fa-circle-check" style="color:var(--teal)"></i> Society of Interventional Radiology
                 (SIR), USA</div>
             </div>
           </div>
@@ -1098,8 +1105,8 @@
     </div>
     <div style="position:relative;z-index:2;max-width:600px;margin:0 auto">
       <div
-        style="display:inline-flex;align-items:center;gap:.5rem;color:var(--gold);font-size:.7rem;font-weight:600;text-transform:uppercase;letter-spacing:.12em;margin-bottom:1rem">
-        <i class="fa-regular fa-calendar-check"></i> Consultation
+        style="display:inline-flex;align-items:center;gap:.5rem;color:var(--gold);font-size:1rem;font-weight:600;text-transform:uppercase;letter-spacing:.12em;margin-bottom:1rem">
+        Consultation
       </div>
       <h2
         style="font-family: 'Poppins', sans-serif;font-size:clamp(1.8rem,3.5vw,2.6rem);font-weight:700;color:#fff;line-height:1.2;margin-bottom:1rem">
