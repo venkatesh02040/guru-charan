@@ -431,13 +431,10 @@
       border-radius: 18px;
       overflow: hidden;
       transition: all .3s;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, .05)
     }
 
     .vc:hover {
       transform: translateY(-6px);
-      box-shadow: 0 25px 60px rgba(11, 31, 58, .12);
-      border-color: var(--teal)
     }
 
     .vc-video {
@@ -768,13 +765,15 @@
         <a href="../about.html">About</a>
         <a href="../procedures.html">Procedures</a>
         <div class="drop"><a href="#" class="active">Testimonials</a>
-          <div class="dmenu"><a href="../testimonials/text-testimonials.html"><i class="fa-regular fa-comment-dots"></i>&nbsp; Patient
+          <div class="dmenu"><a href="../testimonials/text-testimonials.html"><i
+                class="fa-regular fa-comment-dots"></i>&nbsp; Patient
               Reviews</a><a href="../testimonials/video-testimonials.html" style="color:var(--gold)"><i
                 class="fa-brands fa-youtube"></i>&nbsp; Video Testimonials</a></div>
         </div>
         <a href="../blogs.html">Blogs</a>
         <a href="../contact.html">Contact</a>
-        <a href="../contact.html" class="btn-appt"><i class="fa-regular fa-calendar-check"></i>&nbsp; Book Appointment</a>
+        <a href="../contact.html" class="btn-appt"><i class="fa-regular fa-calendar-check"></i>&nbsp; Book
+          Appointment</a>
       </nav>
       <button class="ham" id="ham" onclick="toggleMenu()" aria-label="Toggle menu">
         <span></span><span></span><span></span>
@@ -835,9 +834,11 @@
         style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;margin-bottom:.5rem">
         <h2 class="stit" style="margin-bottom:0">Video Testimonials</h2>
         <div class="switcher">
-          <a href="../testimonials/text-testimonials.html" class="sw-tab"><i class="fa-regular fa-comment-dots"></i> Written
+          <a href="../testimonials/text-testimonials.html" class="sw-tab"><i class="fa-regular fa-comment-dots"></i>
+            Written
             Reviews</a>
-          <a href="../testimonials/video-testimonials.html" class="sw-tab active"><i class="fa-brands fa-youtube"></i> Video
+          <a href="../testimonials/video-testimonials.html" class="sw-tab active"><i class="fa-brands fa-youtube"></i>
+            Video
             Testimonials</a>
         </div>
       </div>
@@ -845,85 +846,111 @@
         showcase genuine patient journeys. We are thankful to every patient who took the time to share their experience.
       </p>
 
-      <div class="vgrid">
-        <!-- Video 1: TACE Example -->
-        <div class="vc">
-          <div class="vc-video">
-            <iframe src="https://www.youtube.com/embed/dQw4w9wgxcq"
-              title="TACE for Liver Cancer - Patient Testimonial | Dr. Gurucharan Shetty"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen></iframe>
-          </div>
-          <div class="vc-info">
-            <span class="vc-tag tag-onco"><i class="fa-solid fa-dna"></i> TACE / Liver Cancer</span>
-            <div class="vc-title">"Dr. Shetty gave me hope when others said there was none. My tumour has shrunk
-              significantly after TACE."</div>
-            <div class="vc-desc">Patient from Bengaluru shares his experience with Transarterial Chemoembolization
-              (TACE) performed by Dr. Gurucharan S Shetty.</div>
-            <div class="vc-patient">
-              <strong>Ramesh K.</strong> • Bengaluru • <span style="color:var(--gold)">★★★★★</span>
-            </div>
-          </div>
-        </div>
+<div class="vgrid">
 
-        <!-- Video 2: Varicose Veins -->
-        <div class="vc">
-          <div class="vc-video">
-            <iframe src="https://www.youtube.com/embed/dQw4w9wgxcq"
-              title="Varicose Veins Laser Treatment - Patient Experience"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen></iframe>
-          </div>
-          <div class="vc-info">
-            <span class="vc-tag tag-vasc"><i class="fa-solid fa-heart-pulse"></i> Varicose Veins</span>
-            <div class="vc-title">"No more pain or swelling after laser ablation. I walked the same day!"</div>
-            <div class="vc-desc">Sunita shares how Dr. Shetty's minimally invasive varicose veins treatment changed her
-              life.</div>
-            <div class="vc-patient">
-              <strong>Sunita Malhotra</strong> • Mysuru • <span style="color:var(--gold)">★★★★★</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Video 3: Stroke Thrombectomy -->
-        <div class="vc">
-          <div class="vc-video">
-            <iframe src="https://www.youtube.com/embed/dQw4w9wgxcq"
-              title="Stroke Recovery - Mechanical Thrombectomy Testimonial"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen></iframe>
-          </div>
-          <div class="vc-info">
-            <span class="vc-tag tag-neuro"><i class="fa-solid fa-brain"></i> Stroke / Thrombectomy</span>
-            <div class="vc-title">"My father is walking and talking again thanks to Dr. Shetty's timely intervention."
-            </div>
-            <div class="vc-desc">Family member describes the golden-hour mechanical thrombectomy that saved their
-              father.</div>
-            <div class="vc-patient">
-              <strong>Anand Prasad</strong> • Bengaluru • <span style="color:var(--gold)">★★★★★</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Add more cards as needed (UAE, Ablation, etc.) -->
-        <!-- Example 4: Uterine Artery Embolisation -->
-        <div class="vc">
-          <div class="vc-video">
-            <iframe src="https://www.youtube.com/embed/dQw4w9wgxcq" title="Uterine Fibroids - UAE Patient Story"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen></iframe>
-          </div>
-          <div class="vc-info">
-            <span class="vc-tag tag-women"><i class="fa-solid fa-venus"></i> Uterine Artery Embolisation</span>
-            <div class="vc-title">"Avoided hysterectomy completely. My fibroids have shrunk dramatically."</div>
-            <div class="vc-desc">Priya Nair shares her journey with Uterine Artery Embolisation by Dr. Gurucharan
-              Shetty.</div>
-            <div class="vc-patient">
-              <strong>Priya Nair</strong> • Bengaluru • <span style="color:var(--gold)">★★★★★</span>
-            </div>
-          </div>
-        </div>
+  <!-- 1. Uterine Artery Embolisation -->
+  <div class="vc">
+    <div class="vc-video">
+      <iframe src="https://www.youtube.com/embed/CmiOXt4nNE4?si=lb9aCfvoVuYrrvOy"
+        title="Uterine artery embolisation awareness | Dr. Gurucharan Shetty patient testimonial"
+        allowfullscreen></iframe>
+    </div>
+    <div class="vc-info">
+      <span class="vc-tag tag-women"><i class="fa-solid fa-venus"></i> Uterine Artery Embolisation</span>
+      <div class="vc-title">"I was able to avoid surgery and recover comfortably after the procedure."</div>
+      <div class="vc-desc">Nisha Kambi shares her experience with uterine artery embolisation as a safe and effective treatment for fibroids.</div>
+      <div class="vc-patient">
+        <strong>Nisha Kambi</strong> • Bengaluru • <span style="color:var(--gold)">★★★★★</span>
       </div>
+    </div>
+  </div>
+
+  <!-- 2. Stroke / Thrombectomy -->
+  <div class="vc">
+    <div class="vc-video">
+      <iframe src="https://www.youtube.com/embed/SazPpdvkvuo?si=EK5I7NN-K4VHyZwR"
+        title="Mechanical thrombectomy in acute stroke - Dr. Gurucharan Shetty patient testimonial"
+        allowfullscreen></iframe>
+    </div>
+    <div class="vc-info">
+      <span class="vc-tag tag-neuro"><i class="fa-solid fa-brain"></i> Stroke / Thrombectomy</span>
+      <div class="vc-title">"Timely treatment made all the difference in recovery."</div>
+      <div class="vc-desc">Maulali Pathan shares his experience with emergency mechanical thrombectomy for acute stroke.</div>
+      <div class="vc-patient">
+        <strong>Maulali Pathan</strong> • Bengaluru • <span style="color:var(--gold)">★★★★★</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. Uterine Fibroid Embolisation -->
+  <div class="vc">
+    <div class="vc-video">
+      <iframe src="https://www.youtube.com/embed/QXesL0vkvsw?si=5W7tU12xg4HLYcxs"
+        title="Uterine fibroid treatment by embolisation - Mechanical Thrombectomy Testimonial"
+        allowfullscreen></iframe>
+    </div>
+    <div class="vc-info">
+      <span class="vc-tag tag-women"><i class="fa-solid fa-venus"></i> Uterine Fibroid Embolisation</span>
+      <div class="vc-title">"The treatment helped us avoid major surgery and improved quality of life."</div>
+      <div class="vc-desc">Sarita shares how embolisation was used to effectively treat uterine fibroids.</div>
+      <div class="vc-patient">
+        <strong>Sarita</strong> • Bengaluru • <span style="color:var(--gold)">★★★★★</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4. Stroke / Thrombectomy -->
+  <div class="vc">
+    <div class="vc-video">
+      <iframe src="https://www.youtube.com/embed/CXmT5b1Th9Y?si=VSVdDfChISfnmCsN" 
+        title="stroke treatment by mechanical thrombectomy - Dr. Gurucharan S Shetty patient testimonial"
+        allowfullscreen></iframe>
+    </div>
+    <div class="vc-info">
+      <span class="vc-tag tag-neuro"><i class="fa-solid fa-brain"></i> Stroke / Thrombectomy</span>
+      <div class="vc-title">"Quick intervention helped restore normal life."</div>
+      <div class="vc-desc">Mr and Mrs Vilas share their experience with mechanical thrombectomy for stroke treatment.</div>
+      <div class="vc-patient">
+        <strong>Mr and Mrs Vilas</strong> • Bengaluru • <span style="color:var(--gold)">★★★★★</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- 5. TACE (HCC) -->
+  <div class="vc">
+    <div class="vc-video">
+      <iframe src="https://www.youtube.com/embed/7XapTANHjKQ?si=oxX3zqmYZUxdptKu"
+        title="TACE-Transarterial Chemoembolisation for Hepatocellular Carcinoma(HCC) - Dr. Gurucharan S Shetty patient testimonial"
+        allowfullscreen></iframe>
+    </div>
+    <div class="vc-info">
+      <span class="vc-tag tag-onco"><i class="fa-solid fa-dna"></i> TACE / Liver Cancer</span>
+      <div class="vc-title">"The treatment was effective and recovery was smooth."</div>
+      <div class="vc-desc">Desar shares her journey of undergoing TACE treatment for hepatocellular carcinoma (HCC).</div>
+      <div class="vc-patient">
+        <strong>Desar</strong> • Bengaluru • <span style="color:var(--gold)">★★★★★</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- 6. Splenic Artery Embolisation -->
+  <div class="vc">
+    <div class="vc-video">
+      <iframe src="https://www.youtube.com/embed/xwz65-jv2I8?si=jdvYLoowoTmxC0S3"
+        title="Embolisation of of splenic artery aneurysm and treating hypersplenism - Dr. Gurucharan S Shetty patient testimonial"
+        allowfullscreen></iframe>
+    </div>
+    <div class="vc-info">
+      <span class="vc-tag tag-vasc"><i class="fa-solid fa-heart-pulse"></i> Vascular Embolisation</span>
+      <div class="vc-title">"The procedure was smooth and my symptoms improved significantly."</div>
+      <div class="vc-desc">Rashmi Seshadri shares her experience with splenic artery embolisation for aneurysm and hypersplenism.</div>
+      <div class="vc-patient">
+        <strong>Rashmi Seshadri</strong> • Bengaluru • <span style="color:var(--gold)">★★★★★</span>
+      </div>
+    </div>
+  </div>
+
+</div>
 
       <div style="text-align:center;margin-top:4rem">
         <p style="color:var(--muted);margin-bottom:1.5rem">Have you been treated by Dr. Shetty? We would love to feature
