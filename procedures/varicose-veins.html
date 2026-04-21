@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <link rel="icon" href="fav-icon.png" type="image/png">
+    <link rel="icon" href="fav-icon.png" type="image/png">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <title>Varicose Veins Treatment | Dr. Gurucharan S Shetty Bangalore</title>
@@ -385,20 +385,12 @@
             top: 100px
         }
 
-        .proc-img-placeholder {
+        .proc-img-wrap img {
             width: 100%;
-            min-height: 380px;
-            background: #eef2f7;
-            border: 2px dashed #cbd5e0;
+            height: auto;
             border-radius: 18px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #94a3b8;
-            font-size: 1rem;
-            font-style: italic;
-            flex-direction: column;
-            gap: .5rem
+            box-shadow: 0 15px 40px rgba(0, 0, 0, .1);
+            display: block
         }
 
         .content h3 {
@@ -804,10 +796,12 @@
                 <div class="drop">
                     <a>Testimonials</a>
                     <div class="dmenu">
-                        <a href="../testimonials/text-testimonials.html"><i class="fa-regular fa-comment-dots"></i>&nbsp;
+                        <a href="../testimonials/text-testimonials.html"><i
+                                class="fa-regular fa-comment-dots"></i>&nbsp;
                             Patient
                             Reviews</a>
-                        <a href="../testimonials/video-testimonials.html"><i class="fa-brands fa-youtube"></i>&nbsp; Video
+                        <a href="../testimonials/video-testimonials.html"><i class="fa-brands fa-youtube"></i>&nbsp;
+                            Video
                             Testimonials</a>
                     </div>
                 </div>
@@ -851,7 +845,8 @@
         <div class="si">
             <div class="proc-layout">
                 <div class="content">
-                    <h3>What are Varicose Veins?</h3>
+                    <div class="slbl">Vascular Procedure</div>
+                    <h2 class="stit">What are Varicose Veins?</h2>
                     <p>Varicose veins are enlarged, twisted veins that appear just beneath the skin surface, most
                         commonly in the legs. They develop when the one-way valves inside the leg veins become weakened
                         or damaged, allowing blood to pool and the vein walls to stretch and bulge. While often
@@ -887,8 +882,9 @@
                     </ul>
                 </div>
                 <div class="proc-img-wrap">
-                    <div class="proc-img-placeholder"><i class="fa-solid fa-image" style="font-size:2rem"></i>Procedure
-                        Image</div>
+                    <div class="proc-img-placeholder"><img width="100%"
+                            src="https://images.unsplash.com/photo-1687013367433-9077a7624830?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="img"></div>
                 </div>
             </div>
 
