@@ -5,12 +5,12 @@
   <link rel="icon" href="../fav-icon.png" type="image/png">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-  <title>Patient Reviews & Testimonials | Dr. Gurucharan S Shetty Bangalore</title>
+  <title>Video Testimonials | Dr. Gurucharan S Shetty Bangalore</title>
   <meta name="description"
-    content="Read real patient testimonials and reviews for Dr. Gurucharan S Shetty, Interventional Radiologist at Sparsh Hospitals Bangalore. Patients share their experiences with TACE, stroke treatment, varicose veins, and more." />
+    content="Watch real video testimonials from patients treated by Dr. Gurucharan S Shetty, Interventional Radiologist at Sparsh Hospitals Bangalore. Hear stories about TACE, stroke thrombectomy, varicose veins laser treatment, uterine artery embolisation, and more." />
   <meta name="keywords"
-    content="Dr Gurucharan Shetty reviews, patient testimonials interventional radiologist Bangalore, Sparsh Hospitals reviews, TACE patient review, stroke treatment testimonial Bangalore" />
-  <link rel="canonical" href="https://drgurucharan.com/testimonials/text-testimonials.html" />
+    content="Dr Gurucharan Shetty video testimonials, patient stories interventional radiologist Bangalore, Sparsh Hospitals video reviews, TACE patient video, stroke treatment testimonial video" />
+  <link rel="canonical" href="https://drgurucharan.com/testimonials/video-testimonials.html" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link
     href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap"
@@ -272,7 +272,10 @@
     }
 
     .msec {
-      padding: .55rem 1.5rem .25rem;
+      display: flex;
+      align-items: center;
+      gap: .5rem;
+      padding: .75rem 1.5rem;
       font-size: .62rem;
       color: var(--gold);
       text-transform: uppercase;
@@ -346,7 +349,6 @@
       line-height: 1.7
     }
 
-    /* STATS BAR */
     .stats-bar {
       background: var(--navy);
       padding: 1.75rem 2rem;
@@ -421,29 +423,56 @@
       margin-bottom: 1rem
     }
 
-    /* TESTIMONIALS */
-    .tgrid {
+    /* Make shorts vertical */
+    .vc.short .vc-video {
+      padding-top: 140%;
+      /* 9:16 ratio */
+    }
+
+    /* Optional: smaller width for better look */
+    .shorts-grid {
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    }
+
+    .vgrid {
       display: grid;
-      grid-template-columns: 1fr;
-      gap: 1.75rem;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 2rem;
       margin-top: 2.5rem
     }
 
-    .tc {
+    .vc {
       background: var(--white);
       border: 1px solid var(--border);
       border-radius: 18px;
-      padding: 2rem;
+      overflow: hidden;
+      transition: all .3s;
+    }
+
+    .vc:hover {
+      transform: translateY(-6px);
+    }
+
+    .vc-video {
       position: relative;
-      transition: all .3s
+      padding-top: 56.25%;
+      background: #000
     }
 
-    .tc:hover {
-      transform: translateY(-4px);
-      border-color: transparent
+    .vc-video iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none
     }
 
-    .tc-tag {
+    .vc-info {
+      padding: 1.5rem
+    }
+
+    .vc-tag {
       display: inline-block;
       font-size: .65rem;
       font-weight: 700;
@@ -479,64 +508,29 @@
       color: var(--teal)
     }
 
-    .tq {
-      font-size: 3rem;
-      line-height: .8;
-      color: var(--teal);
-      opacity: .22;
-      font-family: serif;
-      margin-bottom: .5rem
+    .vc-title {
+      font-weight: 600;
+      font-size: 1.05rem;
+      color: var(--navy);
+      margin-bottom: .6rem;
+      line-height: 1.35
     }
 
-    .tt {
+    .vc-desc {
       font-size: .9rem;
-      color: var(--text);
-      line-height: 1.8;
-      font-style: italic;
-      margin-bottom: 1.5rem
-    }
-
-    .tau {
-      display: flex;
-      align-items: center;
-      gap: .85rem;
-      border-top: 1px solid var(--border);
-      padding-top: 1.25rem
-    }
-
-    .tav {
-      width: 44px;
-      height: 44px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.1rem;
-      color: #fff;
-      font-weight: 700;
-      flex-shrink: 0
-    }
-
-    .tan {
-      font-weight: 700;
-      font-size: .9rem;
-      color: var(--navy)
-    }
-
-    .tal {
-      font-size: .76rem;
       color: var(--muted);
-      margin-top: .15rem
+      line-height: 1.6;
+      margin-bottom: 1rem
     }
 
-    .tstr {
-      color: var(--gold);
-      font-size: .78rem;
-      margin-top: .2rem;
-      letter-spacing: .05em
+    .vc-patient {
+      display: flex;
+      align-items: center;
+      gap: .8rem;
+      font-size: .85rem;
+      color: var(--text)
     }
 
-    /* SWITCH TABS */
     .switcher {
       display: flex;
       gap: 1rem;
@@ -763,14 +757,15 @@
         flex-direction: column;
         text-align: center
       }
+
+      .vgrid {
+        grid-template-columns: 1fr 1fr
+      }
     }
 
-    @media(max-width:480px) {
-      .sec {
-        padding: 3.5rem 1.25rem
-      }
+    @media(max-width:600px) {
 
-      .tgrid {
+      .vgrid {
         grid-template-columns: 1fr
       }
     }
@@ -837,119 +832,65 @@
   <div class="ph">
     <div class="phi">
       <div class="bc2"><a href="../index.html">Home</a><i class="fa-solid fa-chevron-right"
-          style="font-size:.6rem"></i><span>Patient Reviews</span></div>
-      <h1>Patient Testimonials &amp; Reviews</h1>
-      <p>Real stories from patients who have been treated by Dr. Gurucharan S Shetty — from stroke survivors to cancer
-        patients and varicose vein treatment success stories.</p>
+          style="font-size:.6rem"></i><span>Doctor Insights</span></div>
+      <h1>Doctor Insights</h1>
+      <p>Watch quick, informative videos by Dr. Gurucharan S Shetty covering common conditions, advanced treatments, and
+        minimally invasive procedures designed to help you understand your health better.</p>
     </div>
   </div>
 
   <section class="sec" style="background:var(--off)">
     <div class="si">
-      <div class="slbl">Patient Experiences</div>
-      <div
-        style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;margin-bottom:.5rem">
-        <h2 class="stit" style="margin-bottom:0">What Our Patients Say</h2>
-        <div class="switcher">
-          <a href="../testimonials/text-testimonials.html" class="sw-tab active"><i
-              class="fa-regular fa-comment-dots"></i> Written
-            Reviews</a>
-          <a href="../testimonials/video-testimonials.html" class="sw-tab"><i class="fa-brands fa-youtube"></i> Video
-            Testimonials</a>
-        </div>
-      </div>
-      <p style="color:var(--muted);font-size:.9rem;line-height:1.7;max-width:700px;margin-bottom:0">These testimonials
-        reflect the genuine experiences of patients treated by Dr. Gurucharan S Shetty. We are grateful for every
-        patient who has shared their story.</p>
+      <div class="slbl">Expert Insights</div>
+      <h2 class="stit">Doctor Videos (Quick Health Tips)</h2>
+      <p style="color:var(--muted);font-size:.9rem;max-width:700px;margin-bottom:2rem;line-height: 1.2;">
+        Short educational videos by Dr. Gurucharan S Shetty covering common conditions, minimally invasive procedures,
+        and advanced treatment options. These videos aim to simplify complex medical topics and help patients make
+        informed decisions about their care.
+      </p>
 
-      <div class="tgrid">
-        <!-- 1 -->
-        <div class="tc">
-          <p class="tt">Last month I had been to Fortis Hospital on an emergency situation, as I was bleeding profusely
-            from my uterus. There we met the gynecologist and she suggested for scanning. After the scan was complete,
-            Dr. Gurucharan S Shetty was called to look at the scan, he had a focused assessment about the problem. We
-            were then told that there was an injury to the uterine artery, he further suggested a line of procedures to
-            solve the issue. Dr. Gurucharan took it as a challenge to cure me – he was fighting battles on 2 fronts.
-            First to convince my family and second to get ready for technical procedure since it was complicated. I
-            really appreciate his knowledge, skill, enthusiasm and dedication. I can’t thank Dr. Gurucharan for the
-            overall care & support that he provided.
-          </p>
-          <div class="tau">
-            <div class="tav" style="background:linear-gradient(135deg,var(--teal),var(--navy))">N</div>
-            <div>
-              <div class="tan">Nisha S Kambi</div>
-              <div class="tal"><i class="fa-solid fa-map-pin" style="font-size:.65rem;color:var(--teal)"></i> Bengaluru,
-                Karnataka</div>
-              <div class="tstr"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                  class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i> 5.0
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- 2 -->
-        <div class="tc">
-          <p class="tt">I had continuous bleeding after abortion. Scan in hassan revealed pregnancy products had
-            remained and that they had gone inside uterus. I visited several gynaecologists in hassan, Bangalore all of
-            whom suggested that my uterus has be removed, I have only one child and only 27 yr of age. Finally one
-            radiologist asked me to consult interventional radiologist. We gone to fortis hospital Dr Gurucharan, he
-            said it can be treated without removing uterus by embolize treatment. I undergone treatment, only had pain
-            for one day and bleeding stop completely. Now I am getting normal periods. He has saved my and my family
-            happiness. I am very much thankful.</p>
-          <div class="tau">
-            <div class="tav" style="background:linear-gradient(135deg,#be185d,#9333ea)">A</div>
-            <div>
-              <div class="tan">Ab</div>
-              <div class="tal"><i class="fa-solid fa-map-pin" style="font-size:.65rem;color:var(--teal)"></i> Bengaluru,
-                Karnataka</div>
-              <div class="tstr"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                  class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i> 5.0
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- 3 -->
-        <div class="tc">
-          <p class="tt">I was extremely scared after noticing a lump in my left breast. The surgeon asked me to get a
-            breast biopsy done. I have always been scared of needles and felt it would be very painful, but getting the
-            breast biopsy done under Dr Shetty was a completely painless experience. It turned out I was unnecessarily
-            worried as the lump turned out to be not cancer.</p>
-          <div class="tau">
-            <div class="tav" style="background:linear-gradient(135deg,#4338ca,#0e7490)">S</div>
-            <div>
-              <div class="tan">Sujana Satish</div>
-              <div class="tal"><i class="fa-solid fa-map-pin" style="font-size:.65rem;color:var(--teal)"></i> Bengaluru,
-                Karnataka</div>
-              <div class="tstr"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                  class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i> 5.0
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- 4 -->
-        <div class="tc">
-          <p class="tt">My husband had leg swelling and fluid in his stomach. Only the scans in Fortis hospital revealed
-            that one of his main blood vessel had closed. We were referred to Dr Gurucharan. He explained the procedure
-            and its risks and benefits in great detail. Finally we decided to undergo the procedure and a stent was put
-            in the closed blood vessel. My husband got discharged soon and in a few days his leg swelling reduced and
-            also the fluid came down. I am thanks for the correct diagnosis and treatment at Radiology department and
-            specially to Dr Gurucharan.</p>
-          <div class="tau">
-            <div class="tav" style="background:linear-gradient(135deg,#be185d,#f97316)">T</div>
-            <div>
-              <div class="tan">Thulasi sadashiv</div>
-              <div class="tal"><i class="fa-solid fa-map-pin" style="font-size:.65rem;color:var(--teal)"></i> Bengaluru,
-                Karnataka</div>
-              <div class="tstr"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                  class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i> 5.0
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <div class="vgrid shorts-grid">
 
-      <div style="text-align:center;margin-top:3rem">
-        <a href="./video-testimonials.html" class="btn-p"><i class="fa-brands fa-youtube"></i> Watch Video
-          Testimonials</a>
+        <!-- SHORT 1 -->
+        <div class="vc short">
+          <div class="vc-video">
+            <iframe src="https://www.youtube.com/embed/Xtg_sTuQomg" allowfullscreen></iframe>
+          </div>
+          <div class="vc-info">
+            <div class="vc-title">Dealing with a dragging sensation or discomfort in the scrotum?</div>
+          </div>
+        </div>
+
+        <!-- SHORT 2 -->
+        <div class="vc short">
+          <div class="vc-video">
+            <iframe src="https://www.youtube.com/embed/FmSQtJ8JMDw" allowfullscreen></iframe>
+          </div>
+          <div class="vc-info">
+            <div class="vc-title">Could a hidden vein be the reason for a low sperm count?</div>
+          </div>
+        </div>
+
+        <!-- SHORT 3 -->
+        <div class="vc short">
+          <div class="vc-video">
+            <iframe src="https://www.youtube.com/embed/F38JtOwYbak" allowfullscreen></iframe>
+          </div>
+          <div class="vc-info">
+            <div class="vc-title">Think a biopsy always means surgery? Think again.</div>
+          </div>
+        </div>
+
+        <!-- SHORT 4 -->
+        <div class="vc short">
+          <div class="vc-video">
+            <iframe src="https://www.youtube.com/embed/_yucrRx73IE" allowfullscreen></iframe>
+          </div>
+          <div class="vc-info">
+            <div class="vc-title">Did you know there's a non-surgical treatment for thyroid swelling?</div>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
@@ -967,8 +908,6 @@
       <a href="../contact.html" class="btn-p"><i class="fa-regular fa-calendar-check"></i> Book an Appointment</a>
     </div>
   </section>
-
-  <!-- FOOTER -->
   <footer>
     <div class="fi">
       <div class="fg">
