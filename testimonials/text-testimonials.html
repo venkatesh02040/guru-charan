@@ -787,14 +787,24 @@
         <a href="../index.html">Home</a>
         <a href="../about.html">About</a>
         <a href="../procedures.html">Procedures</a>
-        <div class="drop"><a href="#" class="active">Testimonials</a>
-          <div class="dmenu"><a href="../testimonials/text-testimonials.html" style="color:var(--gold)"><i
-                class="fa-regular fa-comment-dots"></i>&nbsp; Patient Reviews</a><a href="../testimonials/video-testimonials.html"><i
-                class="fa-brands fa-youtube"></i>&nbsp; Video Testimonials</a></div>
+        <div class="drop">
+          <a class="active">Patient Stories</a>
+          <div class="dmenu">
+            <a href="./testimonials/text-testimonials.html">
+              <i class="fa-regular fa-comment-dots"></i>&nbsp; Patient Reviews
+            </a>
+            <a href="./testimonials/video-testimonials.html">
+              <i class="fa-brands fa-youtube"></i>&nbsp; Video Testimonials
+            </a>
+            <a href="./testimonials/doctor-videos.html">
+              <i class="fa-solid fa-user-doctor"></i>&nbsp; Doctor Videos
+            </a>
+          </div>
         </div>
         <a href="../blogs.html">Blogs</a>
         <a href="../contact.html">Contact</a>
-        <a href="../contact.html" class="btn-appt"><i class="fa-regular fa-calendar-check"></i>&nbsp; Book Appointment</a>
+        <a href="../contact.html" class="btn-appt"><i class="fa-regular fa-calendar-check"></i>&nbsp; Book
+          Appointment</a>
       </nav>
       <button class="ham" id="ham" onclick="toggleMenu()" aria-label="Toggle menu">
         <span></span><span></span><span></span>
@@ -807,11 +817,14 @@
     <a href="../index.html"><i class="fa-solid fa-house"></i>&nbsp; Home</a>
     <a href="../about.html"><i class="fa-solid fa-user-doctor"></i>&nbsp; About</a>
     <a href="../procedures.html"><i class="fa-solid fa-stethoscope"></i>&nbsp; Procedures</a>
-    <div class="msec">Testimonials</div>
-    <a href="../testimonials/text-testimonials.html" style="padding-left:2.5rem"><i
+    <div class="msec">Patient Stories</div>
+    <a href="./testimonials/text-testimonials.html" style="padding-left:2.5rem"><i
         class="fa-regular fa-comment-dots"></i>&nbsp; Patient Reviews</a>
-    <a href="../testimonials/video-testimonials.html" style="padding-left:2.5rem"><i
+    <a href="./testimonials/video-testimonials.html" style="padding-left:2.5rem"><i
         class="fa-brands fa-youtube"></i>&nbsp; Video Testimonials</a>
+    <a href="./testimonials/doctor-videos.html" style="padding-left:2.5rem">
+      <i class="fa-solid fa-user-doctor"></i>&nbsp; Doctor Videos
+    </a>
     <a href="../blogs.html"><i class="fa-solid fa-blog"></i>&nbsp; Blogs</a>
     <a href="../contact.html"><i class="fa-solid fa-phone"></i>&nbsp; Contact</a>
   </div>
@@ -826,28 +839,6 @@
     </div>
   </div>
 
-  <div class="stats-bar">
-    <div class="sbi">
-      <div class="sb-item">
-        <div class="sb-num">500+</div>
-        <div class="sb-lbl">Happy Patients</div>
-      </div>
-      <div class="sb-item">
-        <div class="sb-num">4.9<i class="fa-solid fa-star"
-            style="font-size:1.2rem;color:var(--gold);margin-left:.3rem"></i></div>
-        <div class="sb-lbl">Average Rating</div>
-      </div>
-      <div class="sb-item">
-        <div class="sb-num">98%</div>
-        <div class="sb-lbl">Recommend Dr. Shetty</div>
-      </div>
-      <div class="sb-item">
-        <div class="sb-num">10+</div>
-        <div class="sb-lbl">Years Trusted</div>
-      </div>
-    </div>
-  </div>
-
   <section class="sec" style="background:var(--off)">
     <div class="si">
       <div class="slbl">Patient Experiences</div>
@@ -855,9 +846,11 @@
         style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;margin-bottom:.5rem">
         <h2 class="stit" style="margin-bottom:0">What Our Patients Say</h2>
         <div class="switcher">
-          <a href="../testimonials/text-testimonials.html" class="sw-tab active"><i class="fa-regular fa-comment-dots"></i> Written
+          <a href="../testimonials/text-testimonials.html" class="sw-tab active"><i
+              class="fa-regular fa-comment-dots"></i> Written
             Reviews</a>
-          <a href="../testimonials/video-testimonials.html" class="sw-tab"><i class="fa-brands fa-youtube"></i> Video Testimonials</a>
+          <a href="../testimonials/video-testimonials.html" class="sw-tab"><i class="fa-brands fa-youtube"></i> Video
+            Testimonials</a>
         </div>
       </div>
       <p style="color:var(--muted);font-size:.9rem;line-height:1.7;max-width:700px;margin-bottom:0">These testimonials
@@ -868,7 +861,7 @@
         <!-- 1 -->
         <div class="tc">
           <span class="tc-tag tag-onco"><i class="fa-solid fa-dna"></i> TACE / Liver Cancer</span>
-           
+
           <p class="tt">Dr. Shetty performed my TACE procedure with exceptional skill and precision. His calm demeanor
             and detailed pre-procedure explanation put me completely at ease. Three months after the procedure, my
             tumour markers have dropped significantly. I cannot thank him enough for giving me more time with my family.
@@ -888,7 +881,7 @@
         <!-- 2 -->
         <div class="tc">
           <span class="tc-tag tag-vasc"><i class="fa-solid fa-heart-pulse"></i> Varicose Veins</span>
-           
+
           <p class="tt">I had been suffering from varicose veins for over 8 years and was terrified of surgery. Dr.
             Shetty explained the laser ablation procedure so thoroughly that I felt confident going in. The procedure
             was done in under an hour, no general anaesthesia, and I walked out of the hospital the same day. Best
@@ -908,7 +901,7 @@
         <!-- 3 -->
         <div class="tc">
           <span class="tc-tag tag-neuro"><i class="fa-solid fa-brain"></i> Stroke / Thrombectomy</span>
-           
+
           <p class="tt">My father suffered an acute stroke at 11 PM. Dr. Shetty was called in and performed the
             mechanical thrombectomy within the golden hour. Today, three months later, my father walks independently and
             has regained nearly full speech. We were told without the procedure he would have been permanently disabled.
@@ -928,7 +921,7 @@
         <!-- 4 -->
         <div class="tc">
           <span class="tc-tag tag-women"><i class="fa-solid fa-venus"></i> Uterine Artery Embolisation</span>
-           
+
           <p class="tt">I was told I needed a hysterectomy for my fibroids. I consulted Dr. Shetty and he recommended
             UAE. The procedure was performed with absolute precision and I was discharged in two days. Six months later,
             my fibroids have shrunk by over 60% and I still have my uterus. I am deeply grateful and would recommend Dr.
@@ -948,7 +941,7 @@
         <!-- 5 -->
         <div class="tc">
           <span class="tc-tag tag-onco"><i class="fa-solid fa-radiation"></i> Tumour Ablation</span>
-           
+
           <p class="tt">When we were told that surgery for my wife's kidney tumour was very risky due to her age and
             other conditions, Dr. Shetty offered percutaneous ablation as an alternative. The procedure was done under
             local anaesthesia with a short hospital stay. The follow-up scans show complete ablation of the tumour. We
@@ -968,7 +961,7 @@
         <!-- 6 -->
         <div class="tc">
           <span class="tc-tag tag-neuro"><i class="fa-solid fa-circle-nodes"></i> Brain Aneurysm Coiling</span>
-           
+
           <p class="tt">My brother was admitted with a ruptured brain aneurysm a terrifying diagnosis. Dr. Shetty
             performed emergency coiling through a small tube in the groin no open brain surgery. My brother recovered
             in 10 days and is now back to his normal life. The skill and calm professionalism Dr. Shetty displayed was
@@ -988,7 +981,7 @@
         <!-- 7 -->
         <div class="tc">
           <span class="tc-tag tag-general"><i class="fa-solid fa-stethoscope"></i> General Consultation</span>
-           
+
           <p class="tt">From the very first consultation, Dr. Shetty took time to understand my case thoroughly and
             explained every step of the treatment in a language I could understand. He never made me feel rushed and
             always answered all my questions patiently. This is a doctor who truly cares about his patients beyond just
@@ -1008,7 +1001,7 @@
         <!-- 8 -->
         <div class="tc">
           <span class="tc-tag tag-vasc"><i class="fa-solid fa-liver"></i> PTBD &amp; Biliary Stenting</span>
-           
+
           <p class="tt">My father had severe jaundice due to bile duct obstruction and was too weak for surgery. Dr.
             Shetty performed PTBD and later biliary stenting, which gave him immediate relief from the jaundice. The
             procedure was done with great care and the team was very supportive throughout. His bilirubin levels
@@ -1028,7 +1021,7 @@
         <!-- 9 -->
         <div class="tc">
           <span class="tc-tag tag-general"><i class="fa-solid fa-microscope"></i> Image Guided Biopsy</span>
-           
+
           <p class="tt">I was very anxious about having a liver biopsy but Dr. Shetty made the entire experience
             stress-free. The CT-guided biopsy was done quickly under local anaesthesia. I barely felt anything. The
             biopsy results came back quickly and we could begin treatment right away. Grateful for the efficiency and
@@ -1109,7 +1102,8 @@
                 Treatment For Varicocele</a></li>
             <li><a href="../blogs/varicose-veins.html"><i class="fa-solid fa-chevron-right"></i>Varicose Veins</a>
             </li>
-            <li><a href="../blogs/mechanical-thrombectomy-stroke.html"><i class="fa-solid fa-chevron-right"></i>Mechanical
+            <li><a href="../blogs/mechanical-thrombectomy-stroke.html"><i
+                  class="fa-solid fa-chevron-right"></i>Mechanical
                 Thrombectomy Has Revolutionised Treatment Of Acute Ischemic Stroke</a></li>
             <li><a href="../blogs.html"><i class="fa-solid fa-chevron-right"></i>All Blogs</a></li>
           </ul>
