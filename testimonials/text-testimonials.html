@@ -280,20 +280,25 @@
     }
 
     .ph {
-      background: linear-gradient(135deg, var(--navy) 0%, var(--navy2) 60%, #0e3d6b 100%);
-      padding: 7rem 2rem 4rem;
+      background: url("../bg-img.png") no-repeat center center;
+      background-size: cover;
+      padding: 8rem 2rem 4rem;
       position: relative;
       overflow: hidden;
-      margin-top: 74px
+      margin-top: 74px;
     }
 
     .ph::before {
       content: '';
       position: absolute;
       inset: 0;
-      opacity: .05;
-      background-image: radial-gradient(circle at 2px 2px, rgba(255, 255, 255, .8) 1px, transparent 0);
-      background-size: 44px 44px
+      background: rgba(0, 0, 0, 0.4);
+      z-index: 1;
+    }
+
+    .ph>* {
+      position: relative;
+      z-index: 2;
     }
 
     .phi {
@@ -419,7 +424,7 @@
     /* TESTIMONIALS */
     .tgrid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      grid-template-columns: 1fr;
       gap: 1.75rem;
       margin-top: 2.5rem
     }
@@ -777,7 +782,7 @@
   <header id="hdr">
     <div class="hdr">
       <a href="../index.html" class="logo">
-         
+
         <div class="logo-t">
           <span class="logo-n">Dr. Gurucharan S Shetty</span>
           <span class="logo-s">Interventional Radiologist</span>
@@ -860,16 +865,19 @@
       <div class="tgrid">
         <!-- 1 -->
         <div class="tc">
-          <span class="tc-tag tag-onco"><i class="fa-solid fa-dna"></i> TACE / Liver Cancer</span>
-
-          <p class="tt">Dr. Shetty performed my TACE procedure with exceptional skill and precision. His calm demeanor
-            and detailed pre-procedure explanation put me completely at ease. Three months after the procedure, my
-            tumour markers have dropped significantly. I cannot thank him enough for giving me more time with my family.
+          <p class="tt">Last month I had been to Fortis Hospital on an emergency situation, as I was bleeding profusely
+            from my uterus. There we met the gynecologist and she suggested for scanning. After the scan was complete,
+            Dr. Gurucharan S Shetty was called to look at the scan, he had a focused assessment about the problem. We
+            were then told that there was an injury to the uterine artery, he further suggested a line of procedures to
+            solve the issue. Dr. Gurucharan took it as a challenge to cure me – he was fighting battles on 2 fronts.
+            First to convince my family and second to get ready for technical procedure since it was complicated. I
+            really appreciate his knowledge, skill, enthusiasm and dedication. I can’t thank Dr. Gurucharan for the
+            overall care & support that he provided.
           </p>
           <div class="tau">
-            <div class="tav" style="background:linear-gradient(135deg,var(--teal),var(--navy))">R</div>
+            <div class="tav" style="background:linear-gradient(135deg,var(--teal),var(--navy))">N</div>
             <div>
-              <div class="tan">Ramesh Kumar</div>
+              <div class="tan">Nisha S Kambi</div>
               <div class="tal"><i class="fa-solid fa-map-pin" style="font-size:.65rem;color:var(--teal)"></i> Bengaluru,
                 Karnataka</div>
               <div class="tstr"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
@@ -880,17 +888,18 @@
         </div>
         <!-- 2 -->
         <div class="tc">
-          <span class="tc-tag tag-vasc"><i class="fa-solid fa-heart-pulse"></i> Varicose Veins</span>
-
-          <p class="tt">I had been suffering from varicose veins for over 8 years and was terrified of surgery. Dr.
-            Shetty explained the laser ablation procedure so thoroughly that I felt confident going in. The procedure
-            was done in under an hour, no general anaesthesia, and I walked out of the hospital the same day. Best
-            decision of my life!</p>
+          <p class="tt">I had continuous bleeding after abortion. Scan in hassan revealed pregnancy products had
+            remained and that they had gone inside uterus. I visited several gynaecologists in hassan, Bangalore all of
+            whom suggested that my uterus has be removed, I have only one child and only 27 yr of age. Finally one
+            radiologist asked me to consult interventional radiologist. We gone to fortis hospital Dr Gurucharan, he
+            said it can be treated without removing uterus by embolize treatment. I undergone treatment, only had pain
+            for one day and bleeding stop completely. Now I am getting normal periods. He has saved my and my family
+            happiness. I am very much thankful.</p>
           <div class="tau">
-            <div class="tav" style="background:linear-gradient(135deg,#be185d,#9333ea)">S</div>
+            <div class="tav" style="background:linear-gradient(135deg,#be185d,#9333ea)">A</div>
             <div>
-              <div class="tan">Sunita Malhotra</div>
-              <div class="tal"><i class="fa-solid fa-map-pin" style="font-size:.65rem;color:var(--teal)"></i> Mysuru,
+              <div class="tan">Ab</div>
+              <div class="tal"><i class="fa-solid fa-map-pin" style="font-size:.65rem;color:var(--teal)"></i> Bengaluru,
                 Karnataka</div>
               <div class="tstr"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
                   class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i> 5.0
@@ -900,16 +909,14 @@
         </div>
         <!-- 3 -->
         <div class="tc">
-          <span class="tc-tag tag-neuro"><i class="fa-solid fa-brain"></i> Stroke / Thrombectomy</span>
-
-          <p class="tt">My father suffered an acute stroke at 11 PM. Dr. Shetty was called in and performed the
-            mechanical thrombectomy within the golden hour. Today, three months later, my father walks independently and
-            has regained nearly full speech. We were told without the procedure he would have been permanently disabled.
-            Dr. Shetty is truly a life-saver.</p>
+          <p class="tt">I was extremely scared after noticing a lump in my left breast. The surgeon asked me to get a
+            breast biopsy done. I have always been scared of needles and felt it would be very painful, but getting the
+            breast biopsy done under Dr Shetty was a completely painless experience. It turned out I was unnecessarily
+            worried as the lump turned out to be not cancer.</p>
           <div class="tau">
-            <div class="tav" style="background:linear-gradient(135deg,#4338ca,#0e7490)">A</div>
+            <div class="tav" style="background:linear-gradient(135deg,#4338ca,#0e7490)">S</div>
             <div>
-              <div class="tan">Anand Prasad</div>
+              <div class="tan">Sujana Satish</div>
               <div class="tal"><i class="fa-solid fa-map-pin" style="font-size:.65rem;color:var(--teal)"></i> Bengaluru,
                 Karnataka</div>
               <div class="tstr"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
@@ -920,117 +927,17 @@
         </div>
         <!-- 4 -->
         <div class="tc">
-          <span class="tc-tag tag-women"><i class="fa-solid fa-venus"></i> Uterine Artery Embolisation</span>
-
-          <p class="tt">I was told I needed a hysterectomy for my fibroids. I consulted Dr. Shetty and he recommended
-            UAE. The procedure was performed with absolute precision and I was discharged in two days. Six months later,
-            my fibroids have shrunk by over 60% and I still have my uterus. I am deeply grateful and would recommend Dr.
-            Shetty to any woman facing this situation.</p>
+          <p class="tt">My husband had leg swelling and fluid in his stomach. Only the scans in Fortis hospital revealed
+            that one of his main blood vessel had closed. We were referred to Dr Gurucharan. He explained the procedure
+            and its risks and benefits in great detail. Finally we decided to undergo the procedure and a stent was put
+            in the closed blood vessel. My husband got discharged soon and in a few days his leg swelling reduced and
+            also the fluid came down. I am thanks for the correct diagnosis and treatment at Radiology department and
+            specially to Dr Gurucharan.</p>
           <div class="tau">
-            <div class="tav" style="background:linear-gradient(135deg,#be185d,#f97316)">P</div>
+            <div class="tav" style="background:linear-gradient(135deg,#be185d,#f97316)">T</div>
             <div>
-              <div class="tan">Priya Nair</div>
+              <div class="tan">Thulasi sadashiv</div>
               <div class="tal"><i class="fa-solid fa-map-pin" style="font-size:.65rem;color:var(--teal)"></i> Bengaluru,
-                Karnataka</div>
-              <div class="tstr"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                  class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i> 5.0
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- 5 -->
-        <div class="tc">
-          <span class="tc-tag tag-onco"><i class="fa-solid fa-radiation"></i> Tumour Ablation</span>
-
-          <p class="tt">When we were told that surgery for my wife's kidney tumour was very risky due to her age and
-            other conditions, Dr. Shetty offered percutaneous ablation as an alternative. The procedure was done under
-            local anaesthesia with a short hospital stay. The follow-up scans show complete ablation of the tumour. We
-            are overjoyed and eternally thankful.</p>
-          <div class="tau">
-            <div class="tav" style="background:linear-gradient(135deg,#059669,#0e7490)">V</div>
-            <div>
-              <div class="tan">Venkatesh Rao</div>
-              <div class="tal"><i class="fa-solid fa-map-pin" style="font-size:.65rem;color:var(--teal)"></i> Hassan,
-                Karnataka</div>
-              <div class="tstr"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                  class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i> 5.0
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- 6 -->
-        <div class="tc">
-          <span class="tc-tag tag-neuro"><i class="fa-solid fa-circle-nodes"></i> Brain Aneurysm Coiling</span>
-
-          <p class="tt">My brother was admitted with a ruptured brain aneurysm a terrifying diagnosis. Dr. Shetty
-            performed emergency coiling through a small tube in the groin no open brain surgery. My brother recovered
-            in 10 days and is now back to his normal life. The skill and calm professionalism Dr. Shetty displayed was
-            extraordinary.</p>
-          <div class="tau">
-            <div class="tav" style="background:linear-gradient(135deg,#4338ca,#7c3aed)">M</div>
-            <div>
-              <div class="tan">Meena Krishnamurthy</div>
-              <div class="tal"><i class="fa-solid fa-map-pin" style="font-size:.65rem;color:var(--teal)"></i> Bengaluru,
-                Karnataka</div>
-              <div class="tstr"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                  class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i> 5.0
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- 7 -->
-        <div class="tc">
-          <span class="tc-tag tag-general"><i class="fa-solid fa-stethoscope"></i> General Consultation</span>
-
-          <p class="tt">From the very first consultation, Dr. Shetty took time to understand my case thoroughly and
-            explained every step of the treatment in a language I could understand. He never made me feel rushed and
-            always answered all my questions patiently. This is a doctor who truly cares about his patients beyond just
-            the procedure.</p>
-          <div class="tau">
-            <div class="tav" style="background:linear-gradient(135deg,var(--navy),var(--teal))">K</div>
-            <div>
-              <div class="tan">Kavitha Subramanian</div>
-              <div class="tal"><i class="fa-solid fa-map-pin" style="font-size:.65rem;color:var(--teal)"></i> Chennai,
-                Tamil Nadu</div>
-              <div class="tstr"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                  class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i> 5.0
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- 8 -->
-        <div class="tc">
-          <span class="tc-tag tag-vasc"><i class="fa-solid fa-liver"></i> PTBD &amp; Biliary Stenting</span>
-
-          <p class="tt">My father had severe jaundice due to bile duct obstruction and was too weak for surgery. Dr.
-            Shetty performed PTBD and later biliary stenting, which gave him immediate relief from the jaundice. The
-            procedure was done with great care and the team was very supportive throughout. His bilirubin levels
-            normalised within a week.</p>
-          <div class="tau">
-            <div class="tav" style="background:linear-gradient(135deg,#f97316,#dc2626)">D</div>
-            <div>
-              <div class="tan">Dinesh Agarwal</div>
-              <div class="tal"><i class="fa-solid fa-map-pin" style="font-size:.65rem;color:var(--teal)"></i> Bengaluru,
-                Karnataka</div>
-              <div class="tstr"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                  class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i> 5.0
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- 9 -->
-        <div class="tc">
-          <span class="tc-tag tag-general"><i class="fa-solid fa-microscope"></i> Image Guided Biopsy</span>
-
-          <p class="tt">I was very anxious about having a liver biopsy but Dr. Shetty made the entire experience
-            stress-free. The CT-guided biopsy was done quickly under local anaesthesia. I barely felt anything. The
-            biopsy results came back quickly and we could begin treatment right away. Grateful for the efficiency and
-            skill of Dr. Shetty and his team.</p>
-          <div class="tau">
-            <div class="tav" style="background:linear-gradient(135deg,#0e7490,#065f46)">N</div>
-            <div>
-              <div class="tan">Nagesh Bhat</div>
-              <div class="tal"><i class="fa-solid fa-map-pin" style="font-size:.65rem;color:var(--teal)"></i> Mangaluru,
                 Karnataka</div>
               <div class="tstr"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
                   class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i> 5.0
@@ -1067,7 +974,7 @@
       <div class="fg">
         <div class="fb">
           <a href="../index.html" class="logo">
-             
+
             <div class="logo-t"><span class="logo-n">Dr. Gurucharan S Shetty</span><span class="logo-s">Interventional
                 Radiologist</span></div>
           </a>

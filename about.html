@@ -282,20 +282,25 @@
 
     /* PAGE HERO */
     .ph {
-      background: linear-gradient(135deg, var(--navy) 0%, var(--navy2) 60%, #0e3d6b 100%);
-      padding: 7rem 2rem 4rem;
+      background: url("./bg-img.png") no-repeat center center;
+      background-size: cover;
+      padding: 8rem 2rem 4rem;
       position: relative;
       overflow: hidden;
-      margin-top: 74px
+      margin-top: 74px;
     }
 
     .ph::before {
       content: '';
       position: absolute;
       inset: 0;
-      opacity: .05;
-      background-image: radial-gradient(circle at 2px 2px, rgba(255, 255, 255, .8) 1px, transparent 0);
-      background-size: 44px 44px
+      background: rgba(0, 0, 0, 0.4);
+      z-index: 1;
+    }
+
+    .ph>* {
+      position: relative;
+      z-index: 2;
     }
 
     .phi {
@@ -828,7 +833,7 @@
   <header id="hdr">
     <div class="hdr">
       <a href="./index.html" class="logo">
-         
+
         <div class="logo-t">
           <span class="logo-n">Dr. Gurucharan S Shetty</span>
           <span class="logo-s">Interventional Radiologist</span>
@@ -854,7 +859,8 @@
         </div>
         <a href="./blogs.html">Blogs</a>
         <a href="./contact.html">Contact</a>
-        <a href="./contact.html" class="btn-appt"><i class="fa-regular fa-calendar-check"></i>&nbsp; Book Appointment</a>
+        <a href="./contact.html" class="btn-appt"><i class="fa-regular fa-calendar-check"></i>&nbsp; Book
+          Appointment</a>
       </nav>
       <button class="ham" id="ham" onclick="toggleMenu()" aria-label="Toggle menu">
         <span></span><span></span><span></span>
@@ -1086,19 +1092,23 @@
               <div
                 style="display:flex;align-items:center;gap:.75rem;font-size:.87rem;color:var(--muted);line-height: 1.5;">
                 <i class="fa-solid fa-circle-check" style="color:var(--teal)"></i> Indian Society of Vascular &amp;
-                Interventional Radiology (ISVIR)</div>
+                Interventional Radiology (ISVIR)
+              </div>
               <div
                 style="display:flex;align-items:center;gap:.75rem;font-size:.87rem;color:var(--muted);line-height: 1.5;">
                 <i class="fa-solid fa-circle-check" style="color:var(--teal)"></i> Indian Radiological &amp; Imaging
-                Association (IRIA)</div>
+                Association (IRIA)
+              </div>
               <div
                 style="display:flex;align-items:center;gap:.75rem;font-size:.87rem;color:var(--muted);line-height: 1.5;">
                 <i class="fa-solid fa-circle-check" style="color:var(--teal)"></i> Cardiovascular &amp; Interventional
-                Radiological Society of Europe (CIRSE)</div>
+                Radiological Society of Europe (CIRSE)
+              </div>
               <div
                 style="display:flex;align-items:center;gap:.75rem;font-size:.87rem;color:var(--muted);line-height: 1.5;">
                 <i class="fa-solid fa-circle-check" style="color:var(--teal)"></i> Society of Interventional Radiology
-                (SIR), USA</div>
+                (SIR), USA
+              </div>
             </div>
           </div>
         </div>
@@ -1138,7 +1148,7 @@
       <div class="fg">
         <div class="fb">
           <a href="./index.html" class="logo">
-             
+
             <div class="logo-t"><span class="logo-n">Dr. Gurucharan S Shetty</span><span class="logo-s">Interventional
                 Radiologist</span></div>
           </a>
@@ -1173,7 +1183,8 @@
                 Treatment For Varicocele</a></li>
             <li><a href="./blogs/varicose-veins.html"><i class="fa-solid fa-chevron-right"></i>Varicose Veins</a>
             </li>
-            <li><a href="./blogs/mechanical-thrombectomy-stroke.html"><i class="fa-solid fa-chevron-right"></i>Mechanical
+            <li><a href="./blogs/mechanical-thrombectomy-stroke.html"><i
+                  class="fa-solid fa-chevron-right"></i>Mechanical
                 Thrombectomy Has Revolutionised Treatment Of Acute Ischemic Stroke</a></li>
             <li><a href="./blogs.html"><i class="fa-solid fa-chevron-right"></i>All Blogs</a></li>
           </ul>

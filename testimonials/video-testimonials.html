@@ -283,20 +283,25 @@
     }
 
     .ph {
-      background: linear-gradient(135deg, var(--navy) 0%, var(--navy2) 60%, #0e3d6b 100%);
-      padding: 7rem 2rem 4rem;
+      background: url("../bg-img.png") no-repeat center center;
+      background-size: cover;
+      padding: 8rem 2rem 4rem;
       position: relative;
       overflow: hidden;
-      margin-top: 74px
+      margin-top: 74px;
     }
 
     .ph::before {
       content: '';
       position: absolute;
       inset: 0;
-      opacity: .05;
-      background-image: radial-gradient(circle at 2px 2px, rgba(255, 255, 255, .8) 1px, transparent 0);
-      background-size: 44px 44px
+      background: rgba(0, 0, 0, 0.4);
+      z-index: 1;
+    }
+
+    .ph>* {
+      position: relative;
+      z-index: 2;
     }
 
     .phi {
@@ -754,7 +759,7 @@
   <header id="hdr">
     <div class="hdr">
       <a href="../index.html" class="logo">
-         
+
         <div class="logo-t">
           <span class="logo-n">Dr. Gurucharan S Shetty</span>
           <span class="logo-s">Interventional Radiologist</span>
@@ -835,111 +840,122 @@
         showcase genuine patient journeys. We are thankful to every patient who took the time to share their experience.
       </p>
 
-<div class="vgrid">
+      <div class="vgrid">
 
-  <!-- 1. Uterine Artery Embolisation -->
-  <div class="vc">
-    <div class="vc-video">
-      <iframe src="https://www.youtube.com/embed/CmiOXt4nNE4?si=lb9aCfvoVuYrrvOy"
-        title="Uterine artery embolisation awareness | Dr. Gurucharan Shetty patient testimonial"
-        allowfullscreen></iframe>
-    </div>
-    <div class="vc-info">
-      <span class="vc-tag tag-women"><i class="fa-solid fa-venus"></i> Uterine Artery Embolisation</span>
-      <div class="vc-title">"I was able to avoid surgery and recover comfortably after the procedure."</div>
-      <div class="vc-desc">Nisha Kambi shares her experience with uterine artery embolisation as a safe and effective treatment for fibroids.</div>
-      <div class="vc-patient">
-        <strong>Nisha Kambi</strong> • Bengaluru <span style="color:var(--gold);font-size: 20px;margin-bottom: 5px;">★★★★★</span>
+        <!-- 1. Uterine Artery Embolisation -->
+        <div class="vc">
+          <div class="vc-video">
+            <iframe src="https://www.youtube.com/embed/CmiOXt4nNE4?si=lb9aCfvoVuYrrvOy"
+              title="Uterine artery embolisation awareness | Dr. Gurucharan Shetty patient testimonial"
+              allowfullscreen></iframe>
+          </div>
+          <div class="vc-info">
+            <span class="vc-tag tag-women"><i class="fa-solid fa-venus"></i> Uterine Artery Embolisation</span>
+            <div class="vc-title">"I was able to avoid surgery and recover comfortably after the procedure."</div>
+            <div class="vc-desc">Nisha Kambi shares her experience with uterine artery embolisation as a safe and
+              effective treatment for fibroids.</div>
+            <div class="vc-patient">
+              <strong>Nisha Kambi</strong> • Bengaluru <span
+                style="color:var(--gold);font-size: 20px;margin-bottom: 5px;">★★★★★</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Stroke / Thrombectomy -->
+        <div class="vc">
+          <div class="vc-video">
+            <iframe src="https://www.youtube.com/embed/SazPpdvkvuo?si=EK5I7NN-K4VHyZwR"
+              title="Mechanical thrombectomy in acute stroke - Dr. Gurucharan Shetty patient testimonial"
+              allowfullscreen></iframe>
+          </div>
+          <div class="vc-info">
+            <span class="vc-tag tag-neuro"><i class="fa-solid fa-brain"></i> Stroke / Thrombectomy</span>
+            <div class="vc-title">"Timely treatment made all the difference in recovery."</div>
+            <div class="vc-desc">Maulali Pathan shares his experience with emergency mechanical thrombectomy for acute
+              stroke.</div>
+            <div class="vc-patient">
+              <strong>Maulali Pathan</strong> • Bengaluru <span
+                style="color:var(--gold);font-size: 20px;margin-bottom: 5px;">★★★★★</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Uterine Fibroid Embolisation -->
+        <div class="vc">
+          <div class="vc-video">
+            <iframe src="https://www.youtube.com/embed/QXesL0vkvsw?si=5W7tU12xg4HLYcxs"
+              title="Uterine fibroid treatment by embolisation - Mechanical Thrombectomy Testimonial"
+              allowfullscreen></iframe>
+          </div>
+          <div class="vc-info">
+            <span class="vc-tag tag-women"><i class="fa-solid fa-venus"></i> Uterine Fibroid Embolisation</span>
+            <div class="vc-title">"The treatment helped us avoid major surgery and improved quality of life."</div>
+            <div class="vc-desc">Sarita shares how embolisation was used to effectively treat uterine fibroids.</div>
+            <div class="vc-patient">
+              <strong>Sarita</strong> • Bengaluru <span
+                style="color:var(--gold);font-size: 20px;margin-bottom: 5px;">★★★★★</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Stroke / Thrombectomy -->
+        <div class="vc">
+          <div class="vc-video">
+            <iframe src="https://www.youtube.com/embed/CXmT5b1Th9Y?si=VSVdDfChISfnmCsN"
+              title="stroke treatment by mechanical thrombectomy - Dr. Gurucharan S Shetty patient testimonial"
+              allowfullscreen></iframe>
+          </div>
+          <div class="vc-info">
+            <span class="vc-tag tag-neuro"><i class="fa-solid fa-brain"></i> Stroke / Thrombectomy</span>
+            <div class="vc-title">"Quick intervention helped restore normal life."</div>
+            <div class="vc-desc">Mr and Mrs Vilas share their experience with mechanical thrombectomy for stroke
+              treatment.</div>
+            <div class="vc-patient">
+              <strong>Mr and Mrs Vilas</strong> • Bengaluru <span
+                style="color:var(--gold);font-size: 20px;margin-bottom: 5px;">★★★★★</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. TACE (HCC) -->
+        <div class="vc">
+          <div class="vc-video">
+            <iframe src="https://www.youtube.com/embed/7XapTANHjKQ?si=oxX3zqmYZUxdptKu"
+              title="TACE-Transarterial Chemoembolisation for Hepatocellular Carcinoma(HCC) - Dr. Gurucharan S Shetty patient testimonial"
+              allowfullscreen></iframe>
+          </div>
+          <div class="vc-info">
+            <span class="vc-tag tag-onco"><i class="fa-solid fa-dna"></i> TACE / Liver Cancer</span>
+            <div class="vc-title">"The treatment was effective and recovery was smooth."</div>
+            <div class="vc-desc">Desar shares her journey of undergoing TACE treatment for hepatocellular carcinoma
+              (HCC).</div>
+            <div class="vc-patient">
+              <strong>Desar</strong> • Bengaluru <span
+                style="color:var(--gold);font-size: 20px;margin-bottom: 5px;">★★★★★</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6. Splenic Artery Embolisation -->
+        <div class="vc">
+          <div class="vc-video">
+            <iframe src="https://www.youtube.com/embed/xwz65-jv2I8?si=jdvYLoowoTmxC0S3"
+              title="Embolisation of of splenic artery aneurysm and treating hypersplenism - Dr. Gurucharan S Shetty patient testimonial"
+              allowfullscreen></iframe>
+          </div>
+          <div class="vc-info">
+            <span class="vc-tag tag-vasc"><i class="fa-solid fa-heart-pulse"></i> Vascular Embolisation</span>
+            <div class="vc-title">"The procedure was smooth and my symptoms improved significantly."</div>
+            <div class="vc-desc">Rashmi Seshadri shares her experience with splenic artery embolisation for aneurysm and
+              hypersplenism.</div>
+            <div class="vc-patient">
+              <strong>Rashmi Seshadri</strong> • Bengaluru <span
+                style="color:var(--gold);font-size: 20px;margin-bottom: 5px;">★★★★★</span>
+            </div>
+          </div>
+        </div>
+
       </div>
-    </div>
-  </div>
-
-  <!-- 2. Stroke / Thrombectomy -->
-  <div class="vc">
-    <div class="vc-video">
-      <iframe src="https://www.youtube.com/embed/SazPpdvkvuo?si=EK5I7NN-K4VHyZwR"
-        title="Mechanical thrombectomy in acute stroke - Dr. Gurucharan Shetty patient testimonial"
-        allowfullscreen></iframe>
-    </div>
-    <div class="vc-info">
-      <span class="vc-tag tag-neuro"><i class="fa-solid fa-brain"></i> Stroke / Thrombectomy</span>
-      <div class="vc-title">"Timely treatment made all the difference in recovery."</div>
-      <div class="vc-desc">Maulali Pathan shares his experience with emergency mechanical thrombectomy for acute stroke.</div>
-      <div class="vc-patient">
-        <strong>Maulali Pathan</strong> • Bengaluru <span style="color:var(--gold);font-size: 20px;margin-bottom: 5px;">★★★★★</span>
-      </div>
-    </div>
-  </div>
-
-  <!-- 3. Uterine Fibroid Embolisation -->
-  <div class="vc">
-    <div class="vc-video">
-      <iframe src="https://www.youtube.com/embed/QXesL0vkvsw?si=5W7tU12xg4HLYcxs"
-        title="Uterine fibroid treatment by embolisation - Mechanical Thrombectomy Testimonial"
-        allowfullscreen></iframe>
-    </div>
-    <div class="vc-info">
-      <span class="vc-tag tag-women"><i class="fa-solid fa-venus"></i> Uterine Fibroid Embolisation</span>
-      <div class="vc-title">"The treatment helped us avoid major surgery and improved quality of life."</div>
-      <div class="vc-desc">Sarita shares how embolisation was used to effectively treat uterine fibroids.</div>
-      <div class="vc-patient">
-        <strong>Sarita</strong> • Bengaluru <span style="color:var(--gold);font-size: 20px;margin-bottom: 5px;">★★★★★</span>
-      </div>
-    </div>
-  </div>
-
-  <!-- 4. Stroke / Thrombectomy -->
-  <div class="vc">
-    <div class="vc-video">
-      <iframe src="https://www.youtube.com/embed/CXmT5b1Th9Y?si=VSVdDfChISfnmCsN" 
-        title="stroke treatment by mechanical thrombectomy - Dr. Gurucharan S Shetty patient testimonial"
-        allowfullscreen></iframe>
-    </div>
-    <div class="vc-info">
-      <span class="vc-tag tag-neuro"><i class="fa-solid fa-brain"></i> Stroke / Thrombectomy</span>
-      <div class="vc-title">"Quick intervention helped restore normal life."</div>
-      <div class="vc-desc">Mr and Mrs Vilas share their experience with mechanical thrombectomy for stroke treatment.</div>
-      <div class="vc-patient">
-        <strong>Mr and Mrs Vilas</strong> • Bengaluru <span style="color:var(--gold);font-size: 20px;margin-bottom: 5px;">★★★★★</span>
-      </div>
-    </div>
-  </div>
-
-  <!-- 5. TACE (HCC) -->
-  <div class="vc">
-    <div class="vc-video">
-      <iframe src="https://www.youtube.com/embed/7XapTANHjKQ?si=oxX3zqmYZUxdptKu"
-        title="TACE-Transarterial Chemoembolisation for Hepatocellular Carcinoma(HCC) - Dr. Gurucharan S Shetty patient testimonial"
-        allowfullscreen></iframe>
-    </div>
-    <div class="vc-info">
-      <span class="vc-tag tag-onco"><i class="fa-solid fa-dna"></i> TACE / Liver Cancer</span>
-      <div class="vc-title">"The treatment was effective and recovery was smooth."</div>
-      <div class="vc-desc">Desar shares her journey of undergoing TACE treatment for hepatocellular carcinoma (HCC).</div>
-      <div class="vc-patient">
-        <strong>Desar</strong> • Bengaluru <span style="color:var(--gold);font-size: 20px;margin-bottom: 5px;">★★★★★</span>
-      </div>
-    </div>
-  </div>
-
-  <!-- 6. Splenic Artery Embolisation -->
-  <div class="vc">
-    <div class="vc-video">
-      <iframe src="https://www.youtube.com/embed/xwz65-jv2I8?si=jdvYLoowoTmxC0S3"
-        title="Embolisation of of splenic artery aneurysm and treating hypersplenism - Dr. Gurucharan S Shetty patient testimonial"
-        allowfullscreen></iframe>
-    </div>
-    <div class="vc-info">
-      <span class="vc-tag tag-vasc"><i class="fa-solid fa-heart-pulse"></i> Vascular Embolisation</span>
-      <div class="vc-title">"The procedure was smooth and my symptoms improved significantly."</div>
-      <div class="vc-desc">Rashmi Seshadri shares her experience with splenic artery embolisation for aneurysm and hypersplenism.</div>
-      <div class="vc-patient">
-        <strong>Rashmi Seshadri</strong> • Bengaluru <span style="color:var(--gold);font-size: 20px;margin-bottom: 5px;">★★★★★</span>
-      </div>
-    </div>
-  </div>
-
-</div>
 
       <div style="text-align:center;margin-top:4rem">
         <p style="color:var(--muted);margin-bottom:1.5rem">Have you been treated by Dr. Shetty? We would love to feature
@@ -967,7 +983,7 @@
       <div class="fg">
         <div class="fb">
           <a href="../index.html" class="logo">
-             
+
             <div class="logo-t"><span class="logo-n">Dr. Gurucharan S Shetty</span><span class="logo-s">Interventional
                 Radiologist</span></div>
           </a>
