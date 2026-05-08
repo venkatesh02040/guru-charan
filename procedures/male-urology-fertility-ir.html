@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" href="../fav-icon.png" type="image/png">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Male Urology & Fertility IR | Dr. Gurucharan S Shetty Bangalore</title>
+    <meta name="description"
+        content="Male urology and fertility interventional radiology in Bangalore by Dr. Gurucharan S Shetty. Varicocele embolisation, Prostate Artery Embolisation (PAE) for BPH, and male fertility-related vascular interventions at Sparsh Hospitals." />
+    <meta name="keywords"
+        content="Dr Gurucharan Shetty, varicocele embolisation Bangalore, prostate artery embolisation Bangalore, PAE for BPH, male fertility IR, interventional radiology urology Bangalore, Sparsh Hospitals" />
+    <link rel="canonical" href="https://drgurucharan.com/procedures/male-urology-fertility-ir.html" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <style>
+        :root {
+            --navy: #004c90;
+            --navy2: #0683CE;
+            --teal: #0e7490;
+            --teal2: #06b6d4;
+            --gold: #c9a84c;
+            --gold2: #e8c97a;
+            --white: #fff;
+            --off: #f4f7fb;
+            --text: #2d3748;
+            --muted: #64748b;
+            --border: #e2e8f0
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box }
+        html { scroll-behavior: smooth }
+        body { font-family: 'DM Sans', sans-serif; color: var(--text); background: var(--white); overflow-x: hidden }
+
+        header {
+            position: fixed; top: 0; left: 0; width: 100%; z-index: 1000;
+            background: #004c90; backdrop-filter: blur(14px);
+            border-bottom: 1px solid rgba(201, 168, 76, 0.22); transition: box-shadow .3s
+        }
+
+        .hdr {
+            max-width: 1300px; margin: 0 auto; padding: 0 0.8rem;
+            display: flex; align-items: center; justify-content: space-between; height: 74px
+        }
+
+        .logo { display: flex; align-items: center; gap: .85rem; text-decoration: none }
+        .logo-t { display: flex; flex-direction: column }
+        .logo-n { font-family: 'Poppins', sans-serif; font-size: 1.05rem; font-weight: 600; color: #fff; line-height: 1.2 }
+        .logo-s { margin-top: 3px; margin-left: 28px; font-size: .6rem; color: var(--gold); letter-spacing: .12em; text-transform: uppercase }
+
+        nav { display: flex; align-items: center; gap: .1rem }
+        nav a {
+            color: rgba(255,255,255,.82); text-decoration: none; font-size: .82rem;
+            font-weight: 500; padding: .45rem .78rem; border-radius: 6px; transition: color .2s; letter-spacing: .025em
+        }
+        nav a:hover, nav a.active { color: var(--gold) }
+
+        .drop { position: relative }
+        .drop>a { display: flex; align-items: center; gap: .3rem; cursor: pointer }
+        .drop>a::after { content: '\f078'; font-family: 'Font Awesome 6 Free'; font-weight: 900; font-size: .52rem; transition: transform .2s }
+        .drop:hover>a::after { transform: rotate(180deg) }
+
+        .dmenu {
+            position: absolute; top: 100%; left: 0; background: var(--navy);
+            border: 1px solid rgba(201,168,76,.2); border-radius: 10px; min-width: 215px;
+            opacity: 0; pointer-events: none; transform: translateY(-8px);
+            transition: all .22s; box-shadow: 0 20px 60px rgba(0,0,0,.4)
+        }
+        .drop:hover .dmenu { opacity: 1; pointer-events: all; transform: translateY(0) }
+        .dmenu a { display: block; padding: .65rem 1.1rem; font-size: .8rem; color: rgba(255,255,255,.8); border-bottom: 1px solid rgba(255,255,255,.05); transition: all .2s }
+        .dmenu a:first-child { border-radius: 10px 10px 0 0 }
+        .dmenu a:last-child { border-bottom: none; border-radius: 0 0 10px 10px }
+        .dmenu a:hover { color: var(--gold); background: rgba(201,168,76,.08) }
+
+        .btn-appt { background: linear-gradient(135deg,var(--gold),var(--gold2)) !important; color: white !important; font-weight: 600 !important; padding: .8rem 1.1rem !important; border-radius: 25px !important; font-size: .8rem !important }
+
+        .ham { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; background: none; border: none }
+        .ham span { display: block; width: 24px; height: 2px; background: #fff; border-radius: 2px; transition: all .3s }
+        .ham.open span:nth-child(1) { transform: rotate(45deg) translate(5px,5px) }
+        .ham.open span:nth-child(2) { opacity: 0 }
+        .ham.open span:nth-child(3) { transform: rotate(-45deg) translate(5px,-5px) }
+
+        .mnav { display: none; position: fixed; top: 74px; left: 0; width: 100%; background: var(--navy); border-top: 1px solid rgba(201,168,76,.2); flex-direction: column; z-index: 999; max-height: calc(100vh - 74px); overflow-y: auto }
+        .mnav.open { display: flex }
+        .mnav>a { padding: .75rem 1.5rem; color: rgba(255,255,255,.85); text-decoration: none; font-size: .88rem; border-bottom: 1px solid rgba(255,255,255,.05); display: block }
+        .mnav>a:hover { color: var(--gold); background: rgba(201,168,76,.06) }
+
+        .ph {
+            background: url("../bg-img.png") no-repeat center center;
+            background-size: cover; padding: 8rem 2rem 4rem;
+            position: relative; overflow: hidden; margin-top: 74px;
+        }
+        .ph::before { content: ''; position: absolute; inset: 0; background: rgba(0,0,0,0.4); z-index: 1; }
+        .ph>* { position: relative; z-index: 2; }
+        .phi { max-width: 1300px; margin: 0 auto; position: relative; z-index: 2 }
+
+        .bc2 { display: flex; align-items: center; gap: .5rem; font-size: .95rem; color: rgba(255,255,255,.5); margin-bottom: 1rem }
+        .bc2 a { color: rgba(255,255,255,.5); text-decoration: none }
+        .bc2 a:hover { color: var(--gold) }
+        .bc2 span { color: var(--gold) }
+
+        .ph h1 { font-family: 'Poppins', sans-serif; font-size: clamp(2rem,4vw,3.2rem); font-weight: 700; color: #fff; line-height: 1.15; margin-bottom: .75rem }
+        .ph p { color: rgba(255,255,255,.65); font-size: 1rem; max-width: 650px; line-height: 1.7 }
+
+        .sec { padding: 5rem 2rem }
+        .si { max-width: 1300px; margin: 0 auto }
+
+        .slbl { display: inline-flex; align-items: center; gap: .5rem; color: var(--teal); font-size: .7rem; font-weight: 600; text-transform: uppercase; letter-spacing: .12em; margin-bottom: .75rem }
+        .slbl::before { content: ''; display: block; width: 28px; height: 2px; background: var(--teal) }
+
+        h2.stit { font-family: 'Poppins', sans-serif; font-size: clamp(1.8rem,3vw,2.5rem); font-weight: 700; color: var(--navy); line-height: 1.2; margin-bottom: 1.5rem }
+
+        .proc-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 3.5rem; align-items: start; margin-bottom: 3rem }
+        .proc-img-wrap { position: sticky; top: 100px }
+        .proc-img-wrap img { width: 100%; height: auto; border-radius: 18px; box-shadow: 0 15px 40px rgba(0,0,0,.1); display: block }
+
+        .content h3 { margin: 2rem 0 1rem; font-family: 'Poppins', sans-serif; font-size: 1.45rem; color: var(--navy) }
+        .content p { line-height: 1.8; font-size: 1.02rem; color: var(--text); margin-bottom: 1.2rem }
+        .content ul { list-style: none; padding-left: 1.2rem; margin: 1.5rem 0 }
+        .content ul li { position: relative; padding-left: 1.8rem; margin-bottom: .8rem }
+        .content ul li::before { content: '\f058'; font-family: 'Font Awesome 6 Free'; font-weight: 900; position: absolute; left: 0; color: var(--teal) }
+
+        /* Procedure Tabs within page */
+        .proc-tabs { display: flex; gap: .5rem; flex-wrap: wrap; margin: 2rem 0 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem }
+        .proc-tab { padding: .45rem 1.1rem; border-radius: 25px; font-size: .82rem; font-weight: 600; cursor: pointer; border: 1px solid var(--border); background: #fff; color: var(--muted); transition: all .22s }
+        .proc-tab.active, .proc-tab:hover { background: var(--teal); border-color: var(--teal); color: #fff }
+
+        .proc-section { display: none }
+        .proc-section.active { display: block }
+
+        .benefits-grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(260px,1fr)); gap: 1.5rem; margin: 2.5rem 0 }
+        .benefit-card { background: var(--white); border: 1px solid var(--border); border-radius: 14px; padding: 1.5rem; text-align: center; transition: all .3s }
+        .benefit-card:hover { transform: translateY(-5px); box-shadow: 0 15px 35px rgba(11,31,58,.08) }
+        .benefit-card .bic { width: 52px; height: 52px; border-radius: 14px; background: linear-gradient(135deg,rgba(14,116,144,.1),rgba(6,182,212,.1)); display: flex; align-items: center; justify-content: center; font-size: 1.4rem; color: var(--teal); margin: 0 auto 1rem }
+        .benefit-card h4 { font-family: 'Poppins', sans-serif; font-size: 1.05rem; color: var(--navy); margin-bottom: .5rem }
+        .benefit-card p { font-size: .9rem; color: var(--muted); line-height: 1.6 }
+
+        /* Comparison table */
+        .compare-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin: 2rem 0 }
+        .compare-card { border-radius: 14px; padding: 1.5rem; border: 1px solid var(--border) }
+        .compare-card.ir { border-color: rgba(14,116,144,.3); background: rgba(14,116,144,.04) }
+        .compare-card.surg { background: #fafafa }
+        .compare-card h4 { font-family: 'Poppins', sans-serif; font-size: 1.05rem; color: var(--navy); margin-bottom: .75rem; display: flex; align-items: center; gap: .5rem }
+        .compare-card ul { list-style: none; padding: 0 }
+        .compare-card ul li { padding: .35rem 0; font-size: .88rem; color: var(--muted); border-bottom: 1px solid var(--border); display: flex; align-items: center; gap: .5rem }
+        .compare-card ul li:last-child { border-bottom: none }
+        .compare-card ul li i { font-size: .65rem; color: var(--teal) }
+
+        .faq { margin-top: .5rem }
+        .faq-item { border: 1px solid var(--border); border-radius: 10px; margin-bottom: .6rem; overflow: hidden; background: var(--white) }
+        .faq-q { width: 100%; background: none; border: none; text-align: left; padding: 1rem 1.25rem; font-family: 'DM Sans', sans-serif; font-size: .98rem; font-weight: 600; color: var(--navy); cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 1rem; transition: background .2s, color .2s }
+        .faq-q:hover { background: rgba(14,116,144,.04) }
+        .faq-q.open { background: rgba(14,116,144,.07); color: var(--teal) }
+        .faq-q .faq-chev { flex-shrink: 0; font-size: .78rem; color: var(--teal); transition: transform .32s ease }
+        .faq-q.open .faq-chev { transform: rotate(180deg) }
+        .faq-a { max-height: 0; overflow: hidden; transition: max-height .35s ease }
+        .faq-a.open { max-height: 500px }
+        .faq-a-inner { padding: .2rem 1.25rem 1.1rem; color: var(--muted); line-height: 1.75; font-size: .96rem }
+
+        .btn-p { display: inline-flex; align-items: center; gap: .5rem; background: linear-gradient(135deg,var(--gold),var(--gold2)); color: white; font-weight: 600; font-size: .88rem; padding: .82rem 1.75rem; border-radius: 30px; text-decoration: none; transition: all .2s }
+        .btn-p:hover { transform: translateY(-2px); box-shadow: 0 10px 28px rgba(201,168,76,.38) }
+
+        /* info callout */
+        .callout { background: rgba(14,116,144,.06); border-left: 4px solid var(--teal); border-radius: 0 12px 12px 0; padding: 1.1rem 1.4rem; margin: 1.5rem 0; font-size: .95rem; color: var(--text); line-height: 1.75 }
+        .callout strong { color: var(--teal) }
+
+        footer { background: #06131f; border-top: 1px solid rgba(201,168,76,.14); padding: 4rem 2rem 0 }
+        .fi { max-width: 1300px; margin: 0 auto }
+        .fg { display: grid; grid-template-columns: 1.8fr 1fr 1fr 1fr; gap: 3rem; padding-bottom: 3rem }
+        .fb p { color: rgba(255,255,255,.48); font-size: .82rem; line-height: 1.8; margin-top: 1rem }
+        .soc { display: flex; gap: .6rem; margin-top: 1.5rem }
+        .si2 { width: 36px; height: 36px; border-radius: 50%; background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.1); display: flex; align-items: center; justify-content: center; color: rgba(255,255,255,.6); font-size: .85rem; text-decoration: none; transition: all .2s }
+        .si2:hover { background: var(--gold); border-color: var(--gold); color: var(--navy) }
+        .fc h4 { font-family: 'Poppins', sans-serif; font-size: 1rem; font-weight: 600; color: #fff; margin-bottom: 1.25rem; position: relative; padding-bottom: .6rem }
+        .fc h4::after { content: ''; position: absolute; bottom: 0; left: 0; width: 28px; height: 2px; background: var(--gold) }
+        .fc ul { list-style: none; display: flex; flex-direction: column; gap: .6rem }
+        .fc ul a { color: rgba(255,255,255,.5); text-decoration: none; font-size: .82rem; transition: color .2s; display: flex; align-items: center; gap: .4rem }
+        .fc ul a i { font-size: .6rem; color: var(--teal) }
+        .fc ul a:hover { color: var(--gold) }
+        .fci { display: flex; align-items: flex-start; gap: .75rem; margin-bottom: .85rem }
+        .fci i { color: var(--gold); font-size: .9rem; margin-top: .14rem; flex-shrink: 0 }
+        .fci p, .fci a { color: rgba(255,255,255,.5); font-size: .82rem; line-height: 1.55; text-decoration: none }
+        .fci a:hover { color: var(--gold) }
+        .fbot { border-top: 1px solid rgba(255,255,255,.07); padding: 1.25rem 0; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: .75rem }
+        .fcp { font-size: .77rem; color: rgba(255,255,255,.32) }
+        .fdb { font-size: .77rem; color: rgba(255,255,255,.32) }
+        .fdb a { color: var(--gold); text-decoration: none; font-weight: 600 }
+
+        @media(max-width:1024px) { .fg { grid-template-columns: 1fr 1fr; gap: 2rem } .compare-grid { grid-template-columns: 1fr } }
+        @media(max-width:900px) { .proc-layout { grid-template-columns: 1fr } .proc-img-wrap { position: static; margin-bottom: 1.5rem } }
+        @media(max-width:768px) { nav { display: none } .ham { display: flex } .fg { grid-template-columns: 1fr } .fbot { flex-direction: column; text-align: center } }
+    </style>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header id="hdr">
+        <div class="hdr">
+            <a href="../index.html" class="logo">
+                <div class="logo-t">
+                    <span class="logo-n">Dr. Gurucharan S Shetty</span>
+                    <span class="logo-s">Interventional Radiologist</span>
+                </div>
+            </a>
+            <nav>
+                <a href="../index.html">Home</a>
+                <a href="../about.html">About</a>
+                <a href="../procedures.html" class="active">Procedures</a>
+                <div class="drop">
+                    <a>Patient Stories</a>
+                    <div class="dmenu">
+                        <a href="../testimonials/text-testimonials.html"><i class="fa-regular fa-comment-dots"></i>&nbsp; Patient Reviews</a>
+                        <a href="../testimonials/video-testimonials.html"><i class="fa-brands fa-youtube"></i>&nbsp; Video Testimonials</a>
+                        <a href="../testimonials/doctor-insights.html"><i class="fa-solid fa-user-doctor"></i>&nbsp; Doctor Insights</a>
+                    </div>
+                </div>
+                <a href="../blogs.html">Blogs</a>
+                <a href="../contact.html">Contact</a>
+                <a href="../contact.html" class="btn-appt"><i class="fa-regular fa-calendar-check"></i>&nbsp; Book Appointment</a>
+            </nav>
+            <button class="ham" id="ham" onclick="toggleMenu()" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- MOBILE NAV -->
+    <div class="mnav" id="mnav">
+        <a href="../index.html"><i class="fa-solid fa-house"></i>&nbsp; Home</a>
+        <a href="../about.html"><i class="fa-solid fa-user-doctor"></i>&nbsp; About</a>
+        <a href="../procedures.html"><i class="fa-solid fa-stethoscope"></i>&nbsp; Procedures</a>
+        <div class="msec">Patient Stories</div>
+        <a href="../testimonials/text-testimonials.html" style="padding-left:2.5rem"><i class="fa-regular fa-comment-dots"></i>&nbsp; Patient Reviews</a>
+        <a href="../testimonials/video-testimonials.html" style="padding-left:2.5rem"><i class="fa-brands fa-youtube"></i>&nbsp; Video Testimonials</a>
+        <a href="../testimonials/doctor-insights.html" style="padding-left:2.5rem"><i class="fa-solid fa-user-doctor"></i>&nbsp; Doctor Insights</a>
+        <a href="../blogs.html"><i class="fa-solid fa-blog"></i>&nbsp; Blogs</a>
+        <a href="../contact.html"><i class="fa-solid fa-phone"></i>&nbsp; Contact</a>
+    </div>
+
+    <!-- PAGE HERO -->
+    <div class="ph">
+        <div class="phi">
+            <div class="bc2">
+                <a href="../index.html">Home</a>
+                <i class="fa-solid fa-chevron-right" style="font-size:.6rem"></i>
+                <a href="../procedures.html">Procedures</a>
+                <i class="fa-solid fa-chevron-right" style="font-size:.6rem"></i>
+                <span>Male Urology &amp; Fertility IR</span>
+            </div>
+            <h1>Male Urology &amp; Fertility IR</h1>
+            <p>Minimally invasive, image-guided vascular interventions for male urological and fertility conditions including varicocele embolisation, Prostate Artery Embolisation for BPH, and male fertility-related procedures without open surgery.</p>
+        </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <section class="sec" style="background:var(--off)">
+        <div class="si">
+
+            <!-- In-page procedure tabs -->
+            <div class="proc-tabs">
+                <div class="proc-tab active" onclick="switchProc('varicocele', this)"><i class="fa-solid fa-circle-nodes"></i>&nbsp; Varicocele Embolisation</div>
+                <div class="proc-tab" onclick="switchProc('pae', this)"><i class="fa-solid fa-shield-halved"></i>&nbsp; Prostate Artery Embolisation (PAE)</div>
+                <div class="proc-tab" onclick="switchProc('fertility', this)"><i class="fa-solid fa-venus-mars"></i>&nbsp; Fertility IR</div>
+            </div>
+
+            <!-- VARICOCELE SECTION -->
+            <div class="proc-section active" id="sec-varicocele">
+                <div class="proc-layout">
+                    <div class="content">
+                        <div class="slbl">Male Urology IR</div>
+                        <h2 class="stit">Varicocele Embolisation</h2>
+                        <p>A varicocele is an abnormal enlargement of the pampiniform plexus of veins within the scrotum, similar to varicose veins of the leg. They occur in approximately 15% of all men and are found in up to 40% of men investigated for infertility. Varicoceles cause elevated scrotal temperature, impair sperm production, reduce testosterone levels, and can cause chronic scrotal discomfort. Varicocele embolisation is a minimally invasive, catheter-based treatment that seals the abnormal veins without any incision into the scrotum or groin.</p>
+                        <p>Using fluoroscopic guidance, the interventional radiologist accesses the internal spermatic vein via a small puncture in the neck or groin, passes a catheter to the varicocele, and deploys embolic coils and/or sclerosant foam to permanently occlude the dilated veins. This eliminates reflux of blood into the pampiniform plexus, allowing the scrotum to cool and sperm function to recover.</p>
+
+                        <h3>Who Needs Varicocele Embolisation?</h3>
+                        <p>Varicocele embolisation is indicated for men with a palpable or ultrasound-confirmed varicocele associated with male-factor infertility (abnormal semen analysis), couples undergoing assisted reproduction where varicocele correction may improve outcomes, and men experiencing chronic scrotal pain or heaviness attributable to varicocele. It is also suitable for adolescents with a significant varicocele causing ipsilateral testicular hypotrophy (reduced growth), and men with low testosterone associated with a clinical varicocele.</p>
+
+                        <h3>How is the Procedure Performed?</h3>
+                        <ul>
+                            <li><strong>Access:</strong> Under local anaesthesia and light sedation, a catheter is introduced via the right internal jugular vein (neck) or the femoral vein (groin) both are tiny punctures, no scrotum or groin incision is needed.</li>
+                            <li><strong>Venography:</strong> Contrast is injected to map the internal spermatic vein and confirm the location and extent of the varicocele under fluoroscopic guidance.</li>
+                            <li><strong>Embolisation:</strong> Embolic coils (platinum or stainless steel) and/or sclerosant foam are delivered through the microcatheter to occlude the dilated internal spermatic vein and its collaterals at multiple levels, preventing recanalization.</li>
+                            <li><strong>Bilateral Treatment:</strong> Both left (most common) and right varicoceles can be treated in the same session without additional access sites.</li>
+                            <li><strong>Completion:</strong> Once venography confirms no further reflux, catheters are removed. The patient is observed briefly and typically discharged the same day.</li>
+                        </ul>
+
+                        <div class="callout">
+                            <strong>Clinical Evidence:</strong> Multiple studies and meta-analyses confirm that varicocele treatment improves semen parameters sperm count, motility, and morphology in the majority of men, with pregnancy rates comparable to surgical varicocelectomy. Embolisation avoids the hydrocele risk associated with open surgery.
+                        </div>
+
+                        <h3>Varicocele Embolisation vs. Surgical Varicocelectomy</h3>
+                        <div class="compare-grid">
+                            <div class="compare-card ir">
+                                <h4><i class="fa-solid fa-syringe" style="color:var(--teal)"></i> Embolisation (IR)</h4>
+                                <ul>
+                                    <li><i class="fa-solid fa-circle-dot"></i> No scrotal or groin incision</li>
+                                    <li><i class="fa-solid fa-circle-dot"></i> Local anaesthesia only</li>
+                                    <li><i class="fa-solid fa-circle-dot"></i> Day procedure, home same day</li>
+                                    <li><i class="fa-solid fa-circle-dot"></i> Return to work in 1–2 days</li>
+                                    <li><i class="fa-solid fa-circle-dot"></i> No hydrocele risk</li>
+                                    <li><i class="fa-solid fa-circle-dot"></i> Bilateral treatment in one session</li>
+                                </ul>
+                            </div>
+                            <div class="compare-card surg">
+                                <h4><i class="fa-solid fa-scissors" style="color:var(--muted)"></i> Surgical Varicocelectomy</h4>
+                                <ul>
+                                    <li><i class="fa-solid fa-circle-dot"></i> Groin or scrotal incision required</li>
+                                    <li><i class="fa-solid fa-circle-dot"></i> General or spinal anaesthesia</li>
+                                    <li><i class="fa-solid fa-circle-dot"></i> Short hospital stay</li>
+                                    <li><i class="fa-solid fa-circle-dot"></i> Return to work in 5–7 days</li>
+                                    <li><i class="fa-solid fa-circle-dot"></i> ~5–10% hydrocele formation risk</li>
+                                    <li><i class="fa-solid fa-circle-dot"></i> Bilateral requires separate access</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="proc-img-wrap">
+                        <img src="https://i.pinimg.com/736x/03/6c/bd/036cbd77d2df66634aabb61d80ea6bbd.jpg" alt="Varicocele embolisation procedure">
+                    </div>
+                </div>
+            </div>
+
+            <!-- PAE SECTION -->
+            <div class="proc-section" id="sec-pae">
+                <div class="proc-layout">
+                    <div class="content">
+                        <div class="slbl">Male Urology IR</div>
+                        <h2 class="stit">Prostate Artery Embolisation (PAE)</h2>
+                        <p>Benign Prostatic Hyperplasia (BPH) or an enlarged prostate affects over 50% of men by age 60 and up to 90% by age 85. Symptoms include urinary frequency, urgency, weak stream, incomplete bladder emptying, and nocturia, significantly impacting quality of life. Prostate Artery Embolisation (PAE) is a cutting-edge, minimally invasive radiological procedure that reduces prostate volume by selectively blocking the small arteries supplying the prostate gland, causing it to shrink without open surgery.</p>
+                        <p>Unlike transurethral resection of the prostate (TURP) the traditional surgical gold standard PAE does not require general anaesthesia, involves no cutting inside the urethra, and carries no risk of retrograde ejaculation or erectile dysfunction. It is an outpatient or short-stay procedure with rapid recovery.</p>
+
+                        <h3>Who is a Candidate for PAE?</h3>
+                        <p>PAE is indicated for men with moderate to severe lower urinary tract symptoms (LUTS) due to BPH who have failed or are intolerant of medical therapy (alpha-blockers, 5-alpha reductase inhibitors), men who wish to avoid surgical risks such as retrograde ejaculation or urethral stricture, elderly men or those with significant comorbidities where TURP carries elevated anaesthetic risk, and men with very large prostates (over 80 ml) in whom TURP may be technically challenging or incomplete. It is also suitable for men with urinary retention who are catheter-dependent and seek a non-surgical path to catheter removal.</p>
+
+                        <h3>How is PAE Performed?</h3>
+                        <ul>
+                            <li><strong>Pre-procedural Planning:</strong> A CTA or MRA of the pelvis is performed beforehand to map the prostate arterial anatomy critical as prostatic arteries are small (1–2 mm) and highly variable between individuals.</li>
+                            <li><strong>Access &amp; Navigation:</strong> Under local anaesthesia and conscious sedation, a catheter is introduced via the femoral or radial artery. Using biplane fluoroscopy and roadmapping, a microcatheter is steered selectively into the prostatic arteries bilaterally.</li>
+                            <li><strong>Embolisation:</strong> Tiny microspheres (100–300 microns) are injected through the microcatheter to selectively block the prostate's blood supply. Non-target embolisation of adjacent structures (bladder, rectum) is carefully avoided using meticulous technique and cone-beam CT guidance.</li>
+                            <li><strong>Bilateral Treatment:</strong> Both left and right prostatic arteries are embolised in the same session. Post-embolisation angiography confirms satisfactory devascularisation.</li>
+                            <li><strong>Recovery:</strong> Most patients are discharged within 24 hours. Prostate volume reduction of 20–40% is typically seen over 3–6 months, with progressive improvement in urinary symptoms.</li>
+                        </ul>
+
+                        <div class="callout">
+                            <strong>Clinical Evidence:</strong> PAE is supported by high-quality randomised controlled trial data (ROPE study, BLISS trial, EMBOLIZE trial) demonstrating durable symptom improvement (IPSS reduction of 10–15 points), significant prostate volume reduction, and importantly, preservation of sexual function with zero incidence of retrograde ejaculation or de novo erectile dysfunction compared to TURP.
+                        </div>
+                    </div>
+                    <div class="proc-img-wrap">
+                        <img src="https://i.pinimg.com/736x/01/4b/b9/014bb9d8a4c50d0cfdc82be0ff979462.jpg" alt="Prostate artery embolisation PAE">
+                    </div>
+                </div>
+            </div>
+
+            <!-- FERTILITY IR SECTION -->
+            <div class="proc-section" id="sec-fertility">
+                <div class="proc-layout">
+                    <div class="content">
+                        <div class="slbl">Male Fertility IR</div>
+                        <h2 class="stit">Male Fertility-Related Vascular Interventions</h2>
+                        <p>Beyond varicocele correction, interventional radiology offers targeted, minimally invasive treatments for several vascular conditions that affect male reproductive health. These include percutaneous embolisation of post-surgical or spontaneous arteriovenous fistulas (AVFs) within the scrotum or pelvis, management of pelvic congestion syndrome-related venous insufficiency in men, and venographic assessment prior to assisted reproductive procedures. These precise catheter-based interventions correct the underlying haemodynamic abnormality with minimal disruption to surrounding structures.</p>
+                        <p>IR also plays a role in the management of post-orchidopexy or post-hernia repair vascular complications, including testicular venous thrombosis, pelvic venous collateralisation, and scrotal hematoma drainage, all performed under imaging guidance to ensure accuracy and patient safety.</p>
+
+                        <h3>Conditions Treated</h3>
+                        <ul>
+                            <li><strong>Varicocele (Primary &amp; Recurrent):</strong> Embolisation for new diagnoses and for varicoceles that have recurred following previous surgical ligation.</li>
+                            <li><strong>Post-surgical Scrotal AVF:</strong> Embolisation of inadvertent arteriovenous fistulas formed after inguinal surgery, orchidopexy, or hernia repair causing pain, swelling, or vascular steal.</li>
+                            <li><strong>Pelvic Venous Insufficiency in Men:</strong> Venographic identification and targeted embolisation of incompetent pelvic veins contributing to pelvic congestion, scrotal heaviness, and perineal pain.</li>
+                            <li><strong>Scrotal Collection Drainage:</strong> Ultrasound-guided aspiration and drainage of scrotal haematomas, hydroceles, or post-operative seromas causing discomfort or infection.</li>
+                            <li><strong>Pre-ART Vascular Assessment:</strong> Dedicated scrotal and pelvic venous mapping for couples undergoing IVF/ICSI, identifying subclinical venous reflux amenable to correction prior to sperm retrieval procedures.</li>
+                        </ul>
+
+                        <h3>Benefits Across All Male Fertility IR Procedures</h3>
+                        <div class="callout">
+                            <strong>Key Advantage:</strong> All male fertility IR procedures preserve testicular blood supply and scrotal integrity. Unlike open scrotal surgery, there is no risk to the vas deferens, epididymis, or testicular artery structures critical to fertility that can be inadvertently damaged during open dissection.
+                        </div>
+                    </div>
+                    <div class="proc-img-wrap">
+                        <img src="https://i.pinimg.com/1200x/7a/65/c1/7a65c12d55e7bd8096a3153c8a161da5.jpg" alt="Male fertility IR procedure">
+                    </div>
+                </div>
+            </div>
+
+            <!-- SHARED BENEFITS GRID -->
+            <h3 style="font-family:'Poppins',sans-serif;font-size:1.45rem;color:var(--navy);margin-bottom:1rem">
+                Why Choose Interventional Radiology for Male Urological Conditions?</h3>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="bic"><i class="fa-solid fa-shield-halved"></i></div>
+                    <h4>No Scrotal Incision</h4>
+                    <p>All procedures are performed through a tiny skin puncture in the wrist or groin the scrotum and groin are never cut.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="bic"><i class="fa-solid fa-person-running"></i></div>
+                    <h4>Same-Day or Next-Day Discharge</h4>
+                    <p>Most procedures are completed as day cases. Patients return home within hours and resume light activities within 1–2 days.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="bic"><i class="fa-solid fa-heart"></i></div>
+                    <h4>Sexual Function Preserved</h4>
+                    <p>PAE and varicocele embolisation carry no risk of retrograde ejaculation, erectile dysfunction, or damage to the vas deferens.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="bic"><i class="fa-solid fa-flask"></i></div>
+                    <h4>Fertility-Focused Outcomes</h4>
+                    <p>Varicocele correction improves semen parameters in the majority of treated men, supporting natural conception and ART success rates.</p>
+                </div>
+            </div>
+
+            <!-- FAQ -->
+            <h3 style="font-family:'Poppins',sans-serif;font-size:1.45rem;color:var(--navy);margin:2.5rem 0 1.25rem">
+                Frequently Asked Questions</h3>
+            <div class="faq">
+                <div class="faq-item">
+                    <button class="faq-q" onclick="toggleFaq(this)">How is a varicocele diagnosed before embolisation?<i class="fa-solid fa-chevron-down faq-chev"></i></button>
+                    <div class="faq-a">
+                        <div class="faq-a-inner">Varicocele is typically diagnosed by clinical examination (palpation of the scrotum) graded I–III by size, combined with colour Doppler scrotal ultrasound which confirms the presence and severity of venous reflux. Semen analysis and serum testosterone are performed to assess the impact on fertility and hormonal function. A venogram performed at the time of embolisation provides the definitive anatomical map.</div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q" onclick="toggleFaq(this)">How long after varicocele embolisation does semen quality improve?<i class="fa-solid fa-chevron-down faq-chev"></i></button>
+                    <div class="faq-a">
+                        <div class="faq-a-inner">Spermatogenesis the process of sperm production takes approximately 72–90 days to complete one full cycle. Meaningful improvement in semen parameters is therefore typically seen 3–6 months after embolisation. A repeat semen analysis is usually performed at 3 months and again at 6 months post-procedure. Couples should continue fertility investigations and treatment planning in parallel during this period.</div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q" onclick="toggleFaq(this)">Does PAE affect sexual function or ejaculation?<i class="fa-solid fa-chevron-down faq-chev"></i></button>
+                    <div class="faq-a">
+                        <div class="faq-a-inner">This is one of PAE's most important advantages over TURP. Because PAE does not involve any instrumentation of the urethra or bladder neck, there is no risk of retrograde ejaculation a complication affecting 65–90% of men after TURP. Multiple published studies have confirmed that erectile function and ejaculatory function are preserved after PAE. Some men actually report improvement in sexual symptoms following relief of LUTS.</div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q" onclick="toggleFaq(this)">How much does the prostate shrink after PAE?<i class="fa-solid fa-chevron-down faq-chev"></i></button>
+                    <div class="faq-a">
+                        <div class="faq-a-inner">Studies consistently demonstrate prostate volume reduction of 20–40% over 3–6 months following PAE, with the maximum effect seen at around 6 months. This volume reduction translates to a clinically significant improvement in urinary symptom scores (IPSS), peak urinary flow rate, and quality of life. Very large prostates (100–200 ml) tend to show the greatest absolute volume reduction, making PAE particularly attractive for this group where TURP is technically challenging.</div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q" onclick="toggleFaq(this)">Can both varicocele embolisation and PAE be performed if needed?<i class="fa-solid fa-chevron-down faq-chev"></i></button>
+                    <div class="faq-a">
+                        <div class="faq-a-inner">Both procedures use catheter-based access and can be performed separately at different time points, or staged appropriately based on clinical priorities. A comprehensive assessment with Dr. Shetty will determine the optimal sequence and timing. In younger men with both infertility and early BPH, addressing the varicocele first is typically prioritised, as it has the more immediate impact on fertility outcomes.</div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q" onclick="toggleFaq(this)">What follow-up is required after these procedures?<i class="fa-solid fa-chevron-down faq-chev"></i></button>
+                    <div class="faq-a">
+                        <div class="faq-a-inner">For varicocele embolisation: scrotal Doppler ultrasound at 3 months to confirm technical success, and semen analysis at 3 and 6 months to track improvement. For PAE: urinary symptom score assessment, uroflowmetry, and post-void residual measurement at 1, 3, and 6 months; MRI prostate at 6 months to assess volume reduction. Long-term, annual urological review is recommended to monitor for any symptom recurrence.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align:center;margin:4rem 0 2rem">
+                <a href="../contact.html" class="btn-p">
+                    <i class="fa-regular fa-calendar-check"></i> Book Consultation with Dr. Shetty
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA BANNER -->
+    <section style="background:linear-gradient(135deg,var(--navy),var(--navy2) 50%,#0e3d6b 100%);padding:4rem 2rem;text-align:center">
+        <div style="max-width:580px;margin:0 auto">
+            <h2 style="font-family:'Poppins',sans-serif;font-size:clamp(1.7rem,3vw,2.4rem);font-weight:700;color:#fff;margin-bottom:1rem">Fertility concerns or prostate symptoms? Get expert guidance.</h2>
+            <p style="color:rgba(255,255,255,.7);font-size:.95rem;line-height:1.7">Consult with Dr. Gurucharan S Shetty to evaluate your condition and explore the safest, most effective minimally invasive treatment for your urological or fertility needs.</p>
+            <a href="../contact.html" class="btn-p" style="margin-top:1.5rem"><i class="fa-regular fa-calendar-check"></i> Book Appointment</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="fi">
+            <div class="fg">
+                <div class="fb">
+                    <a href="../index.html" class="logo">
+                        <div class="logo-t">
+                            <span class="logo-n">Dr. Gurucharan S Shetty</span>
+                            <span class="logo-s">Interventional Radiologist</span>
+                        </div>
+                    </a>
+                    <p>A leading Interventional Radiologist in Bangalore offering expert minimally invasive, image-guided procedures at Sparsh Hospitals. Excellence in vascular, neuro-interventional, and oncology IR.</p>
+                    <div class="soc">
+                        <a href="#" class="si2" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="si2" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="si2" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" class="si2" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="fc">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html"><i class="fa-solid fa-chevron-right"></i>Home</a></li>
+                        <li><a href="../about.html"><i class="fa-solid fa-chevron-right"></i>About</a></li>
+                        <li><a href="../procedures.html"><i class="fa-solid fa-chevron-right"></i>Procedures</a></li>
+                        <li><a href="../testimonials/text-testimonials.html"><i class="fa-solid fa-chevron-right"></i>Patient Reviews</a></li>
+                        <li><a href="../testimonials/video-testimonials.html"><i class="fa-solid fa-chevron-right"></i>Video Testimonials</a></li>
+                        <li><a href="../contact.html"><i class="fa-solid fa-chevron-right"></i>Contact</a></li>
+                    </ul>
+                </div>
+                <div class="fc">
+                    <h4>Our Blogs</h4>
+                    <ul>
+                        <li><a href="../blogs/chemoembolisation-ablation-tumors.html"><i class="fa-solid fa-chevron-right"></i>Chemoembolisation And Ablation Of Tumors</a></li>
+                        <li><a href="../blogs/varicocele-no-scalpel.html"><i class="fa-solid fa-chevron-right"></i>No Scalpel Treatment For Varicocele</a></li>
+                        <li><a href="../blogs/varicose-veins.html"><i class="fa-solid fa-chevron-right"></i>Varicose Veins</a></li>
+                        <li><a href="../blogs/mechanical-thrombectomy-stroke.html"><i class="fa-solid fa-chevron-right"></i>Mechanical Thrombectomy Has Revolutionised Treatment Of Acute Ischemic Stroke</a></li>
+                        <li><a href="../blogs.html"><i class="fa-solid fa-chevron-right"></i>All Blogs</a></li>
+                    </ul>
+                </div>
+                <div class="fc">
+                    <h4>Contact Us</h4>
+                    <div class="fci"><i class="fa-solid fa-location-dot"></i><p>Sparsh Hospitals, Sarjapur Main Rd, Carmelaram, Doddakannelli, Bengaluru – 560035</p></div>
+                    <div class="fci"><i class="fa-solid fa-phone"></i><a href="tel:08061222000">080-61222000</a></div>
+                    <div class="fci"><i class="fa-regular fa-envelope"></i><a href="mailto:gurucharansshetty@gmail.com">gurucharansshetty@gmail.com</a></div>
+                    <div class="fci"><i class="fa-regular fa-clock"></i><p>Mon – Sat: 9:00 AM – 6:00 PM</p></div>
+                </div>
+            </div>
+            <div class="fbot">
+                <div class="fcp">© <span id="yr"></span> Dr. Gurucharan S Shetty. All Rights Reserved.</div>
+                <div class="fdb">Designed &amp; Developed by <a href="https://thinkB.agency/" target="_blank" rel="noopener">thinkB</a></div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('yr').textContent = new Date().getFullYear();
+        function toggleMenu() { document.getElementById('ham').classList.toggle('open'); document.getElementById('mnav').classList.toggle('open'); }
+        window.addEventListener('scroll', function () { document.getElementById('hdr').style.boxShadow = scrollY > 50 ? '0 4px 30px rgba(0,0,0,.35)' : 'none'; });
+        function toggleFaq(btn) {
+            var a = btn.nextElementSibling;
+            var o = btn.classList.contains('open');
+            document.querySelectorAll('.faq-q.open').forEach(function (b) { b.classList.remove('open'); b.nextElementSibling.classList.remove('open'); });
+            if (!o) { btn.classList.add('open'); a.classList.add('open'); }
+        }
+        function switchProc(id, el) {
+            document.querySelectorAll('.proc-tab').forEach(t => t.classList.remove('active'));
+            document.querySelectorAll('.proc-section').forEach(s => s.classList.remove('active'));
+            el.classList.add('active');
+            document.getElementById('sec-' + id).classList.add('active');
+        }
+    </script>
+</body>
+</html>

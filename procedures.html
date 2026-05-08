@@ -7,9 +7,9 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
   <title>Interventional Radiology Procedures | Dr. Gurucharan S Shetty Bangalore</title>
   <meta name="description"
-    content="Explore all minimally invasive Interventional Radiology procedures offered by Dr. Gurucharan S Shetty in Bangalore biopsies, TACE, stroke thrombectomy, varicose veins, UAE, embolisation and more." />
+    content="Explore all minimally invasive Interventional Radiology procedures offered by Dr. Gurucharan S Shetty in Bangalore biopsies, TACE, stroke thrombectomy, varicose veins, UAE, varicocele embolisation, PAE and more." />
   <meta name="keywords"
-    content="Interventional Radiology procedures Bangalore, TACE Bangalore, varicose vein treatment Bangalore, mechanical thrombectomy, uterine artery embolisation, brain aneurysm coiling, image guided biopsy" />
+    content="Interventional Radiology procedures Bangalore, TACE Bangalore, varicose vein treatment Bangalore, mechanical thrombectomy, uterine artery embolisation, image guided biopsy, varicocele embolisation, prostate artery embolisation" />
   <link rel="canonical" href="https://drgurucharan.com/procedures.html" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link
@@ -77,20 +77,6 @@
       text-decoration: none
     }
 
-    .logo-b {
-      width: 46px;
-      height: 46px;
-      background: linear-gradient(135deg, var(--gold), var(--gold2));
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-family: 'Poppins', sans-serif;
-      font-size: 1.3rem;
-      font-weight: 700;
-      color: var(--navy)
-    }
-
     .logo-t {
       display: flex;
       flex-direction: column
@@ -104,7 +90,9 @@
       line-height: 1.2
     }
 
-    .logo-s { margin-top: 3px;margin-left: 28px;
+    .logo-s {
+      margin-top: 3px;
+      margin-left: 28px;
       font-size: .6rem;
       color: var(--gold);
       letter-spacing: .12em;
@@ -385,7 +373,7 @@
       margin-bottom: 1rem
     }
 
-    /* CATEGORY TABS */
+    /* TABS */
     .tabs {
       display: flex;
       gap: .5rem;
@@ -450,6 +438,11 @@
       transform: scaleX(1)
     }
 
+    .pc:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 32px rgba(11, 31, 58, .08)
+    }
+
     .cat-badge {
       display: inline-block;
       font-size: .65rem;
@@ -489,6 +482,12 @@
     .cat-pain {
       background: rgba(14, 116, 144, .1);
       color: var(--teal)
+    }
+
+    /* New men's health badge slightly distinct accent */
+    .cat-men {
+      background: rgba(4, 76, 144, .12);
+      color: var(--navy)
     }
 
     .pic {
@@ -745,7 +744,6 @@
   <header id="hdr">
     <div class="hdr">
       <a href="./index.html" class="logo">
-
         <div class="logo-t">
           <span class="logo-n">Dr. Gurucharan S Shetty</span>
           <span class="logo-s">Interventional Radiologist</span>
@@ -758,15 +756,12 @@
         <div class="drop">
           <a>Patient Stories</a>
           <div class="dmenu">
-            <a href="./testimonials/text-testimonials.html">
-              <i class="fa-regular fa-comment-dots"></i>&nbsp; Patient Reviews
-            </a>
-            <a href="./testimonials/video-testimonials.html">
-              <i class="fa-brands fa-youtube"></i>&nbsp; Video Testimonials
-            </a>
-            <a href="./testimonials/doctor-insights.html">
-              <i class="fa-solid fa-user-doctor"></i>&nbsp; Doctor Insights
-            </a>
+            <a href="./testimonials/text-testimonials.html"><i class="fa-regular fa-comment-dots"></i>&nbsp; Patient
+              Reviews</a>
+            <a href="./testimonials/video-testimonials.html"><i class="fa-brands fa-youtube"></i>&nbsp; Video
+              Testimonials</a>
+            <a href="./testimonials/doctor-insights.html"><i class="fa-solid fa-user-doctor"></i>&nbsp; Doctor
+              Insights</a>
           </div>
         </div>
         <a href="./blogs.html">Blogs</a>
@@ -790,9 +785,8 @@
         class="fa-regular fa-comment-dots"></i>&nbsp; Patient Reviews</a>
     <a href="./testimonials/video-testimonials.html" style="padding-left:2.5rem"><i
         class="fa-brands fa-youtube"></i>&nbsp; Video Testimonials</a>
-    <a href="./testimonials/doctor-insights.html" style="padding-left:2.5rem">
-      <i class="fa-solid fa-user-doctor"></i>&nbsp; Doctor Insights
-    </a>
+    <a href="./testimonials/doctor-insights.html" style="padding-left:2.5rem"><i
+        class="fa-solid fa-user-doctor"></i>&nbsp; Doctor Insights</a>
     <a href="./blogs.html"><i class="fa-solid fa-blog"></i>&nbsp; Blogs</a>
     <a href="./contact.html"><i class="fa-solid fa-phone"></i>&nbsp; Contact</a>
   </div>
@@ -803,7 +797,8 @@
           style="font-size:.6rem"></i><span>Procedures</span></div>
       <h1>Interventional Radiology Procedures</h1>
       <p>Dr. Gurucharan S Shetty offers a comprehensive range of minimally invasive, image-guided procedures from
-        diagnostic biopsies to complex neuro and vascular interventions all without the need for open surgery.</p>
+        diagnostic biopsies to complex neuro, vascular, and men's health interventions all without the need for open
+        surgery.</p>
     </div>
   </div>
 
@@ -822,6 +817,7 @@
         <div class="tab" onclick="filterCat('vasc',this)"><i class="fa-solid fa-heart-pulse"></i> Vascular</div>
         <div class="tab" onclick="filterCat('neuro',this)"><i class="fa-solid fa-brain"></i> Neurointerventional</div>
         <div class="tab" onclick="filterCat('women',this)"><i class="fa-solid fa-venus"></i> Women's Health</div>
+        <div class="tab" onclick="filterCat('men',this)"><i class="fa-solid fa-mars"></i> Men's Health &amp; IR</div>
         <div class="tab" onclick="filterCat('pain',this)"><i class="fa-solid fa-syringe"></i> Pain Management</div>
       </div>
 
@@ -966,16 +962,16 @@
           <span class="cat-badge cat-neuro">Neurointerventional</span>
           <div class="pic"><i class="fa-solid fa-brain"></i></div>
           <div class="pt">Mechanical Thrombectomy in Acute Stroke</div>
-          <div class="pd">Life-saving clot retrieval for large vessel occlusion stroke restoring blood flow to the
-            brain within the golden window to prevent permanent disability.</div>
+          <div class="pd">Life-saving clot retrieval for large vessel occlusion stroke restoring blood flow to the brain
+            within the golden window to prevent permanent disability.</div>
           <div class="pl">Learn More <i class="fa-solid fa-arrow-right"></i></div>
         </a>
-        <a href="./procedures/coiling-brain-aneurysms.html" class="pc" data-cat="neuro">
-          <span class="cat-badge cat-neuro">Neurointerventional</span>
-          <div class="pic"><i class="fa-solid fa-atom"></i></div>
-          <div class="pt">Coiling of Brain Aneurysms in Subarachnoid Haemorrhage</div>
-          <div class="pd">Endovascular coil embolisation to seal brain aneurysms and prevent re-bleeding an advanced
-            alternative to open neurosurgical clipping.</div>
+        <a href="./procedures/hepatobilary-interventions.html" class="pc" data-cat="vasc">
+          <span class="cat-badge cat-vasc">Hepatobiliary</span>
+          <div class="pic"><i class="fa-solid fa-circle-nodes"></i></div>
+          <div class="pt">Image-Guided Hepatobiliary Procedures</div>
+          <div class="pd">Advanced minimally invasive interventions for biliary obstruction, liver tumours, and
+            hepatobiliary disorders using image-guided techniques as an alternative to major surgery.</div>
           <div class="pl">Learn More <i class="fa-solid fa-arrow-right"></i></div>
         </a>
         <a href="./procedures/carotid-renal-artery-stenting.html" class="pc" data-cat="neuro">
@@ -1010,6 +1006,19 @@
             chronic pain effective, minimally invasive pain relief.</div>
           <div class="pl">Learn More <i class="fa-solid fa-arrow-right"></i></div>
         </a>
+
+        <!-- ── NEW: Men's Health & IR card ── -->
+        <a href="./procedures/male-urology-fertility-ir.html" class="pc" data-cat="men">
+          <span class="cat-badge cat-men">Men's Health &amp; IR</span>
+          <div class="pic"
+            style="background:linear-gradient(135deg,rgba(0,76,144,.1),rgba(6,131,206,.1));color:var(--navy)"><i
+              class="fa-solid fa-mars"></i></div>
+          <div class="pt">Male Urology &amp; Fertility IR</div>
+          <div class="pd">Varicocele embolisation, Prostate Artery Embolisation (PAE) for BPH, and fertility-related
+            vascular interventions no scrotal incision, no general anaesthesia.</div>
+          <div class="pl">Learn More <i class="fa-solid fa-arrow-right"></i></div>
+        </a>
+
       </div>
     </div>
   </section>
@@ -1022,7 +1031,7 @@
     </div>
     <div style="position:relative;z-index:2;max-width:600px;margin:0 auto">
       <h2
-        style="font-family: 'Poppins', sans-serif;font-size:clamp(1.8rem,3.5vw,2.6rem);font-weight:700;color:#fff;line-height:1.2;margin-bottom:1rem">
+        style="font-family:'Poppins',sans-serif;font-size:clamp(1.8rem,3.5vw,2.6rem);font-weight:700;color:#fff;line-height:1.2;margin-bottom:1rem">
         Not Sure Which Procedure You Need?</h2>
       <p style="color:rgba(255,255,255,.62);font-size:.93rem;line-height:1.75;margin-bottom:2rem">Book a consultation
         with Dr. Gurucharan S Shetty and get a personalised evaluation and treatment recommendation.</p>
@@ -1041,7 +1050,6 @@
       <div class="fg">
         <div class="fb">
           <a href="./index.html" class="logo">
-
             <div class="logo-t"><span class="logo-n">Dr. Gurucharan S Shetty</span><span class="logo-s">Interventional
                 Radiologist</span></div>
           </a>
@@ -1074,11 +1082,10 @@
                   class="fa-solid fa-chevron-right"></i>Chemoembolisation And Ablation Of Tumors</a></li>
             <li><a href="./blogs/varicocele-no-scalpel.html"><i class="fa-solid fa-chevron-right"></i>No Scalpel
                 Treatment For Varicocele</a></li>
-            <li><a href="./blogs/varicose-veins.html"><i class="fa-solid fa-chevron-right"></i>Varicose Veins</a>
-            </li>
+            <li><a href="./blogs/varicose-veins.html"><i class="fa-solid fa-chevron-right"></i>Varicose Veins</a></li>
             <li><a href="./blogs/mechanical-thrombectomy-stroke.html"><i
-                  class="fa-solid fa-chevron-right"></i>Mechanical
-                Thrombectomy Has Revolutionised Treatment Of Acute Ischemic Stroke</a></li>
+                  class="fa-solid fa-chevron-right"></i>Mechanical Thrombectomy Has Revolutionised Treatment Of Acute
+                Ischemic Stroke</a></li>
             <li><a href="./blogs.html"><i class="fa-solid fa-chevron-right"></i>All Blogs</a></li>
           </ul>
         </div>
@@ -1102,6 +1109,7 @@
       </div>
     </div>
   </footer>
+
   <script>
     document.getElementById('yr').textContent = new Date().getFullYear();
     function toggleMenu() { document.getElementById('ham').classList.toggle('open'); document.getElementById('mnav').classList.toggle('open') }
